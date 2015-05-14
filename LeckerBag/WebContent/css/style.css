@@ -1,0 +1,209 @@
+
+
+/* Meine eigenen Styles */
+
+body
+{
+    background-color: #fdfdf2 !important;
+}
+
+/* --- NAVIGATION - SOZIALES NETZWERK - START --- */
+
+/* Navigationsleiste*/
+
+#nav_sn
+{
+    background-color: #332111;
+    padding-right: 20px;
+    height: 25px;
+    line-height: 25px;
+}
+
+/* Navigationselemente*/
+
+.nav_sn_link
+{
+    padding: 5px 15px 5px 15px !important;
+    color: #f4e5c5 !important;
+}
+
+.nav_sn_link:hover
+{
+    color: #a23b16 !important;
+}
+
+/* --- NAVIGATION - START --- */
+
+.nav_button
+{
+    background-color: #fdfdf2 !important;
+    border: none;
+    border-top: 0.5px solid #332111;
+    border-radius: 0px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+{
+    color: #fdfdf2 !important;
+    background-color: #5b586b;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+{
+    color: #fdfdf2;
+    background-color: #868492;
+    transition: all 0.3s ease 0;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+    color: #332111;
+}
+
+.nav_item_middle> a
+{
+    border-left: 0.25px solid #332111;
+    border-right: 0.25px solid #332111;
+}
+
+.nav_item_first> a
+{
+    border-left: 0.25px solid #332111;
+}
+
+.nav_item_last> a
+{
+    border-right: 0.25px solid #332111;
+}
+
+.navbar-default .navbar-nav > li
+{
+    width: 150px;
+}
+
+/* zentriert die Navigation*/
+
+.navbar .navbar-nav
+{
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse
+{
+    text-align: center;
+}
+
+/* --- NAVIGATION - ENDE --- */
+
+/* --- LOGOROW - START --- */
+
+#logo
+{
+    background: url(../pics/bg_3.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#logo_left
+{
+    height: 400px;
+    padding-top: 180px;
+}
+
+#logo_left>h5
+{
+    color: #fdfdf2 !important;
+    font-weight: bold;
+}
+
+#logo_right
+{
+    padding-top: 180px;
+    height: 400px;
+}
+
+#logo_right>h5
+{
+    color: #fdfdf2 !important;
+    font-weight: bold;
+}
+
+#logo_inner
+{
+    height: 400px;
+    padding-top: 50px;
+}
+
+/* --- LOGOROW - ENDE --- */
+
+#test
+{
+    width: 100%;
+}
+
+#start_abschnitt_1
+{
+    margin-top: 50px;
+    border-top: 1px solid #332211;
+    border-bottom: 1px solid #332211;
+    background-color: #a23b16;
+}
+
+#start_abschnitt_1 > .container >h1
+{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #fdfdf2;
+    text-align: center;
+}
+
+#start_abschnitt_1 > .container >h4
+{
+    padding-bottom: 50px;
+    color: #f4e5c5;
+    text-align: center;
+}
+
+.button_paulo
+{
+    width: 150px;
+    border: none;
+    border-radius: 3px;
+    background: #332111;
+    color: #fdfdf2;
+    bottom: 0;
+    height: 48px;
+    background-color: #5b586b;
+}
+
+.button_paulo:hover
+{
+    background: #868492;
+    color: #fdfdf2;
+}
+
+#start_abschnitt_0
+{
+    background-color: #332211;
+    background: url("../pics/wood.jpg") repeat center center fixed;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+#start_abschnitt_0 > .container > h1
+{
+	text-align:center;
+	color: #fdfdf2;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+#start_abschnitt_0 > .container > h5
+{
+	text-align:center;
+	color: #fdfdf2;
+	padding-bottom:20px;
+}
+
