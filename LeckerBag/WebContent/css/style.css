@@ -2,11 +2,20 @@
 
 /* Meine eigenen Styles */
 
-body
-{
+a{
+    color: #5B586B;
+}
+
+body{
     background-color: #fdfdf2 !important;
 }
 
+.wrapper{
+	background-color: #fefefe;
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(221,221,221,1);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(221,221,221,1);
+	box-shadow: 0px 1px 2px 0px rgba(221,221,221,1);
+}
 /* --- NAVIGATION - SOZIALES NETZWERK - START --- */
 
 /* Navigationsleiste*/
@@ -23,28 +32,27 @@ body
 
 .nav_sn_link
 {
-    padding: 5px 15px 5px 15px !important;
-    color: #f4e5c5 !important;
+    padding: 5px 15px 5px 15px;
+    color: #f4e5c5;
 }
 
 .nav_sn_link:hover
 {
-    color: #a23b16 !important;
+    color: #a23b16;
 }
 
 /* --- NAVIGATION - START --- */
 
 .nav_button
 {
-    background-color: #fdfdf2 !important;
+    background-color: #fdfdf2;
     border: none;
-    border-top: 0.5px solid #332111;
     border-radius: 0px;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
 {
-    color: #fdfdf2 !important;
+    color: #fdfdf2;
     background-color: #5b586b;
 }
 
@@ -60,25 +68,20 @@ body
     color: #332111;
 }
 
-.nav_item_middle> a
-{
-    border-left: 0.25px solid #332111;
-    border-right: 0.25px solid #332111;
-}
-
-.nav_item_first> a
-{
-    border-left: 0.25px solid #332111;
-}
-
 .nav_item_last> a
 {
-    border-right: 0.25px solid #332111;
+    border-right: 0.25px solid #ddd;
+}
+
+.nav_item> a, .nav_item_last> a
+{
+    border-left: 0.25px solid #ddd;
 }
 
 .navbar-default .navbar-nav > li
 {
     width: 150px;
+    background-color: #fdfdf2;
 }
 
 /* zentriert die Navigation*/
@@ -95,13 +98,31 @@ body
     text-align: center;
 }
 
+.navbar
+{
+    z-index: 1;
+}
+
+.navbar-toggle
+{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    float: inherit;
+}
+
+#navigation_bar
+{
+    text-align: center;
+}
+
 /* --- NAVIGATION - ENDE --- */
 
 /* --- LOGOROW - START --- */
 
 #logo
 {
-    background: url(../pics/bg_3.jpg) no-repeat center center fixed;
+    background: url(../pics/bg_logo.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -110,32 +131,40 @@ body
 
 #logo_left
 {
-    height: 400px;
-    padding-top: 180px;
+    height: 250px;
+    background: rgba(40, 100, 0, 0.40) none repeat;
 }
 
-#logo_left>h5
+#logo_left>h4
 {
     color: #fdfdf2 !important;
     font-weight: bold;
+    padding-top: 100px;
 }
 
 #logo_right
 {
-    padding-top: 180px;
-    height: 400px;
+    height: 250px;
+    background: rgba(40, 100, 0, 0.40) none repeat;
 }
 
-#logo_right>h5
+#logo_right>h4
 {
     color: #fdfdf2 !important;
     font-weight: bold;
+    padding-top: 100px;
 }
 
 #logo_inner
 {
-    height: 400px;
-    padding-top: 50px;
+    height: 250px;
+    background: rgba(40, 100, 0, 0.40) none repeat;
+    padding-top: 25px;
+}
+
+#logo_inner img
+{
+    height: 200px;
 }
 
 /* --- LOGOROW - ENDE --- */
@@ -173,7 +202,6 @@ body
     width: 150px;
     border: none;
     border-radius: 3px;
-    background: #332111;
     color: #fdfdf2;
     bottom: 0;
     height: 48px;
@@ -193,17 +221,116 @@ body
     margin-top: 50px;
     margin-bottom: 25px;
 }
+
 #start_abschnitt_0 > .container > h1
 {
-	text-align:center;
-	color: #fdfdf2;
-	padding-top:20px;
-	padding-bottom:20px;
+    text-align: center;
+    color: #fdfdf2;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
 #start_abschnitt_0 > .container > h5
 {
-	text-align:center;
-	color: #fdfdf2;
-	padding-bottom:20px;
+    text-align: center;
+    color: #fdfdf2;
+    padding-bottom: 20px;
+}
+
+/* --- dashboard_elemente START --- */
+.dash_element_col{
+	padding-left:0;
+	padding-right:0;
+}
+.dash_element_holder
+{
+    margin: 0 12.5px;
+    height: 300px;
+}
+
+.dash_element
+{
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    padding-left: 30px;
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+
+.dash_element > h4
+{
+    margin-top: 0;
+}
+
+.dash_element > h5, ul
+{
+    margin-left: 20px;
+    list-style: none;
+}
+
+.content_header_element
+{
+}
+
+.hr_line
+{
+    border-top: 1px solid #ddd;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#help_icon
+{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+#help_text
+{
+    cursor: pointer;
+}
+
+/* --- dashboard_elemente ENDE --- */
+
+/* medium devices (bis 992px) */
+
+@media (max-width:992px)
+{
+    .navbar-nav > li > a
+    {
+        padding: 15px 0px;
+    }
+    .navbar-default .navbar-nav > li
+    {
+        width: 110px;
+    }
+}
+
+/* Small devices (bis 767px) */
+
+@media (max-width:767px)
+{
+    .navbar-nav > li > a
+    {
+        padding: 15px;
+    }
+    .navbar-default .navbar-nav > li
+    {
+        width: 150px;
+    }
+    .nav_item> a
+    {
+        border-left: 0;
+        border-right: 0;
+    }
+    .nav_item_last> a
+    {
+        border-left: 0;
+        border-right: 0;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form
+    {
+        border: 0;
+    }
 }
 
