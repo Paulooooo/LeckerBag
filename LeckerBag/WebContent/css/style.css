@@ -2,11 +2,13 @@
 
 /* Meine eigenen Styles */
 
-a
-{
-    color: #5B586B;
+a{
+	color: #6c7f2c;
+	cursor: pointer;
 }
-
+a:hover{
+	color: #6c7f2c;
+}
 body
 {
     background-color: #fdfdf2 !important;
@@ -350,17 +352,20 @@ body
     color: #5b586b;
 }
 
-#help_text
-{
-    cursor: pointer;
-    color: #5b586b;
-}
-
-#help_icon:hover, #help_text:hover
+#help_icon:hover
 {
     color: #868492;
 }
+.preisfarbe
+{
+    font-weight: bold;
+    color: #962c28;
+}
 
+.beschreibung
+{
+    font-weight: bold;
+}
 /* --- FOOTER - START ---  */
 
 #footer
@@ -372,7 +377,7 @@ body
     margin-top: 40px;
 }
 
-#footer h4, #footer p, #footer a
+#footer h4, #footer p
 {
     color: #827262;
 }
@@ -381,17 +386,6 @@ body
 {
     border-top: 1px solid #6f6052;
     margin-top: 20px;
-}
-
-.preisfarbe
-{
-    font-weight: bold;
-    color: #962c28;
-}
-
-.beschreibung
-{
-    font-weight: bold;
 }
 
 /* --- FOOTER - ENDE---  */
