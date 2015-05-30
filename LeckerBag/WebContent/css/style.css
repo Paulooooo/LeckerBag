@@ -213,20 +213,25 @@ body
     bottom: 0;
     height: 48px;
     background-color: #5b586b;
+    min-width: 150px;
 }
+
 .button_paulo:hover
 {
     background: #868492;
     color: #fdfdf2;
 }
+
 .button_paulo_ext_dashboard
 {
     background: #a23b16;
 }
+
 .button_paulo_ext_dashboard > i
 {
-    padding-left:10px;
+    padding-left: 10px;
 }
+
 .button_paulo_ext_dashboard:hover
 {
     background: #c2542c;
@@ -272,9 +277,10 @@ body
 {
     border: solid 1px #ddd;
     border-radius: 4px;
-    padding: 25px 30px;  
+    padding: 25px 30px;
     margin-bottom: 20px;
-    min-height: 498px;
+    min-height: 530px;
+    position: relative;
 }
 
 .dash_element > h4
@@ -300,15 +306,23 @@ body
     cursor: pointer;
     color: #6c7f2c;
 }
+.last_element_dash
+{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding-right: 30px;
+}
 
-.list_text{
+.list_text
+{
     padding-bottom: 5px;
 }
 
-.abonnement_element{
+.abonnement_element
+{
     padding-bottom: 20px;
 }
-
 
 .hr_line
 {
@@ -316,7 +330,14 @@ body
     margin-top: 0;
     margin-bottom: 20px;
 }
-.hr_line_ext_dashboard
+
+.hr_line_ext_dashboard_middle
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.hr_line_ext_dashboard_last
 {
     margin-top: 20px;
     margin-bottom: 5px;
@@ -368,6 +389,11 @@ body
     color: #962c28;
 }
 
+.beschreibung
+{
+    font-weight: bold;
+}
+
 /* --- FOOTER - ENDE---  */
 
 /* --- dashboard_elemente ENDE --- */
@@ -413,4 +439,6 @@ body
         border: 0;
     }
 }
+
+
 

@@ -77,7 +77,7 @@
                     <div class="row" data-pg-collapsed>
                         <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10" data-pg-collapsed>
                             <h3>Mein Leckerbag</h3> 
-                            <p>Herzlich Willkommen Max Mustermann!</p> 
+                            <p>Herzlich Willkommen <font class="beschreibung">Max Mustermann!</font></p> 
                         </div>
                         <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2" data-pg-collapsed>
                             <a href="#" class=""><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
@@ -126,23 +126,23 @@
                                 <div class="col-md-12 dash_element"> 
                                     <h4>Meine Abonnements</h4>
                                     <h5>Ihre letzten Abonnements</h5>
-                                    <ul class="pg-empty-placeholder">
-                                        <li data-pg-collapsed class="abonnement_element">
-                                            <p color="#5b586b">30-Tage-Abonnement / Kind: <a>Arnold Mustermann</a> <br> Laufzeit: 25.07.15<br><font class="preisfarbe"> EUR 24,95 </font> (<a>Abonnementetails</a>)</p>
+                                    <ul class="pg-empty-placeholder" data-pg-collapsed>
+                                        <li data-pg-collapsed="" class="abonnement_element">
+                                            <p color="#5b586b"><font class="beschreibung">Produkt:</font> 30-Tage-Abonnement <br> <font class="beschreibung">Kind: </font> <a>Arnold Mustermann</a> <br> <font class="beschreibung">Laufzeit: </font>15.09.15<br><font class="preisfarbe"> EUR 24,95 </font> (<a>Abonnementetails</a>)</p>
                                             <button type="button" class="btn btn-default button_paulo">nochmals bestellen</button>
                                         </li>
-                                        <li data-pg-collapsed class="abonnement_element">
-                                            <p color="#5b586b">60-Tage-Abonnement / Kind: <a>Bernadette Mustermann</a><br>Laufzeit: 01.09.15 <br><font class="preisfarbe"> EUR 40,95 </font> (<a>Abonnementetails</a>)</p>
+                                        <li class="abonnement_element">
+                                            <p color="#5b586b"><font class="beschreibung">Produkt:</font> 60-Tage-Abonnement <br> <font class="beschreibung">Kind: </font> <a>Bernadette Mustermann</a> <br> <font class="beschreibung">Laufzeit: </font>01.10.15<br><font class="preisfarbe"> EUR 44,95 </font> (<a>Abonnementetails</a>)</p>
                                             <button type="button" class="btn btn-default button_paulo">nochmals bestellen</button>
                                         </li>
-                                        <li>
+                                        <li data-pg-collapsed="">
                                             <button type="button" class="btn btn-default button_paulo button_paulo_ext_dashboard">neues Abonnement abschließen 
                                                 <i class="fa fa-chevron-right"></i> 
                                             </button>
                                         </li>
                                     </ul>
-                                    <hr class="hr_line hr_line_ext_dashboard"/>
-                                    <div class="row" data-pg-collapsed>
+                                    <div class="row last_element_dash" data-pg-collapsed>
+                                        <hr class="hr_line hr_line_ext_dashboard_last">
                                         <div class="col-md-12">
                                             <a>Alle Abonnements anzeigen</a> 
                                         </div>
@@ -151,87 +151,118 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" data-pg-collapsed>
+                    <div class="row">
                         <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
                             <div class="row dash_element_holder">
-                                <div class="col-md-12 dash_element"> 
+                                <div class="col-md-12 dash_element col-sm-12 col-xs-12 col-lg-12">
                                     <h4>Meine Bestellungen</h4>
-                                    <h5>Nächste Lieferung</h5>
-                                    <ul class="pg-empty-placeholder" data-pg-collapsed="">
-                                        <li>
-                                            <a>Link</a>
-                                        </li>
-                                        <li>
-                                            <a>Link</a>
-                                        </li>
-                                        <li>
-                                            <a>Link</a>
-                                        </li>
-                                    </ul>                                     
+                                    <h5>Ihre nächsten Lieferungen</h5>
+                                    <div class="row">
+                                        <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8" data-pg-collapsed>
+                                            <ul class="pg-empty-placeholder">
+                                                <li class="abonnement_element" data-pg-collapsed>
+                                                    <p color="#5b586b"><font class="beschreibung">Produkt:</font> <a>100652001</a> Brötchen mit Salami, Apfel, Milch <br> <font class="beschreibung">Kind: </font> <a>Arnold Mustermann</a> <br> <font class="beschreibung">Lieferdatum: </font>01.09.15<br>(<a>Bestelldetails</a>)</p>
+                                                </li>
+                                            </ul>                                             
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 text-left">
+                                            <button type="button" class="btn btn-default button_paulo">stornieren</button>                                             
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8" data-pg-collapsed>
+                                            <ul class="pg-empty-placeholder">
+                                                <li class="abonnement_element">
+                                                    <p color="#5b586b"><font class="beschreibung">Produkt:</font> <a>100652011</a> Mehrkornbrötchen mit Käse, Birne, Kakao&nbsp;<br> <font class="beschreibung">Kind: </font> <a>Bernadette Mustermann</a> <br> <font class="beschreibung">Lieferdatum: </font>01.09.15<br>(<a>Bestelldetails</a>)</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 text-left">
+                                            <button type="button" class="btn btn-default button_paulo">stornieren</button>                                             
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8">
+                                            <ul class="pg-empty-placeholder" data-pg-collapsed="">
+                                                <li class="abonnement_element">
+                                                    <p color="#5b586b"><font class="beschreibung">Produkt:</font> <a>100652002</a> Brötchen mit Schinken und Käse, Banane, Milch <br> <font class="beschreibung">Kind: </font> <a>Arnold Mustermann</a> <br> <font class="beschreibung">Lieferdatum: </font>02.09.15<br>(<a>Bestelldetails</a>)</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 text-left">
+                                            <button type="button" class="btn btn-default button_paulo">stornieren</button>                                             
+                                        </div>
+                                    </div>
+                                    <div class="row last_element_dash">
+                                        <hr class="hr_line hr_line_ext_dashboard_last">
+                                        <div class="col-md-12">
+                                            <a>Alle Bestellungen anzeigen</a>
+                                        </div>
+                                    </div>                                     
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" data-pg-collapsed>
+                    <div class="row">
                         <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 dash_element_col">
-                            <div class="row dash_element_holder" data-pg-collapsed>
+                            <div class="row dash_element_holder" data-pg-collapsed="">
                                 <div class="col-md-12 dash_element"> 
-                                    <h4>Mein Profil</h4>
-                                    <h5>Ihre persönlichen Daten</h5>
-                                    <ul class="pg-empty-placeholder" data-pg-collapsed>
+                                    <h4>Meine Favoriten</h4>
+                                    <h5>Ihre Bags</h5>
+                                    <ul class="pg-empty-placeholder" data-pg-collapsed="">
                                         <li>
-                                            <a>Link</a>
+                                            <a>Favoriten ansehen</a>
                                         </li>
                                         <li>
-                                            <a>Link</a>
+                                            <a>Favoriten bearbeiten</a>
                                         </li>
                                         <li>
-                                            <a>Link</a>
+                                            <a>Favoriten löschen</a>
                                         </li>
                                     </ul>
-                                    <h5>Ihre Kinder</h5>
-                                    <ul class="pg-empty-placeholder" data-pg-collapsed>
+                                    <h5>Ihre Bäcker</h5>
+                                    <ul class="pg-empty-placeholder" data-pg-collapsed="">
                                         <li>
-                                            <a>Link</a>
+                                            <a>Favoriten ansehen</a>
                                         </li>
                                         <li>
-                                            <a>Link</a>
+                                            <a>Favoriten bearbeiten</a>
                                         </li>
                                         <li>
-                                            <a>Link</a>
+                                            <a>Favoriten löschen</a>
                                         </li>
                                     </ul>                                     
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 dash_element_col" data-pg-collapsed>
+                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 dash_element_col">
                             <div class="row dash_element_holder">
                                 <div class="col-md-12 dash_element"> 
-                                    <h4>Meine Abonnements</h4>
-                                    <h5>Ihre persönlichen Daten</h5>
+                                    <h4>Neuigkeiten</h4>
+                                    <h5>Heute (31.08.2015)</h5>
                                     <ul class="pg-empty-placeholder" data-pg-collapsed="">
-                                        <li>
-                                            <a>Link</a>
-                                        </li>
-                                        <li>
-                                            <a>Link</a>
-                                        </li>
-                                        <li>
-                                            <a>Link</a>
+                                        <li data-pg-collapsed="">
+                                            <p>Ihr favorisierter Bäcker <a>MüllerBäck</a> bietet ein neues Produkt an!</p>
                                         </li>
                                     </ul>
-                                    <h5>Ihre Kinder</h5>
+                                    <h5>30.08.2015</h5>
                                     <ul class="pg-empty-placeholder" data-pg-collapsed="">
                                         <li>
-                                            <a>Link</a>
+                                            <p>Bäcker <a>BackMich</a> beliefert ab heute die Schule Hermann-Gmeiner-Grundschule von <a>Arnold Mustermann</a>!</p>
                                         </li>
+                                    </ul>
+                                    <h5>30.08.2015</h5>
+                                    <ul class="pg-empty-placeholder" data-pg-collapsed="">
                                         <li>
-                                            <a>Link</a>
+                                            <p>Bäcker <a>BackusBack</a>&nbsp;beliefert ab heute die Schule Hermann-Gmeiner-Grundschule von <a>Arnold Mustermann</a>!</p>
                                         </li>
-                                        <li>
-                                            <a>Link</a>
-                                        </li>
-                                    </ul>                                     
+                                    </ul>
+                                    <div class="row last_element_dash">
+                                        <hr class="hr_line hr_line_ext_dashboard_last">
+                                        <div class="col-md-12" data-pg-collapsed>
+                                            <a>Alle Neuigkeiten anzeigen</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -20,7 +20,6 @@ $(function() {
 	                top: 0,    
 	                left: nav.offset().left+15, //add 15px padding
 	                width: nav.width(),
-	                //backgroundColor: '#332211'
 	            });
 	            navButtons.css({
 	            	borderBottom: '1px solid #ddd'
