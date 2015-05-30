@@ -6,6 +6,7 @@ $(function() {
 	    var nav = $('#navigation_bar');
 	    var navButtons = $('.nav_item');
 	    var navButtonLast = $('.nav_item_last'); 
+	    var navbarContainer = $('.navbar_container'); 
 	    var navHomeY = nav.offset().top;
 	    var isFixed = false;
 	    var $w = $(window);
@@ -27,12 +28,14 @@ $(function() {
 	            navButtonLast.css({
 	            	borderBottom: '1px solid #ddd'
 	            });
+	            navbarContainer.css({
+	                boxShadow: '0px 1px 2px 0px rgba(221,221,221,1)'
+	            });
 	            isFixed = true;
 	        }
 	        else if (!shouldBeFixed && isFixed)
 	        {
-	            nav.css({
-		            
+	            nav.css({   
 	                position: '',
 	                top: '',
 		            width: '100%',
@@ -44,7 +47,12 @@ $(function() {
 	            navButtonLast.css({
 	            	borderBottom: ''
 	            });
+	            navbarContainer.css({
+	                boxShadow: ''
+	            });
 	            isFixed = false;
 	        }
 	    });
 });
+
+

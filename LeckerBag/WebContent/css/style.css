@@ -2,27 +2,35 @@
 
 /* Meine eigenen Styles */
 
-a{
+a
+{
     color: #5B586B;
 }
 
-body{
+body
+{
     background-color: #fdfdf2 !important;
+    overflow-x: hidden;
 }
 
-.wrapper{
-	background-color: #fefefe;
-	-webkit-box-shadow: 0px 1px 2px 0px rgba(221,221,221,1);
-	-moz-box-shadow: 0px 1px 2px 0px rgba(221,221,221,1);
-	box-shadow: 0px 1px 2px 0px rgba(221,221,221,1);
+.wrapper
+{
+    background-color: #fefefe;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(221,221,221,1);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(221,221,221,1);
+    box-shadow: 0px 1px 2px 0px rgba(221,221,221,1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
+
 /* --- NAVIGATION - SOZIALES NETZWERK - START --- */
 
 /* Navigationsleiste*/
 
 #nav_sn
 {
-    background-color: #332111;
+    background-color: #332211;
     padding-right: 20px;
     height: 25px;
     line-height: 25px;
@@ -38,7 +46,7 @@ body{
 
 .nav_sn_link:hover
 {
-    color: #a23b16;
+    color: #6c7f2c;
 }
 
 /* --- NAVIGATION - START --- */
@@ -199,7 +207,6 @@ body{
 
 .button_paulo
 {
-    width: 150px;
     border: none;
     border-radius: 3px;
     color: #fdfdf2;
@@ -207,11 +214,22 @@ body{
     height: 48px;
     background-color: #5b586b;
 }
-
 .button_paulo:hover
 {
     background: #868492;
     color: #fdfdf2;
+}
+.button_paulo_ext_dashboard
+{
+    background: #a23b16;
+}
+.button_paulo_ext_dashboard > i
+{
+    padding-left:10px;
+}
+.button_paulo_ext_dashboard:hover
+{
+    background: #c2542c;
 }
 
 #start_abschnitt_0
@@ -238,28 +256,37 @@ body{
 }
 
 /* --- dashboard_elemente START --- */
-.dash_element_col{
-	padding-left:0;
-	padding-right:0;
+
+.dash_element_col
+{
+    padding-left: 0;
+    padding-right: 0;
 }
+
 .dash_element_holder
 {
     margin: 0 12.5px;
-    height: 300px;
 }
 
 .dash_element
 {
     border: solid 1px #ddd;
     border-radius: 4px;
-    padding-left: 30px;
-    padding-top: 25px;
+    padding: 25px 30px;  
     margin-bottom: 20px;
+    min-height: 498px;
 }
 
 .dash_element > h4
 {
     margin-top: 0;
+}
+
+.dash_element > h5
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-style: italic;
 }
 
 .dash_element > h5, ul
@@ -268,9 +295,20 @@ body{
     list-style: none;
 }
 
-.content_header_element
+.dash_element a
 {
+    cursor: pointer;
+    color: #6c7f2c;
 }
+
+.list_text{
+    padding-bottom: 5px;
+}
+
+.abonnement_element{
+    padding-bottom: 20px;
+}
+
 
 .hr_line
 {
@@ -278,17 +316,59 @@ body{
     margin-top: 0;
     margin-bottom: 20px;
 }
+.hr_line_ext_dashboard
+{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
 
 #help_icon
 {
     margin-top: 25px;
     margin-bottom: 5px;
+    color: #5b586b;
 }
 
 #help_text
 {
     cursor: pointer;
+    color: #5b586b;
 }
+
+#help_icon:hover, #help_text:hover
+{
+    color: #868492;
+}
+
+/* --- FOOTER - START ---  */
+
+#footer
+{
+    padding: 20px;
+    padding-top: 50px;
+    height: 300px;
+    background-color: #332211;
+    margin-top: 40px;
+}
+
+#footer h4, #footer p, #footer a
+{
+    color: #827262;
+}
+
+.hr_line_ext_footer
+{
+    border-top: 1px solid #6f6052;
+    margin-top: 20px;
+}
+
+.preisfarbe
+{
+    font-weight: bold;
+    color: #962c28;
+}
+
+/* --- FOOTER - ENDE---  */
 
 /* --- dashboard_elemente ENDE --- */
 
