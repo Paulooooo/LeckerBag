@@ -9,27 +9,26 @@
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">         
         <link href="css/bootstrap.css" rel="stylesheet">         
         <link href="css/style.css" rel="stylesheet" type="text/css">         
-        <link href="css/bootstrap-responsive.css" rel="stylesheet">         
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'>         
     </head>     
     <body>
         <div class="row">
-            <div class="text-right col-md-12" id="nav_sn" data-pg-collapsed>
+            <div class="text-right col-md-12" id="nav_sn">
                 <a href="#" class="nav_sn_link"><i class="fa fa-facebook"></i></a>
                 <a href="#" class="nav_sn_link"><i class="fa fa-twitter"></i></a>
                 <a href="#" class="nav_sn_link"><i class="fa fa-google-plus"></i></a>
                 <a href="#" class="nav_sn_link"><i class="fa fa-tumblr"></i></a> 
             </div>             
         </div>         
-        <div class="row" id="logo" data-pg-collapsed> 
-            <div class="col-md-4 text-center hidden-sm hidden-xs" id="logo_left">
-                <h5>Herzlich</h5>
-            </div>             
+        <div class="row" id="logo"> 
+            <div class="col-md-4 hidden-sm hidden-xs text-right" id="logo_left">
+</div>             
             <div class="col-md-4 text-center" id="logo_inner"> 
                 <img src="pics/logo_white.png" style="padding-top:20px; padding-bottom:20px" height="300">
             </div>             
-            <div class="col-md-4 text-center hidden-xs hidden-sm" id="logo_right">
-                <h5>Willkommen</h5>
-            </div>             
+            <div class="col-md-4 hidden-xs hidden-sm text-left" id="logo_right">
+</div>             
         </div>         
         <div class="container"> 
 </div>         
@@ -40,28 +39,28 @@
                 <nav class="navbar navbar-default nav_button" role="navigation"> 
                     <div class="container-fluid" id="navigation_bar"> 
                         <div class="navbar-header" data-pg-collapsed> 
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" data-pg-collapsed> 
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
                                 <span class="sr-only">Toggle navigation</span> 
                                 <span class="icon-bar"></span> 
                                 <span class="icon-bar"></span> 
                                 <span class="icon-bar"></span> 
                             </button>                             
                         </div>                         
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-pg-collapsed> 
-                            <ul class="nav navbar-nav"> 
-                                <li class="active nav_item_first"> 
-                                    <a href="#">Startseite</a> 
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+                            <ul class="nav navbar-nav navbar_container"> 
+                                <li class="active nav_item"> 
+                                    <a href="index.html">Startseite</a> 
                                 </li>                                 
-                                <li class="nav_item_middle"> 
+                                <li class="nav_item"> 
                                     <a href="#">Suche</a> 
                                 </li>                                 
-                                <li> 
-                                    <a href="#">Mein Leckerbag</a> 
+                                <li class="nav_item">
+                                    <a href="dashboard_kunde.html">Mein Leckerbag</a> 
                                 </li>                                 
-                                <li class="nav_item_middle"> 
+                                <li class="nav_item"> 
                                     <a href="#">Über Uns</a> 
                                 </li>                                 
-                                <li class="nav_item_last"> 
+                                <li class="nav_item"> 
                                     <a href="#">Kontakt</a> 
                                 </li>                                 
                                 <li class="nav_item_last"> 
@@ -73,75 +72,145 @@
                 </nav>                 
             </div>             
         </div>
-        <div class="row" data-pg-collapsed>
-            <div class="col-md-12" data-pg-collapsed>
-                <div class="container text-center" style="padding-top:50px; padding-bottom:50px" data-pg-collapsed> 
-                    <div class="row" data-pg-collapsed> 
-                        <div class="col-md-6"> 
-                            <i class="fa fa-users fa-4x"></i> 
-                            <h3>Als Kunde...</h3> 
-                            <p>Wir von Leckerbag sorgen für eine gesunde und transparente 
-Pausenernährung Ihrer Kinder. Stellen 
-Sie bequem online Pausensnacks und Getränke zusammen. Um die frische 
-Zubereitung und Auslieferung unserer hoch qualitativen und gleichzeitig 
-preiswerten Produkte, kümmern sich unsere ausgewählten Partner. 
-Vergessen Sie die bisherigen Verpflegungsmöglichkeiten an den Schulen 
-und versorgen Sie ihr Kind ohne zeitlichen Mehraufwand mit einem 
-gesunden Frühstück..</p> 
-                            <button type="button" class="btn btn-default button_paulo">erfahren Sie mehr</button>                             
-                        </div>                         
-                        <div class="col-md-6"> 
-                            <i class="fa fa-truck fa-4x"></i> 
-                            <h3>Als Lieferant...</h3> 
-                            <p>Sie sind Bäcker, Fleischer oder Catering-Unternehmer und möchten ein 
-neues Geschäftsfeld für sich entdecken?
- Wir als junges Start-Up möchten es mit Ihrer Unterstützung ermöglichen,
- Schulen mit täglich frischen und leckeren Pausensnacks zu beliefern. 
-Wir entlasten Ihr Unternehmen indem wir uns um die Organisation, sowie 
-die Abwicklung eines reibungslosen bargeldlosen Zahlungsverkehrs 
-kümmern. Falls wir Ihr Interesse geweckt haben, kontaktieren Sie uns und
- wir stehen für weitere Fragen in...</p> 
-                            <button type="button" class="btn btn-default button_paulo">erfahren Sie mehr</button>                             
-                        </div>                         
-                    </div>                     
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container wrapper">
+                    <div class="row" id="startseite_c0" data-pg-collapsed>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h1 class="text-center">Herzlich Willkommen</h1> 
+                        </div>
+                    </div>
+                    <div class="row" id="startseite_c1">
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" data-pg-collapsed>
+                            <h1 class="text-center" id="uberschrift_c1">Entdecke LeckerBag, deine Pausenzeit</h1>
+                            <hr id="hr_c1"/>                             
+                            <p class="MsoNormal text-center" id="lauftext_c1" data-pg-collapsed><font style="font-weight:500">LeckerBag</font> ist Deutschlands erster Frühstücks Lieferservice <font style="font-weight:500">speziell für Schulkinder.</font><br>Ausgewählte Bäckereien liefern Deinem Kind ein
+								individuelles und gesundes Frühstück.<br>Bestelle online und Dein Kind
+								erhält sein Frühstück <font style="font-weight:500">täglich frisch</font>, direkt in der teilnehmende Schule.</p>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center">
+                            <button type="button" class="btn btn-default button_paulo">Erfahre mehr</button>
+                            <button type="button" class="btn btn-default button_paulo_2">Registriere dich</button>
+                        </div>
+                    </div>
+                    <div class="row" id="startseite_c2"></div>
+                    <div class="row" id="startseite_c3" data-pg-collapsed>
+                        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+                            <h2 class="text-center" id="uberschrift_c3">Unser Prinzip - so funktioniert's</h2> 
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                            <h3 class="text-center"><i class="fa fa-3x fa-star">&nbsp;</i><br></h3> 
+                            <p class="text-center"><font style="font-weight:900; font-size:32px">#1.</font> Wähle eine Bäckerei<br> in Deiner Nähe aus</p>
+                            <br>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                            <h3 class="text-center"><i class="fa fa-3x fa-cutlery">&nbsp;</i><br></h3> 
+                            <p class="text-center"><font style="font-weight:900; font-size:32px">#2.</font> Stelle für Dein Kind<br> individuelle Bags zusammen&nbsp;</p>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                            <h3 class="text-center"><i class="fa fa-3x fa-calendar-o">&nbsp;</i><br></h3> 
+                            <p class="text-center"><font style="font-weight:900; font-size:32px">#3.</font> Wann soll Dein Kind<br> die LeckerBags erhalten</p>
+                            <br>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                            <h3 class="text-center"><i class="fa fa-3x fa-thumbs-o-up">&nbsp;</i><br></h3> 
+                            <p class="text-center">Ihr Kind,<br> gut versorgt mit &nbsp;Leckerbag&nbsp;</p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="row" id="startseite_c4" data-pg-collapsed>
+                        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 text-center" data-pg-collapsed>
+                            <h4>Was unsere Kunden sagen</h4> 
+                        </div>
+                        <div class="col-md-12">
+                            <div id="carousel-startseite" class="carousel slide" data-ride="carousel">
+                                <div class="row">
+                                    <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-sm-2 col-xs-2 col-md-2 col-lg-2" id="startseite_slider_arrow_left">
+                                        <a class="left carousel-control" href="#carousel-startseite" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
+                                    </div>
+                                    <div class="col-xs-6 col-md-6 col-lg-6 col-sm-6">
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <p class="carousel-text">„Abwechslungsreiche Kost, gesundes Frühstück für meine Kinder“</p>
+                                                <p class="carousel-kundenname">Andrea Schneider</p>
+                                            </div>
+                                            <div class="item">
+                                                <p class="carousel-text">„Es gefällt uns Alles“</p>
+                                                <p class="carousel-kundenname">Dagmar Lohaus</p>
+                                            </div>
+                                            <div class="item">
+                                                <p class="carousel-text">„Eine echte Entlastung“</p> 
+                                                <p class="carousel-kundenname">Tim Weißenfels</p>
+                                            </div>
+                                            <div class="item">
+                                                <p class="carousel-text">„Wir sind sehr zufrieden“</p> 
+                                                <p class="carousel-kundenname">Ute und Nils Schmitz</p>
+                                            </div>                                             
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-2 col-xs-2 col-lg-2" id="startseite_slider_arrow_right">
+                                        <a class="right carousel-control" href="#carousel-startseite" data-slide="next" data-pg-collapsed><span class="glyphicon glyphicon-chevron-right"></span></a> 
+                                    </div>
+                                </div>
+                            </div>                             
+                        </div>
+                    </div>
+                    <div class="row" id="startseite_c5">
+                        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 text-center">
+                            <h4 id="uberschrift_c5">Wissenswertes</h4>
+                            <p id="lauftext_c5">Hier erfährst du täglich Neuigkeiten aus rund um die Themen gesunde Ernährung, Kinder-Frühstück und LeckerBag</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 col-lg-4" data-pg-collapsed>
+                            <img src="pics/bg_4.jpg" width="100%">
+                            <p class="text-center untertitel_c5"><a href="">Grundsätze ausgewogener Ernährung</a></p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 col-lg-4" data-pg-collapsed>
+                            <img src="pics/startseite_2.png" width="100%">
+                            <p class="text-center untertitel_c5"><a href="">Lieferung direkt in die Schule</a></p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 col-lg-4">
+                            <img src="pics/startseite_3.png" width="100%">
+                            <p class="text-center untertitel_c5"><a href="">Lieferung an regionalen Feiertagen</a></p>
+                        </div>
+                    </div>
                 </div>                 
             </div>
-        </div>         
-        <div class="row" id="start_abschnitt_1" data-pg-collapsed> 
-            <div class="container"> 
-                <h1>Entwickelt, um dein Leben zu bereichern</h1> 
-                <h4>Jede Leckerbag setzt sich aus einem Pausenbrot, 
-Getränk und Obst Ihrer Wahl zusammen. Den Inhalt Ihrer Leckerbag können 
-Sie stets individuell zusammenstellen, oder aber unseren Konfigurator 
-zur automatischen Zusammenstellung nutzenJede Leckerbag setzt sich aus einem Pausenbrot, 
-Getränk und Obst Ihrer Wahl zusammen. Den Inhalt Ihrer Leckerbag können 
-Sie stets individuell zusammenstellen, oder aber unseren Konfigurator 
-zur automatischen Zusammenstellung nutzenJede Leckerbag setzt sich aus einem Pausenbrot, 
-Getränk und Obst Ihrer Wahl zusammen. Den Inhalt Ihrer Leckerbag können 
-Sie stets individuell zusammenstellen, oder aber unseren Konfigurator 
-zur automatischen Zusammenstellung nutzenJede Leckerbag setzt sich aus einem Pausenbrot, 
-Getränk und Obst Ihrer Wahl zusammen. Den Inhalt Ihrer Leckerbag können 
-Sie stets individuell zusammenstellen, oder aber unseren Konfigurator 
-zur automatischen Zusammenstellung nutzenJede Leckerbag setzt sich aus einem Pausenbrot, 
-Getränk und Obst Ihrer Wahl zusammen. Den Inhalt Ihrer Leckerbag können 
-Sie stets individuell zusammenstellen, oder aber unseren Konfigurator 
-zur automatischen Zusammenstellung nutzenJede Leckerbag setzt sich aus einem Pausenbrot, 
-Getränk und Obst Ihrer Wahl zusammen. Den Inhalt Ihrer Leckerbag können 
-Sie stets individuell zusammenstellen, oder aber unseren Konfigurator 
-zur automatischen Zusammenstellung nutzenJede Leckerbag setzt sich aus einem Pausenbrot, 
-Getränk und Obst Ihrer Wahl zusammen. Den Inhalt Ihrer Leckerbag können 
-Sie stets individuell zusammenstellen, oder aber unseren Konfigurator 
-zur automatischen Zusammenstellung nutzenJede Leckerbag setzt sich aus einem Pausenbrot, 
-Getränk und Obst Ihrer Wahl zusammen. Den Inhalt Ihrer Leckerbag können 
-Sie stets individuell zusammenstellen, oder aber unseren Konfigurator 
-zur automatischen Zusammenstellung nutzenJede Leckerbag setzt sich aus einem Pausenbrot, 
-Getränk und Obst Ihrer Wahl zusammen. Den Inhalt Ihrer Leckerbag können 
-Sie stets individuell zusammenstellen, oder aber unseren Konfigurator 
-zur automatischen Zusammenstellung nutzenJede Leckerbag setzt sich aus einem Pausenbrot, 
-Getränk und Obst Ihrer Wahl zusammen. Den Inhalt Ihrer Leckerbag können 
-Sie stets individuell zusammenstellen, oder aber unseren Konfigurator 
-zur automatischen Zusammenstellung nutzen</h4> 
-            </div>             
+        </div>
+        <div class="row">
+            <div id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="text-center col-md-3" data-pg-collapsed="">
+                            <img src="pics/logo_grey.png" style="padding-top:20px; padding-bottom:20px" height="150">                             
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-6" data-pg-collapsed="">
+                                    <h4>Julius-Maximilians-Universität Würzburg</h4> 
+                                    <p class="bodytext">Sanderring 2<br>97070 Würzburg<br>Tel. 0931/31-0<br>Fax: 0931/31-82600&nbsp;</p>
+                                </div>
+                                <div class="col-md-6" data-pg-collapsed="">
+                                    <h4>LeckerBag - Ein Projekt von:<br></h4> 
+                                    <p>Lehrstuhl für Wirtschaftsinformatik und Systementwicklung</p>
+                                    <p class="bodytext"></p>
+                                    <p class="bodytext">Hubland Nord, Gebäude 32<br>Emil-Fischer-Straße 32<br>D-97074 Würzburg &nbsp;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr_line hr_line_ext_footer">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                            <p>© LeckerBag, Uni-Würzburg. All rights reserved. <a href="impressum.html">Site credits</a><br></p> 
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                            <a>info@leckerbag.de</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>         
         <!-- Ende des Dokumentes -->         
         <script src="js/jquery.js"></script>         

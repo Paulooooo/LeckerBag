@@ -1,5 +1,3 @@
-
-
 /* Meine eigenen Styles */
 
 a{
@@ -13,6 +11,7 @@ body
 {
     background-color: #fdfdf2 !important;
     overflow-x: hidden;
+  	font-family: 'Roboto', sans-serif;
 }
 
 .wrapper
@@ -217,11 +216,27 @@ body
     background-color: #5b586b;
     min-width: 150px;
 }
+.button_paulo_2
+{
+    border: 2px solid #5b586b;
+    border-radius: 3px;
+    color: #5b586b;
+    bottom: 0;
+    height: 48px;
+    background-color: rgba(253,253,242,0);
+    min-width: 150px;
+}
 
 .button_paulo:hover
 {
     background: #868492;
     color: #fdfdf2;
+}
+.button_paulo_2:hover
+{
+    background: #868492;
+    color: #fdfdf2;
+    border: 2px solid #5b586b;
 }
 
 .button_paulo_ext_dashboard
@@ -366,6 +381,128 @@ body
 {
     font-weight: bold;
 }
+/* --- dashboard_elemente ENDE --- */
+
+/* --- Startseite - START ---*/
+#startseite_c0{
+	margin-top: 20px;
+}
+#startseite_c0 h1{
+	font-size: 32px;
+	color: #515151;
+}
+#startseite_c1{
+	margin: 30px 0;
+}
+#uberschrift_c1{
+	padding: 0px 20px 10px 20px;
+	font-size: 52px;
+	font-weight: 900;
+	color: #515151;
+}
+#hr_c1{
+	border-top: 3px solid #a23b16;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 55%;
+    
+}
+#lauftext_c1{
+	padding: 0px 100px 10px 100px;
+	font-size: 18px;
+	font-weight: 300;
+}
+#startseite_c2{
+	background: url(../pics/startseite_1.png) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height:600px;
+}
+#startseite_c3{
+	margin: 0;
+	background-color: #a23b16;
+	position: relative;
+	padding: 60px 50%;
+	width: 200%;
+	left: -50%;
+}
+#uberschrift_c3{
+	padding: 0px 20px 60px 20px;
+	font-size: 52px;
+	font-weight: 900;
+	color: #FDFDF2;
+}
+#startseite_c3 h3{
+	color: #FDFDF2;
+	padding-bottom: 20px;
+}
+#startseite_c3 p{
+	font-size: 16px;
+	font-weight: 300;
+	color: #FDFDF2;
+}
+#startseite_c4{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+#startseite_c4 h4{
+	color: #515151;
+	font-size: 26px;
+	font-weight: 900;
+	padding-bottom: 60px;
+}
+#startseite_c5{
+	margin-top: 90px;
+	background-color: #6c7f2c;
+	padding-top: 30px;
+	padding-bottom: 90px;
+}
+#uberschrift_c5{
+	padding: 0px 20px 10px 20px;
+	font-size: 52px;
+	font-weight: 900;
+	color: #fdfdf2;
+}
+#lauftext_c5{
+	padding: 0px 100px 10px 100px;
+	font-size: 18px;
+	font-weight: 300;
+	color: #fdfdf2;
+}
+.untertitel_c5{
+	padding: 20px 0;
+	font-size: 16px;
+	font-weight: 300;
+	background-color: #fdfdf2;
+	cursor: pointer;
+}
+.carousel-text{
+	color: #515151;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+}
+.carousel-kundenname{
+	color: #515151;
+	font-size: 14px;
+	font-weight: 100;
+	text-align: center;
+}
+.carousel-content {
+    color:black;
+    display:flex;
+    align-items:center;
+}
+.carousel-control.right, .carousel-control.left{
+    background-image: none;
+}
+.glyphicon-chevron-left, .glyphicon-chevron-right{
+	color: #515151;
+}
+/* --- Startseite - ENDE ---*/ 
+
 /* --- FOOTER - START ---  */
 
 #footer
@@ -390,7 +527,6 @@ body
 
 /* --- FOOTER - ENDE---  */
 
-/* --- dashboard_elemente ENDE --- */
 
 /* medium devices (bis 992px) */
 
