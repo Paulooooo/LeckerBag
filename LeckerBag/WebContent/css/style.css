@@ -503,6 +503,61 @@ body
 }
 /* --- Startseite - ENDE ---*/ 
 
+/* --- Profil - START ---*/
+.profil_kindliste
+{
+    height: 400px;
+    margin-top: 10px;
+}
+
+.icon_abstand
+{
+    margin-right: 12px;
+}
+
+.kind_liste
+{
+    width: 300px;
+}
+
+.kind_liste_tabelle
+{
+    width: 180px;
+}
+
+.kind_tabelle_breite
+{
+    margin-top: 20px;
+    border: 10px;
+}
+
+.profil_element
+{
+    height: 400px;
+}
+
+.btn_editprofil
+{
+    margin: 10px;
+}
+.btn_icon
+{
+    border: none;
+    border-radius: 3px;
+    color: #fdfdf2;
+    bottom: 0;
+    height: 48px;
+    background-color: #5b586b;
+    max-width: 48px !important;
+    width: 48px;
+}
+
+.btn_icon_padding
+{
+    margin-right: 8px;
+}
+/* --- Profil - ENDE ---*/
+
 /* --- FOOTER - START ---  */
 
 #footer
