@@ -11,7 +11,7 @@
         <link href="css/style.css" rel="stylesheet" type="text/css">         
         <link href="css/bootstrap-responsive.css" rel="stylesheet">         
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'>         
-        <script src="js/jquery.js"></script> 
+        <script src="js/jquery.js"></script>         
         <script> 
 			$(function(){
 			  $("#header").load("header.html"); 
@@ -20,8 +20,8 @@
 		</script>         
     </head>     
     <body>
-    <div class="row" id="header"></div>   
-        <div class="row" data-pg-collapsed>
+        <div class="row" id="header"></div>         
+        <div class="row">
             <div class="col-md-12">
                 <div class="container wrapper">
                     <div class="row" data-pg-collapsed>
@@ -45,12 +45,12 @@
                                         <div class="radio" style=" margin-bottom:15px" data-pg-name="Radio: Suchkriterium" data-pg-collapsed>
                                             <div class="row" data-pg-name="Row: Bäcker" data-pg-collapsed>
                                                 <label class="control-label">
-                                                    <input type="radio" name="group" value="option1" checked="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bäckereien
+                                                    <input type="radio" name="group" value="option1" checked="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Bäckereien
                                                 </label>
                                             </div>
                                             <div class="row" data-pg-name="Row: Schule" data-pg-collapsed>
                                                 <label class="control-label"> 
-                                                    <input type="radio" name="group" value="option1" checked="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Schulen &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                                                    <input type="radio" name="group" value="option1" checked="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Schulen &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
                                                 </label>
                                             </div>                                             
                                         </div>                                         
@@ -61,7 +61,7 @@
                                     <div class="text-left col-xs-12 col-sm-12 col-md-6 col-lg-6" data-pg-name="Col: Erweiterte Suche" style="margin-top: 5px" data-pg-collapsed>
                                         <a href="suche_erweitert.html">Erweiterte Suche</a>
                                     </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right last_element_dash div_buttons">
                                         <button type="button" class="btn btn-default button_paulo" data-pg-name="Button: Suchen">Suchen</button>                                         
                                     </div>                                     
                                 </div>
@@ -72,14 +72,13 @@
             </div>
         </div>         
         <div class="row" id="footer"></div>
-        <!-- Ende des Dokumentes -->  
+        <!-- Ende des Dokumentes -->         
         <script>
 	        $("#header").load("header.html", function(){
 	        	setNav(1);
 	        });
-        </script>            
-                       
+        </script>         
         <script src="js/bootstrap.js"></script>         
-        <script src="js/functions.js"></script>        
+        <script src="js/functions.js"></script>         
     </body>     
 </html>
