@@ -10,68 +10,17 @@
         <link href="css/bootstrap.css" rel="stylesheet">         
         <link href="css/style.css" rel="stylesheet" type="text/css">         
         <link href="css/bootstrap-responsive.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'>           
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'>         
+        <script src="js/jquery.js"></script> 
+        <script> 
+			$(function(){
+			  $("#header").load("header.html"); 
+			  $("#footer").load("footer.html"); 
+			});
+		</script>         
     </head>     
     <body>
-        <div class="row" data-pg-collapsed>
-            <div class="text-right col-md-12" id="nav_sn" data-pg-collapsed>
-                <a href="#" class="nav_sn_link"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="nav_sn_link"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="nav_sn_link"><i class="fa fa-google-plus"></i></a>
-                <a href="#" class="nav_sn_link"><i class="fa fa-tumblr"></i></a> 
-            </div>             
-        </div>
-        <div class="row" id="logo" data-pg-collapsed> 
-            <div class="col-md-4 hidden-sm hidden-xs text-right" id="logo_left">
-</div>             
-            <div class="col-md-4 text-center" id="logo_inner"> 
-                <img src="pics/logo_white.png" style="padding-top:20px; padding-bottom:20px" height="300">
-            </div>             
-            <div class="col-md-4 hidden-xs hidden-sm text-left" id="logo_right">
-</div>             
-        </div>         
-        <div class="container"> 
-</div>         
-        <div class="container"> 
-</div>
-        <div class="row" data-pg-collapsed>
-            <div class="col-md-12">
-                <nav class="navbar navbar-default nav_button" role="navigation"> 
-                    <div class="container-fluid" id="navigation_bar"> 
-                        <div class="navbar-header" data-pg-collapsed> 
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
-                                <span class="sr-only">Toggle navigation</span> 
-                                <span class="icon-bar"></span> 
-                                <span class="icon-bar"></span> 
-                                <span class="icon-bar"></span> 
-                            </button>                             
-                        </div>                         
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
-                            <ul class="nav navbar-nav navbar_container"> 
-                                <li class="nav_item"> 
-                                    <a href="index.html">Startseite</a> 
-                                </li>                                 
-                                <li class="nav_item"> 
-                                    <a href="suche.html">Suche</a> 
-                                </li>                                 
-                                <li class="nav_item"> 
-                                    <a href="dashboard_kunde.html">Mein Leckerbag</a> 
-                                </li>                                 
-                                <li class="nav_item"> 
-                                    <a href="#">Über Uns</a> 
-                                </li>                                 
-                                <li class="nav_item"> 
-                                    <a href="#">Kontakt</a> 
-                                </li>                                 
-                                <li class="nav_item_last active"> 
-                                    <a href="login.html">Registrieren</a> 
-                                </li>                                 
-                            </ul>                             
-                        </div>                         
-                    </div>                     
-                </nav>                 
-            </div>             
-        </div>
+    <div class="row" id="header"></div>          
         <div class="row">
             <div class="col-md-12">
                 <div class="container wrapper">
@@ -115,7 +64,7 @@
                                     <div class="row">
                                         <div class="col-md-12 col-xs-11 col-sm-12 col-lg-12"> 
                                             <label style="margin-top: 10px; margin-bottom: 15px" data-pg-name="Checkbox: AGBs" data-pg-collapsed=""> 
-                                                <input class="control-label" type="checkbox" value="">                                                                                                                                                                                                                                                                                                                &nbsp;Ich bestätige, die AGB der Firma "LeckerBag"
+                                                <input class="control-label" type="checkbox" value="">                                                                                                                                                                                                                                                                                                                                                                &nbsp;Ich bestätige, die AGB der Firma "LeckerBag"
                                             </label>                                             
                                         </div>
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right"> 
@@ -128,44 +77,16 @@
                     </div>
                 </div>                 
             </div>
-        </div>
-        <div class="row" data-pg-collapsed>
-            <div id="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="text-center col-md-3" data-pg-collapsed="">
-                            <img src="pics/logo_grey.png" style="padding-top:20px; padding-bottom:20px" height="150">                             
-                        </div>
-                        <div class="col-md-9">
-                            <div class="row">
-                                <div class="col-md-6" data-pg-collapsed="">
-                                    <h4>Julius-Maximilians-Universität Würzburg</h4> 
-                                    <p class="bodytext">Sanderring 2<br>97070 Würzburg<br>Tel. 0931/31-0<br>Fax: 0931/31-82600&nbsp;</p>
-                                </div>
-                                <div class="col-md-6" data-pg-collapsed="">
-                                    <h4>LeckerBag - Ein Projekt von:<br></h4> 
-                                    <p>Lehrstuhl für Wirtschaftsinformatik und Systementwicklung</p>
-                                    <p class="bodytext"></p>
-                                    <p class="bodytext">Hubland Nord, Gebäude 32<br>Emil-Fischer-Straße 32<br>D-97074 Würzburg &nbsp;</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="hr_line hr_line_ext_footer">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
-                            <p>© LeckerBag, Uni-Würzburg. All rights reserved. <a href="impressum.html">Site credits</a><br></p> 
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
-                            <p>info@leckerbag.de</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>         
-        <!-- Ende des Dokumentes -->         
-        <script src="js/jquery.js"></script>         
+        <div class="row" id="footer"></div>
+        <!-- Ende des Dokumentes -->  
+        <script>
+	        $("#header").load("header.html", function(){
+	        	setNav(5);
+	        });
+        </script>            
+                       
         <script src="js/bootstrap.js"></script>         
-        <script src="js/functions.js"></script>         
+        <script src="js/functions.js"></script>        
     </body>     
 </html>

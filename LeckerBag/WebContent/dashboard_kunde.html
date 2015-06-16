@@ -2,77 +2,32 @@
 <html> 
     <head> 
         <meta charset="utf-8">         
+        <meta charset="UTF-8"> 
         <title>Leckerbag - Die gesunde Alternative</title>         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">         
         <meta name="description" content="Beschreibung der Seite">         
         <meta name="author" content="Paul Kozakiewicz">         
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">         
         <link href="css/bootstrap.css" rel="stylesheet">         
-        <link href="css/style.css" rel="stylesheet" type="text/css">         
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/datepicker.css" rel="stylesheet" type="text/css">         
         <link href="css/bootstrap-responsive.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'>         
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'> 
+        <script src="js/jquery.js"></script> 
+        <!-- Scheduler -->
+        <script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
+		<link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
+		<!-- Scheduler -->
+        <script> 
+			$(function(){
+			  $("#header").load("header.html"); 
+			  $("#footer").load("footer.html");
+			});
+		</script>           
     </head>     
     <body>
-        <div class="row">
-            <div class="text-right col-md-12" id="nav_sn">
-                <a href="#" class="nav_sn_link"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="nav_sn_link"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="nav_sn_link"><i class="fa fa-google-plus"></i></a>
-                <a href="#" class="nav_sn_link"><i class="fa fa-tumblr"></i></a> 
-            </div>             
-        </div>         
-        <div class="row" id="logo"> 
-            <div class="col-md-4 hidden-sm hidden-xs text-right" id="logo_left">
-</div>             
-            <div class="col-md-4 text-center" id="logo_inner"> 
-                <img src="pics/logo_white.png" style="padding-top:20px; padding-bottom:20px" height="300">
-            </div>             
-            <div class="col-md-4 hidden-xs hidden-sm text-left" id="logo_right">
-</div>             
-        </div>         
-        <div class="container"> 
-</div>         
-        <div class="container"> 
-</div>
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar navbar-default nav_button" role="navigation"> 
-                    <div class="container-fluid" id="navigation_bar"> 
-                        <div class="navbar-header" data-pg-collapsed> 
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
-                                <span class="sr-only">Toggle navigation</span> 
-                                <span class="icon-bar"></span> 
-                                <span class="icon-bar"></span> 
-                                <span class="icon-bar"></span> 
-                            </button>                             
-                        </div>                         
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
-                            <ul class="nav navbar-nav navbar_container"> 
-                                <li class="nav_item"> 
-                                    <a href="index.html">Startseite</a> 
-                                </li>                                 
-                                <li class="nav_item"> 
-                                    <a href="suche.html">Suche</a> 
-                                </li>                                 
-                                <li class="active nav_item"> 
-                                    <a href="dashboard_kunde.html">Mein Leckerbag</a> 
-                                </li>                                 
-                                <li class="nav_item"> 
-                                    <a href="#">Über Uns</a> 
-                                </li>                                 
-                                <li class="nav_item"> 
-                                    <a href="#">Kontakt</a> 
-                                </li>                                 
-                                <li class="nav_item_last"> 
-                                    <a href="login.html">Registrieren</a> 
-                                </li>                                 
-                            </ul>                             
-                        </div>                         
-                    </div>                     
-                </nav>                 
-            </div>             
-        </div>
-        <div class="row">
+    <div class="row" id="header"></div>                  
+        <div class="row" data-pg-collapsed>
             <div class="col-md-12">
                 <div class="container wrapper">
                     <div class="row" data-pg-collapsed>
@@ -137,7 +92,7 @@
                                             <button type="button" class="btn btn-default button_paulo">nochmals bestellen</button>
                                         </li>
                                         <li data-pg-collapsed="">
-                                            <button type="button" class="btn btn-default button_paulo button_paulo_ext_dashboard">neues Abonnement abschließen 
+                                            <button type="button" class="btn btn-default button_paulo button_paulo_ext_dashboard" onclick="location.href='bestellung_kunde.html'">neues Abonnement abschließen 
                                                 <i class="fa fa-chevron-right"></i> 
                                             </button>
                                         </li>
@@ -158,42 +113,9 @@
                                 <div class="col-md-12 dash_element col-sm-12 col-xs-12 col-lg-12">
                                     <h4>Meine Bestellungen</h4>
                                     <h5>Ihre nächsten Lieferungen</h5>
-                                    <div class="row">
-                                        <div class="col-lg-8 col-md-8 col-sm-7 col-xs-7" data-pg-collapsed>
-                                            <ul class="pg-empty-placeholder">
-                                                <li class="abonnement_element" data-pg-collapsed>
-                                                    <p color="#5b586b"><font class="beschreibung">Produkt:</font> <a>100652001</a> Brötchen mit Salami, Apfel, Milch <br> <font class="beschreibung">Kind: </font> <a>Arnold Mustermann</a> <br> <font class="beschreibung">Lieferdatum: </font>01.09.15<br>(<a>Bestelldetails</a>)</p>
-                                                </li>
-                                            </ul>                                             
-                                        </div>
-                                        <div class="col-md-4 col-lg-4 text-left col-xs-5 col-sm-5">
-                                            <button type="button" class="btn btn-default button_paulo">stornieren</button>                                             
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-8 col-lg-8 col-xs-7 col-sm-7" data-pg-collapsed>
-                                            <ul class="pg-empty-placeholder">
-                                                <li class="abonnement_element">
-                                                    <p color="#5b586b"><font class="beschreibung">Produkt:</font> <a>100652011</a> Mehrkornbrötchen mit Käse, Birne, Kakao&nbsp;<br> <font class="beschreibung">Kind: </font> <a>Bernadette Mustermann</a> <br> <font class="beschreibung">Lieferdatum: </font>01.09.15<br>(<a>Bestelldetails</a>)</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4 col-lg-4 text-left col-sm-5 col-xs-5">
-                                            <button type="button" class="btn btn-default button_paulo">stornieren</button>                                             
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-8 col-lg-8 col-sm-7 col-xs-7">
-                                            <ul class="pg-empty-placeholder" data-pg-collapsed="">
-                                                <li class="abonnement_element">
-                                                    <p color="#5b586b"><font class="beschreibung">Produkt:</font> <a>100652002</a> Brötchen mit Schinken und Käse, Banane, Milch <br> <font class="beschreibung">Kind: </font> <a>Arnold Mustermann</a> <br> <font class="beschreibung">Lieferdatum: </font>02.09.15<br>(<a>Bestelldetails</a>)</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4 col-lg-4 text-left col-sm-5 col-xs-5">
-                                            <button type="button" class="btn btn-default button_paulo">stornieren</button>                                             
-                                        </div>
-                                    </div>
+									<div id="wrapper_scheduler">
+										<div id="scheduler_dashboard"></div>
+									</div>
                                     <div class="row last_element_dash">
                                         <hr class="hr_line hr_line_ext_dashboard_last">
                                         <div class="col-md-12">
@@ -270,44 +192,55 @@
                     </div>
                 </div>                 
             </div>
-        </div>
-        <div class="row">
-            <div id="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="text-center col-md-3" data-pg-collapsed="">
-                            <img src="pics/logo_grey.png" style="padding-top:20px; padding-bottom:20px" height="150">                             
-                        </div>
-                        <div class="col-md-9">
-                            <div class="row">
-                                <div class="col-md-6" data-pg-collapsed="">
-                                    <h4>Julius-Maximilians-Universität Würzburg</h4> 
-                                    <p class="bodytext">Sanderring 2<br>97070 Würzburg<br>Tel. 0931/31-0<br>Fax: 0931/31-82600&nbsp;</p>
-                                </div>
-                                <div class="col-md-6" data-pg-collapsed="">
-                                    <h4>LeckerBag - Ein Projekt von:<br></h4> 
-                                    <p>Lehrstuhl für Wirtschaftsinformatik und Systementwicklung</p>
-                                    <p class="bodytext"></p>
-                                    <p class="bodytext">Hubland Nord, Gebäude 32<br>Emil-Fischer-Straße 32<br>D-97074 Würzburg &nbsp;</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="hr_line hr_line_ext_footer">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
-                            <p>© LeckerBag, Uni-Würzburg. All rights reserved. <a href="impressum.html">Site credits</a><br></p> 
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
-                            <a>info@leckerbag.de</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>         
+        <div class="row" id="footer"></div>  
         <!-- Ende des Dokumentes -->         
-        <script src="js/jquery.js"></script>         
-        <script src="js/bootstrap.js"></script>         
-        <script src="js/functions.js"></script>         
+        <script>
+	        $("#header").load("header.html", function(){
+	        	setNav(2);
+	        });
+        </script>
+        <script>
+        	YUI().use(
+        		'aui-scheduler',
+        		function(Y) {
+        			var events = [
+        			    {
+        					content: '<p color="#5b586b"><font class="beschreibung">Produkt:</font> <a>100652001</a> Brötchen mit Salami, Apfel, Milch <br> <font class="beschreibung">Kind: </font> <a>Arnold Mustermann</a> <br> <font class="beschreibung">Lieferdatum: </font>01.09.15<br>(<a>Bestelldetails</a>)</p></br><button type="button" class="btn btn-default button_paulo">stornieren</button>',
+        					endDate: new Date(2015, 8, 1, 10,15),
+        					startDate: new Date(2015, 8, 1, 9,45)
+        			    },
+        			    {
+        					content: '<p color="#5b586b"><font class="beschreibung">Produkt:</font> <a>100652011</a> Mehrkornbrötchen mit Käse, Birne, Kakao&nbsp;<br> <font class="beschreibung">Kind: </font> <a>Bernadette Mustermann</a> <br> <font class="beschreibung">Lieferdatum: </font>01.09.15<br>(<a>Bestelldetails</a>)</p></br><button type="button" class="btn btn-default button_paulo">stornieren</button>',
+        					endDate: new Date(2015, 8, 1, 10,00),
+        					startDate: new Date(2015, 8, 1, 9,30)
+        			    },
+        			    {
+        					content: '<p color="#5b586b"><font class="beschreibung">Produkt:</font> <a>100652011</a> Mehrkornbrötchen mit Käse, Birne, Kakao&nbsp;<br> <font class="beschreibung">Kind: </font> <a>Arnold Mustermann</a> <br> <font class="beschreibung">Lieferdatum: </font>01.09.15<br>(<a>Bestelldetails</a>)</p></br><button type="button" class="btn btn-default button_paulo">stornieren</button>',
+        					endDate: new Date(2015, 8, 2, 10,00),
+        					startDate: new Date(2015, 8, 2, 9,30)
+        			    },
+        			    {
+        					content: '<p color="#5b586b"><font class="beschreibung">Produkt:</font> <a>100652002</a> Brötchen mit Schinken und Käse, Banane, Milch <br> <font class="beschreibung">Kind: </font> <a>Bernadette Mustermann</a> <br> <font class="beschreibung">Lieferdatum: </font>02.09.15<br>(<a>Bestelldetails</a>)</p></br><button type="button" class="btn btn-default button_paulo">stornieren</button>',
+        					endDate: new Date(2015, 8, 2, 10,15),
+        					startDate: new Date(2015, 8, 2, 9,30)
+        			    },
+        			];
+        			var agendaView = new Y.SchedulerAgendaView();
+        			
+        			
+        			new Y.Scheduler({
+        		        boundingBox: '#scheduler_dashboard',
+        		        date: new Date(2015, 8, 1),
+        		        items: events,
+        		        render: true,
+        		        views: [agendaView]
+        			});
+        		}
+        	);
+        </script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/datepicker.js"></script>        
+        <script src="js/functions.js"></script>             
     </body>     
 </html>

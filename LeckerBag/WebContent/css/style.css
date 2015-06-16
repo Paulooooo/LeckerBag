@@ -1,17 +1,33 @@
+
+
 /* Meine eigenen Styles */
 
-a{
-	color: #6c7f2c;
-	cursor: pointer;
+a
+{
+    color: #6c7f2c;
+    cursor: pointer;
 }
-a:hover{
-	color: #6c7f2c;
+
+a:hover
+{
+    color: #6c7f2c;
 }
+
 body
 {
     background-color: #fdfdf2 !important;
     overflow-x: hidden;
-  	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+b, strong
+{
+    font-weight: 500;
+}
+
+label
+{
+    font-weight: 500;
 }
 
 .wrapper
@@ -77,19 +93,19 @@ body
     color: #332111;
 }
 
-.nav_item_last> a
+#nav_item_last a
 {
     border-right: 0.25px solid #ddd;
 }
 
-.nav_item> a, .nav_item_last> a
+.nav_item> a, #nav_item_last a
 {
     border-left: 0.25px solid #ddd;
 }
 
 .navbar-default .navbar-nav > li
 {
-    width: 150px;
+    width: 195px;
     background-color: #fdfdf2;
 }
 
@@ -147,7 +163,7 @@ body
 #logo_left>h4
 {
     color: #fdfdf2 !important;
-    font-weight: bold;
+    font-weight: 500;
     padding-top: 100px;
 }
 
@@ -160,7 +176,7 @@ body
 #logo_right>h4
 {
     color: #fdfdf2 !important;
-    font-weight: bold;
+    font-weight: 500;
     padding-top: 100px;
 }
 
@@ -206,6 +222,8 @@ body
     text-align: center;
 }
 
+/* Normaler Button */
+
 .button_paulo
 {
     border: none;
@@ -216,6 +234,9 @@ body
     background-color: #5b586b;
     min-width: 150px;
 }
+
+/* Alternativer Button*/
+
 .button_paulo_2
 {
     border: 2px solid #5b586b;
@@ -227,11 +248,20 @@ body
     min-width: 150px;
 }
 
+/* Abbrechen Button*/
+
+.button_paulo_3
+{
+    background: #a23b16;
+    margin-right: 5px;
+}
+
 .button_paulo:hover
 {
     background: #868492;
     color: #fdfdf2;
 }
+
 .button_paulo_2:hover
 {
     background: #868492;
@@ -249,7 +279,7 @@ body
     padding-left: 10px;
 }
 
-.button_paulo_ext_dashboard:hover
+.button_paulo_ext_dashboard:hover, .button_paulo_3:hover
 {
     background: #c2542c;
 }
@@ -323,6 +353,7 @@ body
     cursor: pointer;
     color: #6c7f2c;
 }
+
 .last_element_dash
 {
     position: absolute;
@@ -371,6 +402,7 @@ body
 {
     color: #868492;
 }
+
 .preisfarbe
 {
     font-weight: bold;
@@ -379,134 +411,186 @@ body
 
 .beschreibung
 {
-    font-weight: bold;
+    font-weight: 500;
 }
+
+#scheduler_dashboard
+{
+    max-height: 600px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
 /* --- dashboard_elemente ENDE --- */
 
 /* --- Startseite - START ---*/
-#startseite_c0{
-	margin-top: 20px;
+
+#startseite_c0
+{
+    margin-top: 20px;
 }
-#startseite_c0 h1{
-	font-size: 32px;
-	color: #515151;
+
+#startseite_c0 h1
+{
+    font-size: 32px;
+    color: #515151;
 }
-#startseite_c1{
-	margin: 30px 0;
+
+#startseite_c1
+{
+    margin: 30px 0;
 }
-#uberschrift_c1{
-	padding: 0px 20px 10px 20px;
-	font-size: 52px;
-	font-weight: 900;
-	color: #515151;
+
+#uberschrift_c1
+{
+    padding: 0px 20px 10px 20px;
+    font-size: 52px;
+    font-weight: 900;
+    color: #515151;
 }
-#hr_c1{
-	border-top: 3px solid #a23b16;
+
+#hr_c1
+{
+    border-top: 3px solid #a23b16;
     margin-top: 0;
     margin-bottom: 20px;
     width: 55%;
-    
 }
-#lauftext_c1{
-	padding: 0px 100px 10px 100px;
-	font-size: 18px;
-	font-weight: 300;
+
+#lauftext_c1
+{
+    padding: 0px 100px 10px 100px;
+    font-size: 18px;
+    font-weight: 300;
 }
-#startseite_c2{
-	background: url(../pics/startseite_1.png) no-repeat center center; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height:600px;
+
+#startseite_c2
+{
+    background: url(../pics/startseite_1.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
 }
-#startseite_c3{
-	margin: 0;
-	background-color: #a23b16;
-	position: relative;
-	padding: 60px 50%;
-	width: 200%;
-	left: -50%;
+
+#startseite_c3
+{
+    margin: 0;
+    background-color: #a23b16;
+    position: relative;
+    padding: 60px 50%;
+    width: 200%;
+    left: -50%;
 }
-#uberschrift_c3{
-	padding: 0px 20px 60px 20px;
-	font-size: 52px;
-	font-weight: 900;
-	color: #FDFDF2;
+
+#uberschrift_c3
+{
+    padding: 0px 20px 60px 20px;
+    font-size: 52px;
+    font-weight: 900;
+    color: #FDFDF2;
 }
-#startseite_c3 h3{
-	color: #FDFDF2;
-	padding-bottom: 20px;
+
+#startseite_c3 h3
+{
+    color: #FDFDF2;
+    padding-bottom: 20px;
 }
-#startseite_c3 p{
-	font-size: 16px;
-	font-weight: 300;
-	color: #FDFDF2;
+
+#startseite_c3 p
+{
+    font-size: 16px;
+    font-weight: 300;
+    color: #FDFDF2;
 }
-#startseite_c4{
-	margin-top: 60px;
-	margin-bottom: 60px;
+
+#startseite_c4
+{
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
-#startseite_c4 h4{
-	color: #515151;
-	font-size: 26px;
-	font-weight: 900;
-	padding-bottom: 60px;
+
+#startseite_c4 h4
+{
+    color: #515151;
+    font-size: 26px;
+    font-weight: 900;
+    padding-bottom: 60px;
 }
-#startseite_c5{
-	margin-top: 90px;
-	background-color: #6c7f2c;
-	padding-top: 30px;
-	padding-bottom: 90px;
+
+#startseite_c5
+{
+    margin-top: 90px;
+    background-color: #6c7f2c;
+    padding-top: 30px;
+    padding-bottom: 90px;
 }
-#uberschrift_c5{
-	padding: 0px 20px 10px 20px;
-	font-size: 52px;
-	font-weight: 900;
-	color: #fdfdf2;
+
+#uberschrift_c5
+{
+    padding: 0px 20px 10px 20px;
+    font-size: 52px;
+    font-weight: 900;
+    color: #fdfdf2;
 }
-#lauftext_c5{
-	padding: 0px 100px 10px 100px;
-	font-size: 18px;
-	font-weight: 300;
-	color: #fdfdf2;
+
+#lauftext_c5
+{
+    padding: 0px 100px 10px 100px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fdfdf2;
 }
-.untertitel_c5{
-	padding: 20px 0;
-	font-size: 16px;
-	font-weight: 300;
-	background-color: #fdfdf2;
-	cursor: pointer;
+
+.untertitel_c5
+{
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #fdfdf2;
+    cursor: pointer;
 }
-.carousel-text{
-	color: #515151;
-	font-size: 20px;
-	font-weight: 400;
-	text-align: center;
+
+.carousel-text
+{
+    color: #515151;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
 }
-.carousel-kundenname{
-	color: #515151;
-	font-size: 14px;
-	font-weight: 100;
-	text-align: center;
+
+.carousel-kundenname
+{
+    color: #515151;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
 }
-.carousel-content {
-    color:black;
-    display:flex;
-    align-items:center;
+
+.carousel-content
+{
+    color: black;
+    display: flex;
+    align-items: center;
 }
-.carousel-control.right, .carousel-control.left{
+
+.carousel-control.right, .carousel-control.left
+{
     background-image: none;
 }
-.glyphicon-chevron-left, .glyphicon-chevron-right{
-	color: #515151;
+
+.glyphicon-chevron-left, .glyphicon-chevron-right
+{
+    color: #515151;
 }
-/* --- Startseite - ENDE ---*/ 
+
+/* --- Startseite - ENDE ---*/
 
 /* --- Profil - START ---*/
+
 .profil_kindliste
 {
-    height: 400px;
     margin-top: 10px;
 }
 
@@ -540,6 +624,7 @@ body
 {
     margin: 10px;
 }
+
 .btn_icon
 {
     border: none;
@@ -554,13 +639,14 @@ body
 
 .btn_icon_padding
 {
-    margin-right: 8px;
+    margin-right: 5px;
 }
+
 /* --- Profil - ENDE ---*/
 
 /* --- FOOTER - START ---  */
 
-#footer
+#footer_c
 {
     padding: 20px;
     padding-top: 50px;
@@ -569,7 +655,7 @@ body
     margin-top: 40px;
 }
 
-#footer h4, #footer p
+#footer_c h4, #footer p
 {
     color: #827262;
 }
@@ -582,6 +668,271 @@ body
 
 /* --- FOOTER - ENDE---  */
 
+/* --- Bestellung - START ---*/
+
+.breadcrumb
+{
+    background-color: #EEE !important;
+}
+
+.twitter-typeahead
+{
+    display: block !important;
+}
+
+.tt-menu
+{
+    padding: 15px 0;
+    background-color: #EEE;
+    border-radius: 0 0 4px 4px;
+}
+
+.tt-suggestion
+{
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.tt-suggestion:hover
+{
+    background-color: #868492;
+}
+
+#bestellung_map
+{
+    position: static !important;
+}
+
+.bestellung_schrittzaehler
+{
+    margin-bottom: 50px;
+}
+
+#bestellung_lieferantholder, #bestellung_hr_splitter
+{
+    margin: 50px 0;
+}
+
+.progress-bar
+{
+    background-color: #5b586b;
+}
+
+.progress
+{
+    height: 10px;
+}
+
+.star_green
+{
+    color: #6c7f2c;
+}
+
+.form-control_ext_bestellung
+{
+    border: none;
+    box-shadow: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.scheduler-view-table-colgrid:hover
+{
+    background-color: #EEE;
+    cursor: pointer;
+}
+
+.dash_element_ext_bestellung_s2
+{
+    min-height: 300px !important;
+    height: 400px !important;
+    max-height: 500px !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.bestellung_td_selected
+{
+    background-color: #f4e5c5;
+}
+
+.bestellung_td_done
+{
+    background-color: #6c7f2c !important;
+}
+
+#bestellung_favorites
+{
+    overflow-x: scroll;
+}
+
+.carousel_favorites
+{
+    padding-top: 10%;
+    width: 5%;
+    background: rgba(238,238,238,1);
+}
+
+.thumbnail_favorites
+{
+    margin-bottom: 0px !important;
+}
+
+.bestellung_favorite_optionen
+{
+    margin: 15px 0;
+}
+
+#portlet_default
+{
+    height: 35px;
+    color: #333 !important;
+    width: 100% !important;
+}
+
+.bestellung_bag
+{
+    margin-top: 41px;
+    background-color: #F7F7F7;
+    border: 1px solid #EEE;
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.sidebar
+{
+    background-color: #F7F7F7;
+    border: 1px solid #EEE;
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.tabbable-content > h5, ul
+{
+    margin-left: 0px !important;
+}
+
+.bestellung_s2_proxyProdukt
+{
+    border: solid 1px #EEE;
+}
+
+#dropContainer
+{
+    background-color: #333;
+    height: 300px;
+}
+
+#mySortableLayout *, .sidebar *
+{
+    -moz-user-select: none;
+}
+
+.portlet-item
+{
+    cursor: move;
+    color: #FFF;
+    margin: 10px 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+.portlet
+{
+    background-color: #EAEAEE;
+    cursor: move;
+    color: #FFF;
+    text-align: center;
+    float: left;
+    width: 90%;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 5px;
+}
+
+.portlet_delete
+{
+    background-color: #A23B16;
+    cursor: pointer;
+    color: #FFF;
+    text-align: center;
+    float: left;
+    width: 10%;
+    height: 48px;
+    line-height: 48px;
+}
+
+.blue
+{
+    background-color: #39594c;
+}
+
+.green
+{
+    background-color: #77a33f;
+}
+
+.red
+{
+    background-color: #a5d26d;
+}
+
+/* --- Bestellung - ENDE---  */
+
+/* --- Dashboard_Lieferant - START --- */
+
+.option_dashboard_lieferant_1
+{
+    margin-bottom: 15px;
+}
+
+#scheduler_dashboard_lieferant
+{
+    overflow: hidden;
+    height: 700px !important;
+}
+
+#datasHolder_dashboard_lieferant
+{
+    overflow: hidden;
+    height: 700px !important;
+}
+
+#datas_dashboard_lieferant
+{
+    height: 600px;
+    overflow-y: scroll !important;
+}
+
+.scheduler-view-scrollable
+{
+    height: 500px !important;
+}
+
+.yui3-widget-bd
+{
+    height: 610px !important;
+}
+
+.scheduler-view-agenda-info-container .scheduler-view-agenda-info
+{
+    color: #5b586b;
+}
+
+.scheduler-view-agenda-container .scheduler-view-agenda-header .scheduler-view-agenda-header-extra
+{
+    color: #5b586b;
+}
+
+#dashboard_stornierungen_tb_holder
+{
+    width: 100%;
+    overflow-x: scroll;
+}
+
+/* --- Dashboard_Lieferant - ENDE --- */
 
 /* medium devices (bis 992px) */
 
@@ -593,16 +944,16 @@ body
     }
     .navbar-default .navbar-nav > li
     {
-        width: 110px;
+        width: 125px;
     }
-    #footer
-	{
-    height: 600px;
-	}
-	#footer h4, #footer p
-	{
-    text-align: center;
-	}
+    #footer_c
+    {
+        height: 600px;
+    }
+    #footer_c h4, #footer p
+    {
+        text-align: center;
+    }
 }
 
 /* Small devices (bis 767px) */
@@ -615,14 +966,14 @@ body
     }
     .navbar-default .navbar-nav > li
     {
-        width: 150px;
+        min-width: 125px !important;
     }
     .nav_item> a
     {
         border-left: 0;
         border-right: 0;
     }
-    .nav_item_last> a
+    #nav_item_last a
     {
         border-left: 0;
         border-right: 0;
@@ -631,7 +982,42 @@ body
     {
         border: 0;
     }
+    #footer_c
+    {
+        height: 600px;
+    }
+    #footer_c h4, #footer p
+    {
+        text-align: center;
+    }
 }
 
+.axis text
+{
+    font: 10px sans-serif;
+}
 
+.axis path,
+.axis line
+{
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
 
+.bar
+{
+    fill: #5B586B;
+    fill-opacity: .9;
+}
+
+.x.axis path
+{
+    display: none;
+}
+
+.list_scroll{
+	height:100%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
