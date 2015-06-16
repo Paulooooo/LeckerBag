@@ -10,26 +10,26 @@
         <link href="css/bootstrap.css" rel="stylesheet">         
         <link href="css/style.css" rel="stylesheet" type="text/css">         
         <link href="css/bootstrap-responsive.css" rel="stylesheet">         
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'> 
-       	<script src="js/jquery.js"></script> 
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'>         
+        <script src="js/jquery.js"></script>         
         <script> 
 			$(function(){
 			  $("#header").load("header.html"); 
 			  $("#footer").load("footer.html"); 
 			});
-		</script>          
+		</script>         
     </head>     
     <body> 
-    <div class="row" id="header"></div>                   
-        <div class="row" data-pg-collapsed>
+        <div class="row" id="header"></div>         
+        <div class="row">
             <div class="col-md-12">
                 <div class="container wrapper">
                     <div class="row" data-pg-collapsed>
                         <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10" data-pg-collapsed>
-                            <h3>Kind&nbsp;</h3>
+                            <h3>Mein Kind&nbsp;</h3>
                         </div>
                         <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2" data-pg-collapsed>
-                            <a href="#" class=""><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
+                            <a href="#"><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
                             <br/>
                             <a>benötigen Sie hilfe?</a>
                         </div>
@@ -40,8 +40,8 @@
                             <a href="dashboard_kunde.html">Mein Leckerbag</a>
                         </li>                         
                         <li>
-                        	<a href="mein_profil_kunde.html">Mein Profil</a>
-                        </li> 
+                            <a href="mein_profil_kunde.html">Mein Profil</a>
+                        </li>                         
                         <li>
                             <font>Mein Kind</font>
                         </li>                         
@@ -54,13 +54,13 @@
                                         <h4>Daten des Kindes</h4>
                                     </div>
                                     <div class="text-right col-md-6 col-lg-6 col-sm-6 col-xs-6" data-pg-collapsed>
-                                        <button id="btn_profil_kunde_edit" type="button" class="btn btn-default btn_icon btn_icon btn_icon_padding" onclick="editProfilKunde(false)" data-pg-collapsed>
+                                        <button id="btn_profil_kunde_edit" type="button" class="btn btn-default btn_icon btn_icon btn_icon_padding" onclick="" data-pg-collapsed>
                                             <i class="glyphicon glyphicon-pencil"></i>
                                         </button>
-                                        <button id="btn_profil_kunde_save" type="button" class="btn btn-default btn_icon btn_icon btn_icon_padding" onclick="editProfilKunde(true)" style="display:none" data-pg-collapsed>
+                                        <button id="btn_profil_kunde_save" type="button" class="btn btn-default btn_icon btn_icon btn_icon_padding" onclick="" style="display:none" data-pg-collapsed>
                                             <i class="fa fa-check"></i>
                                         </button>
-                                        <button type="button" class="btn btn-default btn_icon btn_icon" data-pg-collapsed onclick="location.href='profil_loeschen_kunde.html'">
+                                        <button type="button" class="btn btn-default btn_icon btn_icon" data-pg-collapsed onclick="location.href='profil_loeschen_kind.html'">
                                             <i class="glyphicon glyphicon-trash"></i>
                                         </button>                                         
                                     </div>
@@ -90,19 +90,6 @@
                                         <div class="form-group"> 
                                             <label class="control-label" for="formInput166">Klasse</label>
                                             <input type="text" class="form-control profilTextfield" id="formInput166" placeholder="5 a" disabled="disabled">
-                                        </div>
-                                        <div class="form-group">
-                                            <span class="glyphicon glyphicon-calendar"></span> 
-                                            <label class="control-label" for="formInput174">Geburtsdatum</label>
-                                            <input type="date" class="form-control profilTextfield" id="formInput174" placeholder="03.05.2005" disabled="disabled">
-                                        </div>                                         
-                                        <div class="form-group profilTextfieldCollapse" data-pg-collapsed style="display:none"> 
-                                            <label class="control-label" for="formInput214">E-Mail</label>
-                                            <input type="text" class="form-control" id="formInput214" placeholder="MaxMustermann@web.de">
-                                        </div>
-                                        <div class="form-group profilTextfieldCollapse" data-pg-collapsed style="display:none"> 
-                                            <label class="control-label" for="formInput226">Neues Passwort</label>
-                                            <input type="text" class="form-control" id="formInput226" placeholder="xxxxxxxxxx">
                                         </div>                                         
                                     </div>
                                     <hr class="hr_line"/>
@@ -117,55 +104,55 @@
                                                 </ul>                                                 
                                             </div>
                                             <div class="col-md-4 col-lg-4 col-xs-5 col-sm-5 text-left">
-                                                <button type="button" class="btn btn-default button_paulo button_paulo_ext_dashboard">neues Abonnement abschließen 
+                                                <button type="button" class="btn btn-default button_paulo button_paulo_ext_dashboard" onclick="location.href='bestellung_kunde.html'">neues Abonnement abschließen 
                                                     <i class="fa fa-chevron-right"></i> 
                                                 </button>                                                 
                                             </div>
                                         </div>                                         
                                     </div>
-                                    <div class="row" data-pg-collapsed>
+                                    <div class="row">
                                         <div class="col-md-12 dash_element col-sm-12 col-xs-12 col-lg-12">
                                             <h4>Ihre nächsten Lieferungen</h4>
                                             <div class="row">
                                                 <div class="col-lg-8 col-md-8 col-sm-7 col-xs-7" data-pg-collapsed>
                                                     <ul class="pg-empty-placeholder">
                                                         <li class="abonnement_element" data-pg-collapsed>
-                                                            <p color="#5b586b"><font class="beschreibung">Produkt:</font> <a>100652001</a> Brötchen mit Salami, Apfel, Milch <br> <font class="beschreibung">Kind: </font> <a>Arnold Mustermann</a> <br> <font class="beschreibung">Lieferdatum: </font>01.09.15<br>(<a>Bestelldetails</a>)</p>
+                                                            <p color="#5b586b"><font class="beschreibung">Produkt:</font> <a>100652001</a> Brötchen mit Salami, Apfel, Milch <br> <font class="beschreibung">Kind: </font> <a>Arnold Mustermann</a> <br> <font class="beschreibung">Lieferdatum: </font>01.09.15<br>(<a href="3_details_bestellung.html">Bestelldetails</a>)</p>
                                                         </li>
                                                     </ul>                                                     
                                                 </div>
                                                 <div class="col-md-4 col-lg-4 text-left col-xs-5 col-sm-5" data-pg-collapsed>
-                                                    <button type="button" class="btn btn-default button_paulo">stornieren</button>                                                     
+                                                    <button type="button" class="btn btn-default button_paulo" onclick="location.href='4_stornierung_bag.html'">stornieren</button>                                                     
                                                 </div>
                                             </div>
-                                            <div class="row" data-pg-collapsed>
+                                            <div class="row">
                                                 <div class="col-md-8 col-lg-8 col-xs-7 col-sm-7">
                                                     <ul class="pg-empty-placeholder">
                                                         <li class="abonnement_element">
-                                                            <p color="#5b586b"><font class="beschreibung">Produkt:</font> <a>100652011</a> Mehrkornbrötchen mit Käse, Birne, Kakao&nbsp;<br> <font class="beschreibung">Kind: </font> <a>Arnold Mustermann</a> <br> <font class="beschreibung">Lieferdatum: </font>01.09.15<br>(<a>Bestelldetails</a>)</p>
+                                                            <p color="#5b586b"><font class="beschreibung">Produkt:</font> <a>100652011</a> Mehrkornbrötchen mit Käse, Birne, Kakao&nbsp;<br> <font class="beschreibung">Kind: </font> <a>Arnold Mustermann</a> <br> <font class="beschreibung">Lieferdatum: </font>01.09.15<br>(<a href="3_details_bestellung.html">Bestelldetails</a>)</p>
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="col-md-4 col-lg-4 text-left col-sm-5 col-xs-5">
-                                                    <button type="button" class="btn btn-default button_paulo">stornieren</button>                                                     
+                                                    <button type="button" class="btn btn-default button_paulo" onclick="location.href='4_stornierung_bag.html'">stornieren</button>                                                     
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-8 col-lg-8 col-sm-7 col-xs-7">
                                                     <ul class="pg-empty-placeholder" data-pg-collapsed="">
                                                         <li class="abonnement_element">
-                                                            <p color="#5b586b"><font class="beschreibung">Produkt:</font> <a>100652002</a> Brötchen mit Schinken und Käse, Banane, Milch <br> <font class="beschreibung">Kind: </font> <a>Arnold Mustermann</a> <br> <font class="beschreibung">Lieferdatum: </font>02.09.15<br>(<a>Bestelldetails</a>)</p>
+                                                            <p color="#5b586b"><font class="beschreibung">Produkt:</font> <a>100652002</a> Brötchen mit Schinken und Käse, Banane, Milch <br> <font class="beschreibung">Kind: </font> <a>Arnold Mustermann</a> <br> <font class="beschreibung">Lieferdatum: </font>02.09.15<br>(<a href="3_details_bestellung.html">Bestelldetails</a>)</p>
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="col-md-4 col-lg-4 text-left col-sm-5 col-xs-5">
-                                                    <button type="button" class="btn btn-default button_paulo">stornieren</button>                                                     
+                                                    <button type="button" class="btn btn-default button_paulo" onclick="location.href='4_stornierung_bag.html'">stornieren</button>                                                     
                                                 </div>
                                             </div>
                                             <div class="row last_element_dash">
                                                 <hr class="hr_line hr_line_ext_dashboard_last">
                                                 <div class="col-md-12">
-                                                    <a>Alle Bestellungen anzeigen</a>
+                                                    <a href="#">Alle Bestellungen anzeigen</a>
                                                 </div>
                                             </div>                                             
                                         </div>
@@ -177,13 +164,13 @@
                 </div>                 
             </div>
         </div>
-        <div class="row" id="footer"></div> 
-        <!-- Ende des Dokumentes -->    
+        <div class="row" id="footer"></div>         
+        <!-- Ende des Dokumentes -->         
         <script>
 	        $("#header").load("header.html", function(){
 	        	setNav(2);
 	        });
-        </script>     
+        </script>         
         <!-- Ende des Dokumentes -->         
         <script src="js/jquery.js"></script>         
         <script src="js/bootstrap.js"></script>         
