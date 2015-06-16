@@ -1017,7 +1017,128 @@ label
 }
 
 .list_scroll{
-	height:100%;
+	height:300px;
 	overflow-y:scroll;
 	overflow-x:hidden;
+	margin-bottom: 15px;
+}
+
+.kind_profil_aktuellesabo
+{
+    height: 200px;
+}
+
+.kind_add
+{
+    height: 80px;
+}
+
+
+.list_scroll
+{
+    width: 100%;
+    overflow-y: scroll;
+    margin-top: 15px;
+}
+
+.div_buttons
+{
+    left: 0;
+}
+
+.button_3
+{
+}
+
+.div_profil_geloescht
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.logo_info
+{
+    color: #6c7f2c;
+}
+
+.rating
+{
+    float: left;
+}
+
+.rating span
+{
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    color: #5b586b;
+}
+
+.rating span:hover, .rating span:hover ~ span
+{
+    color: #6c7f2c;
+}
+
+.abo_border
+{
+    border-left: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+    border-top: solid 1px #ddd;
+    border-radius: 4px;
+}
+
+.abo_color
+{
+    background-color: #ddd;
+}
+
+.abo_color
+{
+}
+
+.abo_border_bottom
+{
+    border-bottom: solid 1px #ddd;
+}
+
+.border_grey
+{
+    border: solid 1px #ddd;
+    border-radius: 4px;
+}
+
+.progress_rezensionen
+{
+    margin-bottom: 0;
+    height: 13px;
+    margin-top: 3px;
+    color: #5b586b;
+}
+
+.rezension_color
+{
+    background-color: #5B586B;
+}
+
+.rezension_red
+{
+    border-radius: 4px;
+    border: solid 2px #d53f2e;
+    background-color: #ddd;
+}
+
+.rezension_green
+{
+    border: solid 2px #6c7f2c;
+    border-radius: 4px;
+    background-color: #ddd;
+}
+
+.rezension_orange
+{
+    border: solid 2px #ce7822;
+    border-radius: 4px;
+    background-color: #ddd;
 }

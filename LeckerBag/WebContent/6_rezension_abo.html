@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8">         
+        <title>Leckerbag - Die gesunde Alternative</title>         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">         
+        <meta name="description" content="Beschreibung der Seite">         
+        <meta name="author" content="Paul Kozakiewicz">         
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">         
+        <link href="css/bootstrap.css" rel="stylesheet">         
+        <link href="css/style.css" rel="stylesheet" type="text/css">         
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">         
+        <script src="js/jquery.js"></script>         
+        <script> 
+			$(function(){
+			  $("#header").load("header.html"); 
+			  $("#footer").load("footer.html"); 
+			});
+		</script>         
+    </head>     
+    <body>
+        <div class="row" id="header"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container wrapper">
+                    <div class="row">
+                        <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10" data-pg-collapsed="">
+                            <h3>Ihre Rezension</h3> 
+                            <p>&nbsp;</p>
+                        </div>
+                        <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2">
+                            <a href="#"><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
+                            <br>
+                            <a id="help_text" class="hidden-xs">benötigen Sie hilfe?</a>
+                        </div>
+                    </div>
+                    <hr class="hr_line">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="dashboard_lieferant.html">Mein Leckerbag</a>
+                        </li>                         
+                        <li>&nbsp;
+                            <a href="2_uebersicht_abo.html">Alle Abonnements&nbsp;</a>
+                        </li>                                                                                                                                                    &nbsp;
+                        <li>&nbsp;Ihre Rezension &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>                         
+                    </ol>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-md-12 dash_element col-xs-12 col-sm-12 col-lg-12">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style=" margin-bottom: 10px">
+                                            <h4>Bewertung</h4>
+                                            <div class="rating">
+                                                <span class="glyphicon glyphicon-star rating"></span>
+                                                <span class="glyphicon glyphicon-star rating"></span>
+                                                <span class="glyphicon glyphicon-star rating"></span>
+                                                <span class="glyphicon glyphicon-star rating"></span>
+                                                <span class="glyphicon rating glyphicon-star"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 20px">
+                                        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12"> 
+                                            <input type="text" class="form-control input-sm" placeholder="Titel">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <input type="text" class="form-control input-sm" style="padding-bottom: 305px; margin-bottom: 35px" placeholder="Rezension">                                             
+                                        </div>
+                                    </div>
+                                    <div class="row text-right">
+                                        <div class="col-xs-12 col-sm-12 text-right col-md-12 col-lg-12"> 
+                                            <button type="button" class="btn btn-default button_paulo_3 button_paulo">Abbrechen</button>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &nbsp;
+                                            <button type="button" class="btn btn-default button_paulo">Senden</button>
+                                        </div>
+                                    </div>                                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </div>
+        <div class="row" id="footer"></div>         
+        <!-- Ende des Dokumentes -->         
+        <script>
+	        $("#header").load("header.html", function(){
+	        	setNav(2);
+	        });
+        </script>         
+        <!-- Ende des Dokumentes -->         
+        <script src="js/jquery.js"></script>         
+        <script src="js/bootstrap.js"></script>         
+        <script src="js/functions.js"></script>         
+    </body>     
+</html>

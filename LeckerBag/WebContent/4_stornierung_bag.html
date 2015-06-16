@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8">         
+        <title>Leckerbag - Die gesunde Alternative</title>         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">         
+        <meta name="description" content="Beschreibung der Seite">         
+        <meta name="author" content="Paul Kozakiewicz">         
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">         
+        <link href="css/bootstrap.css" rel="stylesheet">         
+        <link href="css/style.css" rel="stylesheet" type="text/css">         
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <script src="js/jquery.js"></script>         
+        <script> 
+			$(function(){
+			  $("#header").load("header.html"); 
+			  $("#footer").load("footer.html"); 
+			});
+		</script>          
+    </head>     
+    <body>
+    <div class="row" id="header"></div> 
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container wrapper">
+                    <div class="row">
+                        <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10" data-pg-collapsed="">
+                            <h3>Ihre Stornierung</h3> 
+                            <p>&nbsp;Stornierung des Leckerbags</p>
+                        </div>
+                        <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2">
+                            <a href="#"><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
+                            <br>
+                            <a id="help_text" class="hidden-xs">benötigen Sie hilfe?</a>
+                        </div>
+                    </div>
+                    <hr class="hr_line">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="dashboard_lieferant.html">Mein Leckerbag</a>
+                        </li>                         
+                        <li>&nbsp;
+                            <a href="2_uebersicht_abo.html">Alle Abonnements&nbsp;</a>
+                        </li>
+                        <li>&nbsp;
+                            <a href="1_details_abo.html">Details des Abonnement&nbsp;</a>
+                        </li>                                                                                                                                                                                                                            &nbsp;
+                        <li>&nbsp;Ihre Stornierung &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>                         
+                    </ol>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-md-12 dash_element col-xs-12 col-sm-12 col-lg-12">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-5 col-sm-5 col-lg-5" data-pg-collapsed="">
+                                            <h4>Details zur Bestellung</h4> 
+                                            <p>Brötchen: Mehrkornbrötchen | Salami | Gurke<br></p>
+                                            <p>Obst: Apfel<br></p>
+                                            <p>Getränk: Wasser<br></p>
+                                            <p>Lieferdatum: 28.04.2015<br></p>
+                                        </div>
+                                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                                            <h4>Details zum Lieferanten<br></h4> 
+                                            <p>Name: Bäcker Bob<br></p>
+                                            <p>Straße: Sanderstraße 12<br></p>
+                                            <p>Postleitzahl: 97072 Würzburg<br></p>
+                                            <p class="hidden-xs"><br></p>
+                                        </div>
+                                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12" data-pg-collapsed="">
+                                            <h4>Details zum Kind</h4> 
+                                            <p>Name: Hans-Jürgen<br></p>
+                                            <p>Schule: Grimm Schule<br></p>
+                                            <p>Klasse: 2a</p>
+                                        </div>
+                                    </div>
+                                    <div class="row" data-pg-collapsed="">
+                                        <hr class="hr_line" style="margin-left:15px; margin-right:15px">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-xs-12 col-lg-5 col-md-5" data-pg-collapsed="">
+                                            <h4>Verwendungszweck</h4>
+                                            <select class="form-control" data-pg-name="Dropdown: Geschlecht" data-pg-collapsed="">
+                                                <option>Abholen</option>
+                                                <option class="pg-empty-placeholder">Spenden</option>
+                                                <option>Stornieren</option>                                                 
+                                            </select>
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12">
+                                            <h4>Begründung<br></h4>
+                                            <input type="text" class="form-control input-sm" style="padding-bottom: 175px; margin-bottom: 15px">                                             
+                                        </div>
+                                    </div>
+                                    <div class="row" data-pg-collapsed="" style="margin-bottom: 25px">
+                                        <hr class="hr_line" style="margin-left:15px; margin-right:15px">
+                                    </div>
+                                    <div class="row text-right">
+                                        <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 text-left"> 
+                                            <div class="row">
+                                                <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 text-right">
+                                                    <i class="fa fa-lg logo_info fa-check-circle"></i> 
+                                                </div>
+                                                <div class="col-md-11 col-lg-11 col-sm-11 col-xs-11">
+                                                    <p>Der ausstehende Betrag wurde bereits beglichen..<br></p>
+                                                </div>
+                                                <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1 text-right">
+                                                    <i class="fa fa-info-circle fa-lg logo_info"></i> 
+                                                </div>
+                                                <div class="col-md-11 col-lg-11 col-sm-11 col-xs-11">
+                                                    <p>Das Bestellung kann noch bis zum 29.04.2015 storniert werden.<br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 text-right col-md-5 col-lg-5">
+                                            <button type="button" class="btn btn-default button_paulo_3 button_paulo">Abbrechen</button>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &nbsp;
+                                            <button type="button" class="btn btn-default button_paulo">Stornieren</button>
+                                        </div>
+                                    </div>                                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </div>
+        <div class="row" id="footer"></div>         
+        <!-- Ende des Dokumentes -->         
+        <script>
+	        $("#header").load("header.html", function(){
+	        	setNav(2);
+	        });
+        </script>              
+        <!-- Ende des Dokumentes -->         
+        <script src="js/jquery.js"></script>         
+        <script src="js/bootstrap.js"></script>         
+        <script src="js/functions.js"></script>         
+    </body>     
+</html>

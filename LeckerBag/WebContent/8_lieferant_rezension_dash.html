@@ -1,0 +1,427 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8">         
+        <title>Leckerbag - Die gesunde Alternative</title>         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">         
+        <meta name="description" content="Beschreibung der Seite">         
+        <meta name="author" content="Paul Kozakiewicz">         
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">         
+        <link href="css/bootstrap.css" rel="stylesheet">         
+        <link href="css/style.css" rel="stylesheet" type="text/css">         
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">  
+        <script src="js/jquery.js"></script>         
+        <script> 
+			$(function(){
+			  $("#header").load("header.html"); 
+			  $("#footer").load("footer.html"); 
+			});
+		</script>         
+    </head>     
+    <body>        
+    <div class="row" id="header"></div>           
+        <div class="row" data-pg-collapsed>
+            <div class="col-md-12">
+                <div class="container wrapper">
+                    <div class="row" data-pg-collapsed="">
+                        <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10">
+                            <h3>Meine Rezensionen</h3> 
+                            <p><br></p>
+                        </div>
+                        <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2">
+                            <a href="#"><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
+                            <br>
+                            <a id="help_text">benötigen Sie hilfe?</a>
+                        </div>
+                    </div>
+                    <hr class="hr_line">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="dashboard_lieferant.html">Mein Leckerbag</a>
+                        </li>                         
+                        <li>&nbsp;Meine Rezensionen&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>                         
+                    </ol>
+                    <div class="row" style="margin-bottom: 10px; margin-right: 1px">
+                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 dash_element_col" style="height: 300px;">
+                            <div class="row dash_element_holder">
+                                <div class="col-md-12 border_grey" style="height: 300px;">
+                                    <div class="row" style="margin-top:5px">
+                                        <div class="col-md-12 col-lg-12" style="margin-bottom: 15px" data-pg-collapsed="">
+                                            <h4>Aktuelle Bewertungen</h4>
+                                        </div>
+                                        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="padding-left: 40px; margin-bottom: 10px">
+                                            <i class="fa fa-star logo_info fa-lg"></i>
+                                            <i class="fa fa-star logo_info fa-lg"></i>
+                                            <i class="fa fa-star logo_info fa-lg"></i>
+                                            <i class="fa fa-star logo_info fa-lg"></i>
+                                            <i class="fa fa-star-o logo_info fa-lg" style="margin-right: 5px"></i>
+                                            <a href="9_lieferant_rezension_alle.html">(112)</a>
+                                            <p>4.1 von 5 Sternen</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 text-right">
+                                            <a>5 Sterne:</a> 
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="progress progress_rezensionen"> 
+                                                <div class="progress-bar rezension_color" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"> 
+                                                    <span class="sr-only">30% Complete</span> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a>40</a> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 text-right">
+                                            <a>4 Sterne:</a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="progress progress_rezensionen"> 
+                                                <div class="progress-bar rezension_color" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 32%;"> 
+                                                    <span class="sr-only">30% Complete</span> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a>43</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 text-right">
+                                            <a>3 Sterne:</a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="progress progress_rezensionen"> 
+                                                <div class="progress-bar rezension_color" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 15%;"> 
+                                                    <span class="sr-only">30% Complete</span> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a>21</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 text-right">
+                                            <a>2 Sterne:</a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="progress progress_rezensionen"> 
+                                                <div class="progress-bar rezension_color" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"> 
+                                                    <span class="sr-only">30% Complete</span> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a>04</a>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 15px">
+                                        <div class="col-md-3 text-right">
+                                            <a>1 Stern: &nbsp;</a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="progress progress_rezensionen"> 
+                                                <div class="progress-bar rezension_color" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"> 
+                                                    <span class="sr-only">30% Complete</span> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a>4</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="padding-left: 40px; margin-bottom: 15px">
+                                            <a href="9_lieferant_rezension_alle.html">Alle 112 Rezensionen anzeigen</a>
+                                        </div>
+                                    </div>                                     
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 dash_element_col border_grey item_rezensionen" style="height: 300px;">
+                            <div class="row dash_element_holder" style="margin-bottom: 15px; margin-top:5px">
+                                <div class="col-md-10 col-lg-10 col-sm-8 col-xs-8"> 
+                                    <h4>Aktuelle Rezensionen</h4>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-4 col-xs-4">
+                                    <button type="button" class="btn btn-default btn_icon btn_icon">
+                                        <i class="glyphicon glyphicon-print"></i>
+                                    </button>                                     
+                                </div>
+                            </div>
+                            <div class="row dash_element_holder" style="padding-right: 15px; ">
+                                <div class="col-md-12 col-lg-12 border_grey" style="height: 215px; float: left; overflow-y: scroll;">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12" style="margin-bottom:10px;">
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" data-pg-collapsed="">
+                                                    <i class="fa fa-star logo_info fa-lg"></i>
+                                                    <i class="fa fa-star logo_info fa-lg"></i>
+                                                    <i class="fa fa-star logo_info fa-lg"></i>
+                                                    <i class="fa fa-star logo_info fa-lg"></i>
+                                                    <i class="fa fa-star logo_info fa-lg"></i> 
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <h4>Abonnement ist grandios &amp; lecker!</h4>
+                                                    <h5><strong>Kunde:</strong> <a>Maria Müller</a> | <strong>Datum:</strong> 21.04.2015</h5> 
+                                                    <p>Ich kann über Müllerbäck nichts schlechtes berichten. Die Bags sind immer frisch, pünktlich und lecker. Nachdem wir zuvor unsere Bags von einem anderen Lieferanten bezogen haben, welcher aber keine Mehrkornbrötchen angeboten hat sind wir nun mit Müllerbäck vollauf zufrieden. Ein...<a>(mehr)</a></p>
+                                                    <hr class="hr_line">
+                                                </div>
+                                            </div>                                             
+                                        </div>
+                                        <div class="col-md-12 col-lg-12" style="margin-bottom:10px;" data-pg-collapsed="">
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" data-pg-collapsed="">
+                                                    <i class="fa fa-star logo_info fa-lg"></i>
+                                                    <i class="fa fa-star logo_info fa-lg"></i>
+                                                    <i class="fa fa-star logo_info fa-lg"></i>
+                                                    <i class="fa fa-star logo_info fa-lg"></i>
+                                                    <i class="fa fa-star logo_info fa-lg"></i> 
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <h4>Abonnement ist grandios &amp; lecker!</h4>
+                                                    <h5><strong>Kunde:</strong> <a>Maria Müller</a> | <strong>Datum:</strong> 21.04.2015</h5> 
+                                                    <p>Ich kann über Müllerbäck nichts schlechtes berichten. Die Bags sind immer frisch, pünktlich und lecker. Nachdem wir zuvor unsere Bags von einem anderen Lieferanten bezogen haben, welcher aber keine Mehrkornbrötchen angeboten hat sind wir nun mit Müllerbäck vollauf zufrieden. Ein...<a>(mehr)</a></p>
+                                                    <hr class="hr_line">
+                                                </div>
+                                            </div>                                             
+                                        </div>
+                                        <div class="col-md-12 col-lg-12" style="margin-bottom:10px;" data-pg-collapsed="">
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" data-pg-collapsed="">
+                                                    <i class="fa fa-star logo_info fa-lg"></i>
+                                                    <i class="fa fa-star logo_info fa-lg"></i>
+                                                    <i class="fa fa-star logo_info fa-lg"></i>
+                                                    <i class="fa fa-star logo_info fa-lg"></i>
+                                                    <i class="fa fa-star logo_info fa-lg"></i> 
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <h4>Abonnement ist grandios &amp; lecker!</h4>
+                                                    <h5><strong>Kunde:</strong> <a>Maria Müller</a> | <strong>Datum:</strong> 21.04.2015</h5> 
+                                                    <p>Ich kann über Müllerbäck nichts schlechtes berichten. Die Bags sind immer frisch, pünktlich und lecker. Nachdem wir zuvor unsere Bags von einem anderen Lieferanten bezogen haben, welcher aber keine Mehrkornbrötchen angeboten hat sind wir nun mit Müllerbäck vollauf zufrieden. Ein...<a>(mehr)</a></p>
+                                                    <hr class="hr_line">
+                                                </div>
+                                            </div>                                             
+                                        </div>
+                                        <div class="col-md-12 col-lg-12" style="margin-bottom:10px;" data-pg-collapsed="">
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" data-pg-collapsed="">
+                                                    <i class="fa fa-star logo_info fa-lg"></i>
+                                                    <i class="fa fa-star logo_info fa-lg"></i>
+                                                    <i class="fa fa-star logo_info fa-lg"></i>
+                                                    <i class="fa fa-star logo_info fa-lg"></i>
+                                                    <i class="fa fa-star logo_info fa-lg"></i> 
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <h4>Abonnement ist grandios &amp; lecker!</h4>
+                                                    <h5><strong>Kunde:</strong> <a>Maria Müller</a> | <strong>Datum:</strong> 21.04.2015</h5> 
+                                                    <p>Ich kann über Müllerbäck nichts schlechtes berichten. Die Bags sind immer frisch, pünktlich und lecker. Nachdem wir zuvor unsere Bags von einem anderen Lieferanten bezogen haben, welcher aber keine Mehrkornbrötchen angeboten hat sind wir nun mit Müllerbäck vollauf zufrieden. Ein...<a>(mehr)</a></p>
+                                                    <hr class="hr_line">
+                                                </div>
+                                            </div>                                             
+                                        </div>
+                                    </div>                                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 10px">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-sm-12 col-xs-12 dash_element_col border_grey col-md-12 col-lg-12" style="height: 410px;">
+                                    <div class="row dash_element_holder" style="margin-bottom: 15px; margin-top:5px">
+                                        <div class="col-md-10"> 
+                                            <h4>Die besten Rezensionen</h4>
+                                        </div>
+                                        <div class="col-md-2 text-right">
+                                            <button type="button" class="btn btn-default btn_icon btn_icon">
+                                                <i class="glyphicon glyphicon-print"></i>
+                                            </button>                                             
+                                        </div>
+                                    </div>
+                                    <div class="row dash_element_holder" style="padding-right: 15px; ">
+                                        <div class="col-md-12 col-lg-12 border_grey item_rezensionen" style="height: 330px; float: left; overflow-y: scroll;">
+                                            <div class="row" style="padding-right: 5px">
+                                                <div class="col-md-12 col-lg-12" style="margin-bottom:10px;">
+                                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 rezension_green" style="margin-top:15px; margin-bottom:15px; margin-left:3px" data-pg-collapsed="">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="margin-top:10px">
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i> 
+                                                            </div>
+                                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                                <h4>Abonnement ist grandios &amp; lecker!</h4>
+                                                                <h5><strong>Kunde:</strong> <a>Maria Müller</a> | <strong>Datum:</strong> 21.04.2015</h5> 
+                                                                <p>Ich kann über Müllerbäck nichts schlechtes berichten. Die Bags sind immer frisch, pünktlich und lecker. Nachdem wir zuvor unsere Bags von einem anderen Lieferanten bezogen haben, welcher aber keine Mehrkornbrötchen angeboten hat sind<a>(mehr)</a></p>
+                                                            </div>
+                                                        </div>                                                         
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 rezension_green" style=" margin-bottom:15px; margin-left:3px">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="margin-top:10px">
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa logo_info fa-lg fa-star-o"></i> 
+                                                            </div>
+                                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                                <h4>Abonnement ist grandios &amp; lecker!</h4>
+                                                                <h5><strong>Kunde:</strong> <a>Maria Müller</a> | <strong>Datum:</strong> 21.04.2015</h5> 
+                                                                <p>Ich kann über Müllerbäck nichts schlechtes berichten. Die Bags sind immer frisch, pünktlich und lecker. Nachdem wir zuvor unsere Bags von einem anderen Lieferanten bezogen haben, welcher aber keine Mehrkornbrötchen angeboten hat sind<a>(mehr)</a></p>
+                                                            </div>
+                                                        </div>                                                         
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 rezension_green" style=" margin-bottom:15px; margin-left:3px" data-pg-collapsed="">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="margin-top:10px">
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i> 
+                                                            </div>
+                                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                                <h4>Abonnement ist grandios &amp; lecker!</h4>
+                                                                <h5><strong>Kunde:</strong> <a>Maria Müller</a> | <strong>Datum:</strong> 21.04.2015</h5> 
+                                                                <p>Ich kann über Müllerbäck nichts schlechtes berichten. Die Bags sind immer frisch, pünktlich und lecker. Nachdem wir zuvor unsere Bags von einem anderen Lieferanten bezogen haben, welcher aber keine Mehrkornbrötchen angeboten hat sind<a>(mehr)</a></p>
+                                                            </div>
+                                                        </div>                                                         
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 rezension_green" style=" margin-bottom:15px; margin-left:3px" data-pg-collapsed="">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="margin-top:10px">
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i> 
+                                                            </div>
+                                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                                <h4>Abonnement ist grandios &amp; lecker!</h4>
+                                                                <h5><strong>Kunde:</strong> <a>Maria Müller</a> | <strong>Datum:</strong> 21.04.2015</h5> 
+                                                                <p>Ich kann über Müllerbäck nichts schlechtes berichten. Die Bags sind immer frisch, pünktlich und lecker. Nachdem wir zuvor unsere Bags von einem anderen Lieferanten bezogen haben, welcher aber keine Mehrkornbrötchen angeboten hat sind<a>(mehr)</a></p>
+                                                            </div>
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>
+                                            </div>                                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 10px">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-sm-12 col-xs-12 dash_element_col border_grey col-md-12 col-lg-12" style="height: 410px;">
+                                    <div class="row dash_element_holder" style="margin-bottom: 15px; margin-top:5px">
+                                        <div class="col-md-10"> 
+                                            <h4>Die&nbsp;kritischsten&nbsp;Rezensionen</h4>
+                                        </div>
+                                        <div class="col-md-2 text-right">
+                                            <button type="button" class="btn btn-default btn_icon btn_icon">
+                                                <i class="glyphicon glyphicon-print"></i>
+                                            </button>                                             
+                                        </div>
+                                    </div>
+                                    <div class="row dash_element_holder" style="padding-right: 15px; ">
+                                        <div class="col-md-12 col-lg-12 border_grey item_rezensionen" style="height: 330px; float: left; overflow-y: scroll;">
+                                            <div class="row" style="padding-right: 5px">
+                                                <div class="col-md-12 col-lg-12" style="margin-bottom:10px;">
+                                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 rezension_orange" style="margin-top:15px; margin-bottom:15px; margin-left:3px">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="margin-top:10px">
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa logo_info fa-lg fa-star-o"></i>
+                                                                <i class="fa logo_info fa-lg fa-star-o"></i>
+                                                                <i class="fa logo_info fa-lg fa-star-o"></i> 
+                                                            </div>
+                                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                                <h4>Abonnement ist grandios &amp; lecker!</h4>
+                                                                <h5><strong>Kunde:</strong> <a>Maria Müller</a> | <strong>Datum:</strong> 21.04.2015</h5> 
+                                                                <p>Ich kann über Müllerbäck nichts schlechtes berichten. Die Bags sind immer frisch, pünktlich und lecker. Nachdem wir zuvor unsere Bags von einem anderen Lieferanten bezogen haben, welcher aber keine Mehrkornbrötchen angeboten hat sind<a>(mehr)</a></p>
+                                                            </div>
+                                                        </div>                                                         
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 rezension_red" style=" margin-bottom:15px; margin-left:3px">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="margin-top:10px">
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa logo_info fa-lg fa-star-o"></i>
+                                                                <i class="fa logo_info fa-lg fa-star-o"></i>
+                                                                <i class="fa logo_info fa-lg fa-star-o"></i>
+                                                                <i class="fa logo_info fa-lg fa-star-o"></i> 
+                                                            </div>
+                                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                                <h4>Abonnement ist grandios &amp; lecker!</h4>
+                                                                <h5><strong>Kunde:</strong> <a>Maria Müller</a> | <strong>Datum:</strong> 21.04.2015</h5> 
+                                                                <p>Ich kann über Müllerbäck nichts schlechtes berichten. Die Bags sind immer frisch, pünktlich und lecker. Nachdem wir zuvor unsere Bags von einem anderen Lieferanten bezogen haben, welcher aber keine Mehrkornbrötchen angeboten hat sind<a>(mehr)</a></p>
+                                                            </div>
+                                                        </div>                                                         
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 rezension_orange" style=" margin-bottom:15px; margin-left:3px" data-pg-collapsed="">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="margin-top:10px">
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i> 
+                                                            </div>
+                                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                                <h4>Abonnement ist grandios &amp; lecker!</h4>
+                                                                <h5><strong>Kunde:</strong> <a>Maria Müller</a> | <strong>Datum:</strong> 21.04.2015</h5> 
+                                                                <p>Ich kann über Müllerbäck nichts schlechtes berichten. Die Bags sind immer frisch, pünktlich und lecker. Nachdem wir zuvor unsere Bags von einem anderen Lieferanten bezogen haben, welcher aber keine Mehrkornbrötchen angeboten hat sind<a>(mehr)</a></p>
+                                                            </div>
+                                                        </div>                                                         
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 rezension_red" style=" margin-bottom:15px; margin-left:3px" data-pg-collapsed="">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="margin-top:10px">
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i>
+                                                                <i class="fa fa-star logo_info fa-lg"></i> 
+                                                            </div>
+                                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                                <h4>Abonnement ist grandios &amp; lecker!</h4>
+                                                                <h5><strong>Kunde:</strong> <a>Maria Müller</a> | <strong>Datum:</strong> 21.04.2015</h5> 
+                                                                <p>Ich kann über Müllerbäck nichts schlechtes berichten. Die Bags sind immer frisch, pünktlich und lecker. Nachdem wir zuvor unsere Bags von einem anderen Lieferanten bezogen haben, welcher aber keine Mehrkornbrötchen angeboten hat sind<a>(mehr)</a></p>
+                                                            </div>
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>
+                                            </div>                                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </div>         
+        <div class="row" id="footer"></div>         
+        <!-- Ende des Dokumentes -->         
+        <script>
+	        $("#header").load("header.html", function(){
+	        	setNav(2);
+	        });
+        </script> 
+        <!-- Ende des Dokumentes -->         
+        <script src="js/jquery.js"></script>         
+        <script src="js/bootstrap.js"></script>         
+        <script src="js/functions.js"></script>         
+    </body>     
+</html>

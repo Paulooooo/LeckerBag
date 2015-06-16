@@ -10,23 +10,14 @@
         <link href="css/bootstrap.css" rel="stylesheet">         
         <link href="css/style.css" rel="stylesheet" type="text/css">         
         <link href="css/bootstrap-responsive.css" rel="stylesheet">         
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'>         
-        <script src="js/jquery.js"></script>         
-        <script> 
-			$(function(){
-			  $("#header").load("header.html"); 
-			  $("#footer").load("footer.html"); 
-			});
-		</script>         
     </head>     
-    <body>
-        <div class="row" id="header"></div>         
+    <body>                   
         <div class="row">
             <div class="col-md-12">
                 <div class="container wrapper">
                     <div class="row">
                         <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10">
-                            <h3>Profil löschen</h3>
+                            <h3>Profil des Kindes bearbeiten</h3>
                         </div>
                         <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2" data-pg-collapsed>
                             <a href="#"><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
@@ -38,33 +29,45 @@
                     <ol class="breadcrumb" data-pg-collapsed> 
                         <li>
                             <a href="dashboard_kunde.html">Mein Leckerbag</a>
-                        </li>
+                        </li>                         
                         <li>
                             <a href="mein_profil_kunde.html">Mein Profil</a>
                         </li>                         
                         <li>
-                            <font>Mein Profil löschen</font>
-                        </li>                         
+                            <a href="profil_kind.html">Mein Kind</a>
+                        </li>
+                        <li>
+                            <font>Mein Kind bearbeiten</font>
+                        </li>
                     </ol>
                     <div class="row">
                         <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
                             <div class="row dash_element_holder">
                                 <div class="dash_element col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <h4>Sind sie sich sicher, dass sie ihren Account vollständig und unwiderruflich löschen möchten?</h4>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                        <div class="form-group" data-pg-collapsed>
-                                            <b>Vorname</b>
-                                            <br>
-                                            <input type="text" class="form-control" id="formInput154" placeholder="Max" disabled="disabled">
+                                    <h4>Daten des Kindes</h4>
+                                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6" data-pg-collapsed>
+                                        <div class="form-group" data-pg-collapsed> 
+                                            <label class="control-label" for="formInput126">Vorname</label>
+                                            <input type="text" class="form-control" id="formInput126" placeholder="Max">
                                         </div>
                                         <div class="form-group" data-pg-collapsed> 
-                                            <label class="control-label" for="formInput166">Nachname</label>
-                                            <input type="text" class="form-control" id="formInput166" placeholder="Mustermann" disabled="disabled">
+                                            <label class="control-label" for="formInput136">Schule</label>
+                                            <input type="text" class="form-control" id="formInput136" placeholder="Röntgen-Gymnasium">
                                         </div>                                         
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6 text-right last_element_dash div_buttons button_3">
-                                        <button class="button_paulo button_paulo_3" name="abbrechen">Abbrechen</button>
-                                        <button class="button_paulo" name="abbrechen">Löschen</button>                                         
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <div class="form-group" data-pg-collapsed> 
+                                            <label class="control-label" for="formInput154">Nachname</label>
+                                            <input type="text" class="form-control" id="formInput154" placeholder="Mustermann">
+                                        </div>
+                                        <div class="form-group" data-pg-collapsed> 
+                                            <label class="control-label" for="formInput166">Klasse</label>
+                                            <input type="text" class="form-control" id="formInput166" placeholder="2 a">
+                                        </div>                                         
+                                    </div>
+                                    <div class="div_buttons col-sm-6 col-xs-6 last_element_dash col-md-12 col-lg-12 text-right">
+                                        <button class="button_paulo btn_default button_paulo_3" name="abbrechen">Abbrechen</button>
+                                        <button class="button_paulo btn_default" name="abbrechen">Speichern</button>                                         
                                     </div>
                                 </div>
                             </div>
@@ -73,13 +76,8 @@
                 </div>                 
             </div>
         </div>         
-        <div class="row" id="footer"></div>
         <!-- Ende des Dokumentes -->         
-        <script>
-	        $("#header").load("header.html", function(){
-	        	setNav(2);
-	        });
-        </script>         
+        <script src="js/jquery.js"></script>         
         <script src="js/bootstrap.js"></script>         
         <script src="js/functions.js"></script>         
     </body>     
