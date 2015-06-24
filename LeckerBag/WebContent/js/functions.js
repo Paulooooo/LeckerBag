@@ -224,12 +224,12 @@ var iconURLPrefix = 'http://maps.google.com/mapfiles/ms/icons/';
 
 var icons = [
 	iconURLPrefix + 'red-dot.png',
-	iconURLPrefix + 'green-dot.png',
+	/*iconURLPrefix + 'green-dot.png',
 	iconURLPrefix + 'blue-dot.png',
 	iconURLPrefix + 'orange-dot.png',
 	iconURLPrefix + 'purple-dot.png',
 	iconURLPrefix + 'pink-dot.png',      
-	iconURLPrefix + 'yellow-dot.png'
+	iconURLPrefix + 'yellow-dot.png'*/
 ];
 var iconsLength = icons.length;
 
@@ -353,5 +353,4 @@ var removeBagProdukt = function () {
 $('#favorites_carousel').carousel({
 	interval: 500
 });
-
 

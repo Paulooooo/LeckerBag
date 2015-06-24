@@ -30,12 +30,12 @@
     <div class="row">
         <div class="col-md-12">
             <div class="container wrapper">
-                <div class="row" data-pg-collapsed>
+                <div class="row">
                     <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10" data-pg-collapsed>
                         <h3>Bestellung</h3>
                         <p>Erstelle deine LeckerBags</p> 
                     </div>
-                    <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2" data-pg-collapsed>
+                    <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2">
                         <a href="#" class=""><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
                         <br/>
                         <a>benötigen Sie Hilfe?</a>
@@ -72,7 +72,7 @@
                                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right"> 
                                         <p>Sie müssen noch <strong><font id="daysRemaining">30</font></strong><strong> / 30</strong> Tagen konfigurieren</p> 
                                     </div>
-                                    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 dash_element dash_element_ext_bestellung_s2" data-pg-collapsed>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 dash_element dash_element_ext_bestellung_s2">
                                         <div class="row">
                                             <div class="ol-md-12 col-sm-12 col-xs-12 col-lg-12">
                                                 <p class="control-label" for="formInput43">Wähle einen Tag aus</p>
@@ -84,10 +84,37 @@
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 dash_element" id="bestellung_s2_bagbefuellen" style="display:block">
                                         <div class="row">
-                                            <div class="ol-md-12 col-sm-12 col-xs-12 col-lg-12 col-md-12">
+                                            <div class="ol-md-12 col-sm-12 col-xs-12 col-lg-12 col-md-12" data-pg-collapsed>
                                                 <p class="control-label" for="formInput43">Befülle Deine Bag</p>
                                             </div>
-                                            <div class="ol-md-12 col-md-6 col-lg-6 col-xs-12 col-sm-12" data-pg-collapsed>
+                                            <div class="ol-md-12 col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right">
+                                                        <i class="fa fa-circle fa-2x ampel" id="ampel_1" data-toggle="popover" data-trigger="click"></i>
+                                                        <i class="fa fa-2x fa-circle ampel" id="ampel_2" data-toggle="popover" data-trigger="click"></i>
+                                                        <i class="fa fa-2x fa-circle ampel" id="ampel_3" style="margin-right:20px" data-toggle="popover" data-trigger="click"></i> 
+                                                    </div>
+                                                    <div id="popover_content_wrapper" style="display: none">
+														<table class="table" id ="table_naehrwerte">
+														  <thead>
+														    <tr>
+														      <th>kcal</th>
+														      <th>Fett</th>
+														      <th>Eiweiß</th>
+														      <th>Kohlenhydrate</th>
+														    </tr>
+														  </thead>
+														  <tbody>
+														    <tr>
+														      <td>115</td>
+														      <td>25g</td>
+														      <td>15g</td>
+														      <td>45g</td>
+														    </tr>
+														  </tbody>
+														</table>
+	                                                </div>
+                                                </div>
                                                 <div id="mySortableLayout">
                                                     <div class="bestellung_bag">
                                                         <div class="portlet" id="portlet_default">
@@ -279,6 +306,42 @@
 	        		}, false);
 	        	}
 	        });  
+	        //TODO: Popover momentan redundand aber egal
+	        var setTrafficLight = function(light){
+	        	if(light === 1){
+	        		document.getElementById("ampel_1").style.color = '#00bd00';
+	        		document.getElementById("ampel_2").style.color = '#eeeeee';
+	        		document.getElementById("ampel_3").style.color = '#eeeeee';
+	        		$("#ampel_1").popover({ placement : 'top', html: true, title: unescape('N%E4hrwerttabelle'), content: function (){ return $('#popover_content_wrapper').html();}});
+	        		$("#ampel_2").popover({ placement : 'top', html: true, title: unescape('N%E4hrwerttabelle'), content: function (){ return $('#popover_content_wrapper').html();}});
+	        		$("#ampel_3").popover({ placement : 'top', html: true, title: unescape('N%E4hrwerttabelle'), content: function (){ return $('#popover_content_wrapper').html();}});
+	        		$("#ampel_1").popover('enable');
+	        		$("#ampel_3").popover('disable');
+	        		$("#ampel_2").popover('disable');
+	        	}
+	        	else if(light === 2){
+	        		document.getElementById("ampel_2").style.color = '#ffff00';
+	        		document.getElementById("ampel_1").style.color = '#eeeeee';
+	        		document.getElementById("ampel_3").style.color = '#eeeeee';
+	        		$("#ampel_1").popover({ placement : 'top', html: true, title: unescape('N%E4hrwerttabelle'), content: function (){ return $('#popover_content_wrapper').html();}});
+	        		$("#ampel_2").popover({ placement : 'top', html: true, title: unescape('N%E4hrwerttabelle'), content: function (){ return $('#popover_content_wrapper').html();}});
+	        		$("#ampel_3").popover({ placement : 'top', html: true, title: unescape('N%E4hrwerttabelle'), content: function (){ return $('#popover_content_wrapper').html();}});
+	        		$("#ampel_2").popover('enable');
+	        		$("#ampel_1").popover('disable');
+	        		$("#ampel_3").popover('disable');
+	        	}
+	        	else{
+	        		document.getElementById("ampel_3").style.color = '#d10000';
+	        		document.getElementById("ampel_2").style.color = '#eeeeee';
+	        		document.getElementById("ampel_1").style.color = '#eeeeee';
+	        		$("#ampel_1").popover({ placement : 'top', html: true, title: unescape('N%E4hrwerttabelle'), content: function (){ return $('#popover_content_wrapper').html();}});
+	        		$("#ampel_2").popover({ placement : 'top', html: true, title: unescape('N%E4hrwerttabelle'), content: function (){ return $('#popover_content_wrapper').html();}});
+	        		$("#ampel_3").popover({ placement : 'top', html: true, title: unescape('N%E4hrwerttabelle'), content: function (){ return $('#popover_content_wrapper').html();}});
+	        		$("#ampel_3").popover('enable');
+	        		$("#ampel_1").popover('disable');
+	        		$("#ampel_2").popover('disable');
+	        	}
+	        };
     </script>
     <script>
         		YUI().use(
@@ -362,12 +425,13 @@
     			    portletList.on(
     			      'drag:end',
     			      function(event) {
+    			    	setTrafficLight(Math.floor(Math.random() * (4 - 1 + 1)) + 1);
     			        var newPortlet = Y.Node.create('<div class="portlet ' + color + '">'+name+'</div><div class="portlet_delete" role="button" onclick=""><i class="fa fa-trash-o fa-lg"></i></div>');
     			        var dropConfig = {
     			          bubbleTargets: this,
     			          useShim: false
     			        };
-
+							
     			        if (portletList.appendNode && portletList.appendNode.inDoc()) {
     			          portletList.appendNode.replace(newPortlet);
     			          var livePortlet = Y.one('.' + color);
@@ -375,6 +439,7 @@
     			          livePortlet.drop.set('groups', ['portal-layout']);
     			        }
     			      }
+    			      
     			    );
     			  }
     	);

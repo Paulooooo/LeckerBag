@@ -147,7 +147,7 @@ label
 
 #logo
 {
-    background: url(../pics/bg_logo.png) no-repeat center center fixed;
+    background: url(../pics/bg_logo.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -466,7 +466,7 @@ label
 
 #startseite_c2
 {
-    background: url(../pics/startseite_1.png) no-repeat center center;
+    background: url(../pics/startseite_1.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -619,6 +619,20 @@ label
 {
     height: 400px;
 }
+.schulen_element
+{
+    height: 100%;
+}
+.schulen_map
+{
+    padding-top: 25px;
+    width: 100%;
+}
+#schulen_map{
+	margin: 0 auto;
+}
+
+
 
 .btn_editprofil
 {
@@ -669,7 +683,12 @@ label
 /* --- FOOTER - ENDE---  */
 
 /* --- Bestellung - START ---*/
-
+.popover-content{
+	padding: 0px;
+}
+#table_naehrwerte{
+	text-align: center;
+}
 .breadcrumb
 {
     background-color: #EEE !important;
@@ -792,14 +811,19 @@ label
 
 .bestellung_bag
 {
-    margin-top: 41px;
+    margin-top: 0px;
     background-color: #F7F7F7;
     border: 1px solid #EEE;
     height: 300px;
     overflow-x: hidden;
     overflow-y: scroll;
 }
-
+.ampel{
+	margin-top: 10px !important;
+	margin-bottom: 5px !important;
+	cursor: pointer;
+	color:#eee;
+}
 .sidebar
 {
     background-color: #F7F7F7;
