@@ -86,16 +86,13 @@ function checkSchool(a){
 };
 
 function school_get_checked(){
-
 	if(this.value === "1"){
 		infowindow.setContent(locations_schulen[0][0]);
 		infowindow.open(map, markers[0]);
-		console.log("1");
 	}
 	else if(this.value === "2"){
 		infowindow.setContent(locations_schulen[1][0]);
 		infowindow.open(map, markers[1]);
-		console.log("2");
 	}
 	else {
 		infowindow.setContent(locations_schulen[2][0]);
