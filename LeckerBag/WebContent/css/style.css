@@ -772,12 +772,7 @@ label
 
 .bestellung_td_selected
 {
-    background-color: #f4e5c5;
-}
-
-.bestellung_td_done
-{
-    background-color: #6c7f2c !important;
+    background-color: #eee;
 }
 
 #bestellung_favorites
@@ -1165,4 +1160,26 @@ label
     border: solid 2px #ce7822;
     border-radius: 4px;
     background-color: #ddd;
+}
+.check_circle_green{
+	color: #6c7f2c;
+}
+.dash_element_ext_bestellung_s2 td{
+	text-align:center;
+}
+.scheduler-view-table-row {
+	overflow: visible !important;
+}
+.popover-title {
+	text-align:center;
+}
+.scheduler-view-table-row-container{
+	overflow: visible !important;
+}
+.scheduler-view-noscroll {
+	overflow: visible !important;
+}
+.popover_baginhalt{
+	padding: 5px;
+	border-bottom: solid 1px #eee;
 }

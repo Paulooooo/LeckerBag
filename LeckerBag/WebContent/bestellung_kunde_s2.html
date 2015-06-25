@@ -87,33 +87,33 @@
                                             <div class="ol-md-12 col-sm-12 col-xs-12 col-lg-12 col-md-12" data-pg-collapsed>
                                                 <p class="control-label" for="formInput43">Befülle Deine Bag</p>
                                             </div>
-                                            <div class="ol-md-12 col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                                            <div class="ol-md-12 col-md-6 col-lg-6 col-xs-12 col-sm-12" data-pg-collapsed>
                                                 <div class="row">
                                                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right">
-                                                        <i class="fa fa-circle fa-2x ampel" id="ampel_1" data-toggle="popover" data-trigger="click"></i>
-                                                        <i class="fa fa-2x fa-circle ampel" id="ampel_2" data-toggle="popover" data-trigger="click"></i>
-                                                        <i class="fa fa-2x fa-circle ampel" id="ampel_3" style="margin-right:20px" data-toggle="popover" data-trigger="click"></i> 
+                                                        <i class="fa fa-circle fa-2x ampel" id="ampel_1" data-toggle="popover" data-trigger="hover"></i>
+                                                        <i class="fa fa-2x fa-circle ampel" id="ampel_2" data-toggle="popover" data-trigger="hover"></i>
+                                                        <i class="fa fa-2x fa-circle ampel" id="ampel_3" style="margin-right:20px" data-toggle="popover" data-trigger="hover"></i> 
                                                     </div>
                                                     <div id="popover_content_wrapper" style="display: none">
-														<table class="table" id ="table_naehrwerte">
-														  <thead>
-														    <tr>
-														      <th>kcal</th>
-														      <th>Fett</th>
-														      <th>Eiweiß</th>
-														      <th>Kohlenhydrate</th>
-														    </tr>
-														  </thead>
-														  <tbody>
-														    <tr>
-														      <td>115</td>
-														      <td>25g</td>
-														      <td>15g</td>
-														      <td>45g</td>
-														    </tr>
-														  </tbody>
-														</table>
-	                                                </div>
+                                                        <table class="table" id="table_naehrwerte">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>kcal</th>
+                                                                    <th>Fett</th>
+                                                                    <th>Eiweiß</th>
+                                                                    <th>Kohlenhydrate</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>115</td>
+                                                                    <td>25g</td>
+                                                                    <td>15g</td>
+                                                                    <td>45g</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                                 <div id="mySortableLayout">
                                                     <div class="bestellung_bag">
@@ -173,10 +173,11 @@
                                                     </div>
                                                 </div>                                                 
                                             </div>
-                                            <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6 bestellung_favorite_optionen" data-pg-collapsed>
+                                            <div class="row pg-empty-placeholder"></div>
+                                            <div class="col-xs-6 bestellung_favorite_optionen col-sm-6 col-md-6 col-lg-6" data-pg-collapsed>
                                                 <p data-pg-collapsed> <input class="control-label" type="checkbox" value="">                                                                                                                             		   Bag als Favorite abspeichern       </p> 
                                             </div>
-                                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-right bestellung_favorite_optionen" data-pg-collapsed>
+                                            <div class="col-sm-6 col-xs-6 text-right bestellung_favorite_optionen col-md-6 col-lg-6" data-pg-collapsed>
                                                 <button type="button" class="btn btn-default button_paulo" onclick="saveDate(false)">Speichern</button>                                                 
                                             </div>
                                         </div>
@@ -301,8 +302,12 @@
 	        		eventRecorder[i].addEventListener('click', function(){
 	        			var id = $(this).attr("id");
 	        			var element = document.getElementById(id);
-	        			element.className = element.className+" bestellung_td_selected";
-	        			document.getElementById("bestellung_s2_bagbefuellen").style = "display:block";
+	        			if (element.classList.contains('bestellung_td_selected') ){
+	        				element.classList.remove('bestellung_td_selected');
+	        			}
+	        			else{
+	        				element.className = element.className+" bestellung_td_selected";
+	        			}
 	        		}, false);
 	        	}
 	        });  
@@ -426,7 +431,7 @@
     			      'drag:end',
     			      function(event) {
     			    	setTrafficLight(Math.floor(Math.random() * (4 - 1 + 1)) + 1);
-    			        var newPortlet = Y.Node.create('<div class="portlet ' + color + '">'+name+'</div><div class="portlet_delete" role="button" onclick=""><i class="fa fa-trash-o fa-lg"></i></div>');
+    			        var newPortlet = Y.Node.create('<div class="bag_item_holder"><div class="portlet ' + color + '">'+name+'</div><div class="portlet_delete" role="button" onclick="remove_bag_item(this)"><i class="fa fa-trash-o fa-lg"></i></div></div>');
     			        var dropConfig = {
     			          bubbleTargets: this,
     			          useShim: false
