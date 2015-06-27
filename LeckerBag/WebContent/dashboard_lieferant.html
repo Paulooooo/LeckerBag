@@ -469,10 +469,10 @@ Ich kann über Müllerbäck nichts schlechtes berichten.
     		    var columns = ['Kind', 'Baginhalt', 'Lieferdatum', 'Schule', 'Zusatzinformation'];
 
     		    var data = [
-    		      {Kind: 'Arnold Mustermann', Baginhalt: 'Weizenbrötchen mit Salami, Banane, Apfelschorle', Lieferdatum: '01.09.15', Schule: 'Röntgen Gymnasium', Zusatzinformation: '-'},
+    		      {Kind: 'Arnold Mustermann', Baginhalt: 'Weizenbrötchen mit Salami, Banane, Apfelschorle', Lieferdatum: '01.09.15', Schule: 'Röntgen Gymnasium', Zusatzinformation: 'storniert'},
     		      {Kind: 'Carl Christophson', Baginhalt: 'Volkornbrot mit Ei, Apfel, stilles Wasser', Lieferdatum: '01.09.15', Schule: 'Röntgen Gymnasium', Zusatzinformation: 'Klasse 2b'},
-    		      {Kind: 'Frank Blumengarten', Baginhalt: 'Volkornbrötchen mit Putenaufschnitt, Banane, Milch', Lieferdatum: '01.09.15', Schule: 'Röntgen Gymnasium', Zusatzinformation: 'Klasse 3a'},
-    		      {Kind: 'Mike Meckelmann', Baginhalt: 'Weizenbrötchen mit Salami, Apfel, stilles Wasser', Lieferdatum: '01.09.15', Schule: 'Röntgen Gymnasium', Zusatzinformation: 'Klasse 3a'},
+    		      {Kind: 'Frank Blumengarten', Baginhalt: 'Volkornbrötchen mit Putenaufschnitt, Banane, Milch', Lieferdatum: '01.09.15', Schule: 'Röntgen Gymnasium', Zusatzinformation: 'storniert'},
+    		      {Kind: 'Mike Meckelmann', Baginhalt: 'Weizenbrötchen mit Salami, Apfel, Nektarine, stilles Wasser', Lieferdatum: '01.09.15', Schule: 'Röntgen Gymnasium', Zusatzinformation: 'Klasse 3a'},
     		      {Kind: 'Christian Jansen', Baginhalt: 'Volkornbrot mit Schinken, Apfel, stilles Wasser', Lieferdatum: '01.09.15', Schule: 'Röntgen Gymnasium', Zusatzinformation: 'Laktoseintoleranz'}
     		    ];
 
@@ -484,6 +484,19 @@ Ich kann über Müllerbäck nichts schlechtes berichten.
     		    ).render('#dataTable_dashboard_lieferant_1');
     		  }
     		);
+    	function colorStorniert(){
+    		var elements = document.getElementsByClassName("yui3-datatable-col-Zusatzinformation");
+    		console.log(elements)
+    		for(var a=0; a<elements.length; a++){
+    			console.log(elements[a].innerHTML);
+    			if(elements[a].innerHTML === "storniert"){
+    				elements[a].parentNode.style.backgroundColor = "#a23b16";
+    				elements[a].parentNode.style.color = "#fefefe";
+    				elements[a].parentNode.style.fontWeight = "500";
+    			}
+    		}
+    	};
+
     </script>
     <script>
 		YUI().use(
@@ -509,10 +522,10 @@ Ich kann über Müllerbäck nichts schlechtes berichten.
 	YUI().use(
 	  		  'aui-datatable',
 	  		  function(Y) {
-	  		    var columns = ['Banane', 'Apfel'];
+	  		    var columns = ['Banane', 'Apfel', 'Nektarine'];
 
 	  		    var data = [
-	  		      {Banane: '2', Apfel: '3'},
+	  		      {Banane: '2', Apfel: '3', Nektarine: '1'},
 	  		    ];
 
 	  		    new Y.DataTable.Base(
@@ -546,6 +559,7 @@ Ich kann über Müllerbäck nichts schlechtes berichten.
     <script>
     	var displayDataTableDash = function (value) {
     		document.getElementById("datasHolder_dashboard_lieferant").style = 'display:block';
+    		colorStorniert();
     	};
     </script>
     <script>

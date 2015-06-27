@@ -105,7 +105,7 @@ label
 
 .navbar-default .navbar-nav > li
 {
-    width: 195px;
+    /*width: 195px;*/
     background-color: #fdfdf2;
 }
 
@@ -125,7 +125,7 @@ label
 
 .navbar
 {
-    z-index: 1;
+    z-index: 1000;
 }
 
 .navbar-toggle
@@ -139,6 +139,15 @@ label
 #navigation_bar
 {
     text-align: center;
+}
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.affix .nav_item{
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0px 1px 2px 0px rgba(221,221,221,1);
 }
 
 /* --- NAVIGATION - ENDE --- */
@@ -910,30 +919,36 @@ label
 #scheduler_dashboard_lieferant
 {
     overflow: hidden;
-    height: 700px !important;
+    margin-bottom: 50px;
 }
 
 #datasHolder_dashboard_lieferant
 {
     overflow: hidden;
-    height: 700px !important;
+    margin-bottom: 50px;
 }
 
 #datas_dashboard_lieferant
 {
-    height: 600px;
     overflow-y: scroll !important;
+    border: 1px solid #DDD;
+	height: 510px !important;
 }
-
+.scheduler-base-hd{
+	height: 48px;
+	margin-bottom: 15px;
+}
 .scheduler-view-scrollable
 {
-    height: 500px !important;
+    height: 420px !important;
 }
-
-.yui3-widget-bd
+.scheduler-view-agenda{
+	height: 509px !important;
+}
+/*.yui3-widget-bd
 {
     height: 610px !important;
-}
+}*/
 
 .scheduler-view-agenda-info-container .scheduler-view-agenda-info
 {
@@ -953,63 +968,7 @@ label
 
 /* --- Dashboard_Lieferant - ENDE --- */
 
-/* medium devices (bis 992px) */
 
-@media (max-width:992px)
-{
-    .navbar-nav > li > a
-    {
-        padding: 15px 0px;
-    }
-    .navbar-default .navbar-nav > li
-    {
-        width: 125px;
-    }
-    #footer_c
-    {
-        height: 600px;
-    }
-    #footer_c h4, #footer p
-    {
-        text-align: center;
-    }
-}
-
-/* Small devices (bis 767px) */
-
-@media (max-width:767px)
-{
-    .navbar-nav > li > a
-    {
-        padding: 15px;
-    }
-    .navbar-default .navbar-nav > li
-    {
-        min-width: 125px !important;
-    }
-    .nav_item> a
-    {
-        border-left: 0;
-        border-right: 0;
-    }
-    #nav_item_last a
-    {
-        border-left: 0;
-        border-right: 0;
-    }
-    .navbar-default .navbar-collapse, .navbar-default .navbar-form
-    {
-        border: 0;
-    }
-    #footer_c
-    {
-        height: 600px;
-    }
-    #footer_c h4, #footer p
-    {
-        text-align: center;
-    }
-}
 
 .axis text
 {
@@ -1179,7 +1138,68 @@ label
 .scheduler-view-noscroll {
 	overflow: visible !important;
 }
+.scheduler-base-content{
+	overflow: visible !important;
+}
 .popover_baginhalt{
 	padding: 5px;
 	border-bottom: solid 1px #eee;
+}
+/* medium devices (bis 992px) */
+
+@media (max-width:992px)
+{
+    .navbar-nav > li > a
+    {
+        padding: 15px 0px;
+    }
+    .navbar-default .navbar-nav > li
+    {
+        width: 125px;
+    }
+    #footer_c
+    {
+        height: 600px;
+    }
+    #footer_c h4, #footer p
+    {
+        text-align: center;
+    }
+}
+
+/* Small devices (bis 767px) */
+
+@media (max-width:767px)
+{
+	
+    .navbar-nav > li > a
+    {
+        padding: 15px;
+    }
+    .navbar-default .navbar-nav > li
+    {
+        /*min-width: 125px !important;*/
+    }
+    .nav_item> a
+    {
+        border-left: 0;
+        border-right: 0;
+    }
+    #nav_item_last a
+    {
+        border-left: 0;
+        border-right: 0;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form
+    {
+        border: 0;
+    }
+    #footer_c
+    {
+        height: 600px;
+    }
+    #footer_c h4, #footer p
+    {
+        text-align: center;
+    }
 }
