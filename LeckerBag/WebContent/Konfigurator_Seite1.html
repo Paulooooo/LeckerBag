@@ -1,0 +1,517 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8">         
+        <title>Leckerbag - Die gesunde Alternative</title>         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">         
+        <meta name="description" content="Beschreibung der Seite">         
+        <meta name="author" content="Paul Kozakiewicz">         
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">         
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">         
+        <link href="css/style.css" rel="stylesheet" type="text/css">         
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>         
+        <script> 
+			$(function(){
+		        $("#header").load("header2.html", function(){
+		        	setNav(2);
+		        });
+			  	$("#footer").load("footer.html"); 
+			});
+		</script>         
+    </head>     
+    <body> 
+        <div class="row" id="header" data-pg-collapsed></div>         
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container wrapper">
+                    <div class="row" data-pg-collapsed>
+                        <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10" data-pg-collapsed>
+                            <h3>Produktkonfigurator</h3>
+                        </div>
+                        <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2" data-pg-collapsed>
+                            <a href="#"><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
+                            <br/>
+                            <a>benötigen Sie hilfe?</a>
+                        </div>
+                    </div>
+                    <hr class="hr_line"/>
+                    <ol class="breadcrumb" data-pg-collapsed> 
+                        <li>
+                            <a href="dashboard_lieferant.html">Mein Leckerbag</a>
+                        </li>                         
+                        <li>
+                            <font>Produktkonfigurator</font>
+                        </li>                         
+                    </ol>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="dash_element col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row" data-pg-collapsed>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" data-pg-collapsed>
+                                            <h4>Rohling</h4>
+                                        </div>
+                                        <div class="text-right col-md-6 col-lg-6 col-sm-6 col-xs-6" data-pg-collapsed>
+                                            <button type="button" class="btn btn-default btn_icon btn_icon">
+                                                <i class="fa fa-check"></i>
+                                            </button>                                             
+                                        </div>
+                                    </div>
+                                    <div class="row" data-pg-collapsed>
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="margin-top:10px">
+                                            <hr class="hr_line"/>                                             
+                                        </div>
+                                    </div>
+                                    <div class="row" data-pg-collapsed>
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3" data-pg-collapsed>
+                                            <div class="row pg-empty-placeholder" data-pg-collapsed>
+                                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 konfigurator_col">
+</div>
+                                            </div>                                             
+                                        </div>
+                                        <div class="col-md-9 col-lg-9 col-sm-9 col-xs-9">
+                                            <div class="row">
+                                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                                    <div class="row pg-empty-placeholder">
+                                                        <div class="konfigurator_col col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center" data-pg-collapsed>
+                                                            <h5 class="text-center">Kalorien in Kcal</h5> 
+                                                        </div>
+                                                        <div class="konfigurator_col col-md-4 col-lg-4 col-sm-4 col-xs-4 text-center" data-pg-collapsed>
+                                                            <h5 class="text-center">Kohlenhydrate in g</h5> 
+                                                        </div>
+                                                        <div class="konfigurator_col col-md-4 col-lg-4 col-sm-4 col-xs-4 text-center" data-pg-collapsed>
+                                                            <h5 class="text-center">Eiweiß in g</h5> 
+                                                        </div>
+                                                    </div>                                                     
+                                                </div>
+                                                <div class="col-md-5 col-lg-5 col-sm-5 col-xs-5">
+                                                    <div class="row pg-empty-placeholder">
+                                                        <div class="konfigurator_col col-md-6 col-sm-6 col-xs-6 col-lg-6 text-center" data-pg-collapsed>
+                                                            <h5 class="text-center">Fett in g</h5> 
+                                                        </div>
+                                                        <div class="konfigurator_col col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center" data-pg-collapsed>
+                                                            <h5 class="text-center">Preis / Stk.</h5> 
+                                                        </div>
+                                                    </div>                                                     
+                                                </div>
+                                            </div>                                             
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 konfigurator_namenscol" data-pg-collapsed>
+                                            <div class="row pg-empty-placeholder">
+                                                <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12">
+                                                    <div class="row konfigurator_row" data-pg-collapsed>
+                                                        <label data-pg-collapsed> 
+                                                            <input class="control-label" type="checkbox" value="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Weizenbrötchen       
+                                                        </label>
+                                                    </div>
+                                                    <div class="row konfigurator_row" data-pg-collapsed>
+                                                        <label> 
+                                                            <input class="control-label" type="checkbox" value="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Vollkornbrötchen        
+                                                        </label>
+                                                    </div>
+                                                    <div class="row konfigurator_row" data-pg-collapsed>
+                                                        <label> 
+                                                            <input class="control-label" type="checkbox" value="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Sesambrötchen       
+                                                        </label>
+                                                    </div>
+                                                    <div class="row konfigurator_row" data-pg-collapsed>
+                                                        <label data-pg-collapsed> 
+                                                            <input class="control-label" type="checkbox" value="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Mohnbrötchen       
+                                                        </label>
+                                                    </div>
+                                                    <div class="row konfigurator_row" data-pg-collapsed>
+                                                        <label> 
+                                                            <input class="control-label" type="checkbox" value="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Gemischtes Brot      
+                                                        </label>
+                                                    </div>
+                                                    <div class="row konfigurator_row" data-pg-collapsed>
+                                                        <label> 
+                                                            <input class="control-label" type="checkbox" value="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Schwarzbrot      
+                                                        </label>
+                                                    </div>
+                                                    <div class="row konfigurator_row" data-pg-collapsed>
+                                                        <label>
+                                                            <input class="control-label" type="checkbox" value="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Vollkornbrot      
+                                                        </label>
+                                                    </div>                                                     
+                                                </div>
+                                            </div>                                             
+                                        </div>
+                                        <div class="col-md-9 col-lg-9 col-sm-9 col-xs-9">
+                                            <div class="row">
+                                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                                    <div class="row pg-empty-placeholder">
+                                                        <div class="konfigurator_col col-md-4 col-sm-4 col-xs-4 col-lg-4 text-center" data-pg-collapsed>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>                                                             
+                                                        </div>
+                                                        <div class="konfigurator_col col-sm-4 col-md-4 col-lg-4 col-xs-4" data-pg-collapsed>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>                                                             
+                                                        </div>
+                                                        <div class="konfigurator_col col-lg-4 col-md-4 col-sm-4 col-xs-4" data-pg-collapsed>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>                                                             
+                                                        </div>
+                                                    </div>                                                     
+                                                </div>
+                                                <div class="col-md-5 col-lg-5 col-sm-5 col-xs-5" data-pg-collapsed>
+                                                    <div class="row pg-empty-placeholder" data-pg-collapsed>
+                                                        <div class="konfigurator_col col-sm-6 col-lg-6 col-md-6 col-xs-6" data-pg-collapsed>
+                                                            <div class="row konfigurator_row">
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>                                                             
+                                                        </div>
+                                                        <div class="konfigurator_col col-md-6 col-lg-6 col-sm-6 col-xs-6" data-pg-collapsed>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>
+                                                            <div class="row konfigurator_row" data-pg-collapsed>
+                                                                <input type="text" class="form-control input-sm">
+                                                            </div>                                                             
+                                                        </div>
+                                                    </div>                                                     
+                                                </div>
+                                            </div>                                             
+                                        </div>
+                                    </div>
+                                    <div class="row" data-pg-collapsed>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 konfig_abstand" data-pg-collapsed>
+                                            <h4>Belag</h4>
+                                        </div>
+                                        <div class="text-right col-md-6 col-lg-6 col-sm-6 col-xs-6 konfig_abstand">
+                                            <button type="button" class="btn btn-default btn_icon btn_icon" onclick="location.href='profil_loeschen_kind.html'">
+                                                <i class="fa fa-check"></i>
+                                            </button>                                             
+                                        </div>
+                                    </div>
+                                    <hr class="hr_line"/>
+                                    <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1">
+</div>
+                                    <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1" data-pg-collapsed>
+                                        <h5 class="text-center">Kalorien in Kcal</h5> 
+                                    </div>
+                                    <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1" data-pg-collapsed>
+                                        <h5 class="text-center">Kohlenhydrate in g</h5> 
+                                    </div>
+                                    <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1" data-pg-collapsed>
+                                        <h5 class="text-center">Eiweiß in g</h5> 
+                                    </div>
+                                    <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1" data-pg-collapsed>
+                                        <h5 class="text-center">Fett in g</h5> 
+                                    </div>
+                                    <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1" data-pg-collapsed>
+                                        <h5 class="text-center">Preis / ?</h5> 
+                                    </div>
+                                    <div class="row" data-pg-collapsed>
+                                        <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1" data-pg-collapsed>
+                                            <label> 
+                                                <input class="control-label" type="checkbox" value="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Salami       
+                                            </label>                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1" data-pg-collapsed>
+                                            <label> 
+                                                <input class="control-label" type="checkbox" value="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Schinken       
+                                            </label>                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1" data-pg-collapsed>
+                                            <label> 
+                                                <input class="control-label" type="checkbox" value="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Putenbrust       
+                                            </label>                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1" data-pg-collapsed>
+                                            <label> 
+                                                <input class="control-label" type="checkbox" value="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Lyoner       
+                                            </label>                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1" data-pg-collapsed>
+                                            <label> 
+                                                <input class="control-label" type="checkbox" value="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Emmentaler   
+                                            </label>                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1" data-pg-collapsed>
+                                            <label> 
+                                                <input class="control-label" type="checkbox" value="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Gouda   
+                                            </label>                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1" data-pg-collapsed>
+                                            <label> 
+                                                <input class="control-label" type="checkbox" value="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Edamer   
+                                            </label>                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                        <div class="col-md-2 col-lg-2" data-pg-collapsed>
+                                            <input type="text" class="form-control input-sm" placeholder="">                                             
+                                        </div>
+                                    </div>
+                                    <div class="row" data-pg-collapsed>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 konfig_abstand" data-pg-collapsed>
+                                            <h4>Zusätzlicher Belag</h4>
+                                        </div>
+                                        <div class="text-right col-md-6 col-lg-6 col-sm-6 col-xs-6 konfig_abstand">
+                                            <button type="button" class="btn btn-default btn_icon btn_icon" onclick="location.href='profil_loeschen_kind.html'">
+                                                <i class="fa fa-check"></i>
+                                            </button>                                             
+                                        </div>
+                                    </div>
+                                    <hr class="hr_line"/>
+                                    <div class="row" data-pg-collapsed>
+                                        <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1">
+                                            <div class="checkbox" data-pg-collapsed> 
+                                                <label class="control-label"> 
+                                                    <b><input type="checkbox" value="">                                Salat<br><input type="checkbox" value="">                                Gurke<br><input type="checkbox" value="">                                Tomate<br><input type="checkbox" value="">                                Avocado<br></b>
+                                                </label>                                                 
+                                            </div>                                             
+                                        </div>
+                                    </div>
+                                    <div class="row" data-pg-collapsed>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 konfig_abstand">
+                                            <h4>Getränke</h4>
+                                        </div>
+                                        <div class="text-right col-md-6 col-lg-6 col-sm-6 col-xs-6 konfig_abstand">
+                                            <button type="button" class="btn btn-default btn_icon btn_icon" onclick="location.href='profil_loeschen_kind.html'">
+                                                <i class="fa fa-check"></i>
+                                            </button>                                             
+                                        </div>
+                                    </div>
+                                    <hr class="hr_line"/>
+                                    <div class="row" data-pg-collapsed>
+                                        <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1">
+                                            <div class="checkbox" data-pg-collapsed> 
+                                                <label class="control-label"> 
+                                                    <b><input type="checkbox" value="">                                                               Milch<br><input type="checkbox" value="">                                                                Kaba<br><input type="checkbox" value="">                                                                Wasser<br><input type="checkbox" value="">                                                                Fruchtschorle<br></b>
+                                                </label>                                                 
+                                            </div>                                             
+                                        </div>
+                                    </div>
+                                    <div class="row" data-pg-collapsed>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 konfig_abstand" data-pg-collapsed>
+                                            <h4>Obst</h4>
+                                        </div>
+                                        <div class="text-right col-md-6 col-lg-6 col-sm-6 col-xs-6 konfig_abstand">
+                                            <button type="button" class="btn btn-default btn_icon btn_icon" onclick="location.href='profil_loeschen_kind.html'">
+                                                <i class="fa fa-check"></i>
+                                            </button>                                             
+                                        </div>
+                                    </div>
+                                    <hr class="hr_line"/>
+                                    <div class="row" data-pg-collapsed>
+                                        <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1">
+                                            <div class="checkbox" data-pg-collapsed> 
+                                                <label class="control-label"> 
+                                                    <b><input type="checkbox" value="">                                                               Apfel<br><input type="checkbox" value="">                                                                Birne<br><input type="checkbox" value="">                                                                Banane<br><input type="checkbox" value="">                                                                Orange<br></b>
+                                                </label>                                                 
+                                            </div>                                             
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right" data-pg-collapsed>
+                                        <button type="button" class="btn btn-default button_paulo button_paulo_3">Abbrechen</button>
+                                        <button type="button" class="btn btn-default button_paulo" onclick="location.href='Konfigurator_Seite2.html'">Weiter</button>                                         
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </div>
+        <div class="row" id="footer" data-pg-collapsed></div>         
+        <!-- Ende des Dokumentes -->         
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>         
+        <script src="js/functions.js"></script>         
+    </body>     
+</html>

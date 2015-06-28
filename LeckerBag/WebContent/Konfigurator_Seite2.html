@@ -1,0 +1,188 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8">         
+        <title>Leckerbag - Die gesunde Alternative</title>         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">         
+        <meta name="description" content="Beschreibung der Seite">         
+        <meta name="author" content="Paul Kozakiewicz">         
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">         
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">      
+        <link href="css/style.css" rel="stylesheet" type="text/css">         
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>      
+        <script> 
+			$(function(){
+		        $("#header").load("header2.html", function(){
+		        	setNav(2);
+		        });
+			  	$("#footer").load("footer.html"); 
+			});
+		</script>           
+    </head>     
+    <body> 
+        <div class="row" id="header" data-pg-collapsed></div>         
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container wrapper">
+                    <div class="row" data-pg-collapsed>
+                        <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10" data-pg-collapsed>
+                            <h3>Produktkonfigurator</h3>
+                        </div>
+                        <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2" data-pg-collapsed>
+                            <a href="#"><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
+                            <br/>
+                            <a>benötigen Sie hilfe?</a>
+                        </div>
+                    </div>
+                    <hr class="hr_line"/>
+                    <ol class="breadcrumb" data-pg-collapsed> 
+                        <li>
+                            <a href="dashboard_lieferant.html">Mein Leckerbag</a>
+                        </li>                         
+                        <li>
+                            <a href="Konfigurator_Seite1.html">Produktkonfigurator</a>
+                        </li>                         
+                        <li>
+                            <font>Produktangebot</font>
+                        </li>                         
+                    </ol>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="dash_element col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h4>Stellen Sie aus den zuvor gewählten Produkten ihre vordefinierten Brötchen zusammen:</h4>
+                                    <hr class="hr_line"/>
+                                    <div class="row konfig_abstand konfig_abstand_unten">
+                                        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" data-pg-collapsed="">
+                                            <div class="form-group" data-pg-collapsed=""> 
+                                                <label class="control-label">Rohling</label>                                                 
+                                                <select id="" class="form-control"> 
+                                                    <option>Weizenbrötchen</option>                                                     
+                                                    <option>Vollkornnbrötchen</option>                                                     
+                                                    <option>Sesambrötchen</option>
+                                                    <option>Schwarzbrot</option>
+                                                    <option>Vollkornbrot</option>                                                     
+                                                </select>
+                                            </div>
+                                            <div class="form-group"> 
+                                                <label class="control-label">Belag 1</label>
+                                                <select id="" class="form-control"> 
+                                                    <option></option>
+                                                    <option>Salami</option>                                                     
+                                                    <option>Schinken</option>                                                     
+                                                    <option>Lyoner</option>                                                     
+                                                </select>
+                                            </div>                                             
+                                            <div class="form-group"> 
+                                                <label class="control-label">Belag 2</label>
+                                                <select id="" class="form-control"> 
+                                                    <option></option>
+                                                    <option>Emmentaler</option>                                                     
+                                                    <option>Gouda</option>                                                     
+                                                    <option>Edamer</option>                                                     
+                                                </select>
+                                            </div>                                             
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-pg-collapsed="">
+                                            <div class="form-group"> 
+                                                <label class="control-label">Zusätzlicher Belag 1</label>
+                                                <select id="" class="form-control"> 
+                                                    <option></option>
+                                                    <option>Salat</option>                                                     
+                                                    <option>Gurke</option>                                                     
+                                                    <option>Tomate</option>                                                     
+                                                </select>
+                                            </div>                                             
+                                            <div class="form-group"> 
+                                                <label class="control-label">Zusätzlicher Belag 2</label>
+                                                <select id="" class="form-control"> 
+                                                    <option></option>
+                                                    <option>Salat</option>                                                     
+                                                    <option>Gurke</option>                                                     
+                                                    <option>Tomate</option>                                                     
+                                                </select>
+                                            </div>
+                                            <div class="form-group"> 
+                                                <label class="control-label">Zusätzlicher Belag 3</label>
+                                                <select id="" class="form-control"> 
+                                                    <option></option>
+                                                    <option>Salat</option>                                                     
+                                                    <option>Gurke</option>                                                     
+                                                    <option>Tomate</option>                                                     
+                                                </select>
+                                            </div>                                             
+                                        </div>
+                                        <div class="col-md-12 col-lg-12 col-sm-6 col-xs-6 text-right" data-pg-collapsed> 
+                                            <button type="button" class="btn btn-default btn_icon btn_icon" data-pg-collapsed>
+                                                <i class="glyphicon glyphicon-check"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <h4>Ihre Auswahl:</h4>
+                                    <hr class="hr_line"/>
+                                    <div class="row konfig_abstand">
+                                        <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6 list_scroll">
+                                            <ul class="list-group" data-pg-collapsed> 
+                                                <li class="list-group-item" data-pg-collapsed="">
+                                                    <label data-pg-collapsed=""> 
+                                                        <input class="control-label" type="checkbox" value="">                                                         
+                                                    </label>                                                     
+                                                    Weizenbrötchen / Schinken / Gouda / Tomate             
+                                                    <b>Kosten:</b> 2,49 € 
+                                                </li>
+                                                <li class="list-group-item" data-pg-collapsed="">
+                                                    <label> 
+                                                        <input class="control-label" type="checkbox" checked="checked">                                                         
+                                                    </label>                                                     
+                                                    Vollkornbrötchen / Salami / Emmentaler                              
+                                                    <b>Kosten:</b> 2,00 € 
+                                                </li>                                                 
+                                                <li class="list-group-item" data-pg-collapsed="">
+                                                    <label data-pg-collapsed=""> 
+                                                        <input class="control-label" type="checkbox" value="">                                                         
+                                                    </label>                                                     
+                                                    Sesambrötchen / Lyoner / Salat
+                                                    <b>Kosten:</b> 1,89 €                            
+                                                </li>
+                                                <li class="list-group-item" data-pg-collapsed="">
+                                                    <label data-pg-collapsed=""> 
+                                                        <input class="control-label" type="checkbox" checked="checked">                                                         
+                                                    </label>                                                     
+                                                    Vollkornbrot / Schinken / Edamer / Tomate
+                                                    <b>Kosten:</b> 2,09 €  
+                                                </li>
+                                                <li class="list-group-item" data-pg-collapsed="">
+                                                    <label data-pg-collapsed=""> 
+                                                        <input class="control-label" type="checkbox" checked="checked">                                                         
+                                                    </label>                                                     
+                                                    Schwarzbrot / Salami / Emmentaler / Salat
+                                                    <b>Kosten:</b> 2,19 € 
+                                                </li>
+                                                <li class="list-group-item" data-pg-collapsed="">
+                                                    <label data-pg-collapsed=""> 
+                                                        <input class="control-label" type="checkbox" checked="checked">                                                         
+                                                    </label>                                                     
+                                                    Weizenbrötchen / Lyoner / Gouda / Tomate
+                                                    <b>Kosten:</b> 2,49 €  
+                                                </li>                                                 
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right" data-pg-collapsed>
+                                        <button type="button" class="btn btn-default button_paulo button_paulo_3">Abbrechen</button>
+                                        <button type="button" class="btn btn-default button_paulo" onclick="location.href='mein_profil_lieferant.html'">Fertig</button>                                         
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </div>
+        <div class="row" id="footer" data-pg-collapsed></div>         
+        <!-- Ende des Dokumentes -->         
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>   
+        <script src="js/functions.js"></script>         
+    </body>     
+</html>

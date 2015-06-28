@@ -1145,6 +1145,36 @@ label
 	padding: 5px;
 	border-bottom: solid 1px #eee;
 }
+.btn_add_abo_rot
+{
+    background: #A23B16;
+}
+
+.konfig_abstand
+{
+    margin-top: 25px;
+}
+
+.konfig_abstand_unten
+{
+    margin-bottom: 25px;
+}
+
+.konfigurator_row{
+	height: 30px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	line-height: 30px;
+}
+.konfigurator_col{
+	padding: 0 8px !important;
+}
+.konfigurator_namenscol{
+	padding-left:45px;
+}
+
+
+
 /* medium devices (bis 992px) */
 
 @media (max-width:992px)
@@ -1165,13 +1195,30 @@ label
     {
         text-align: center;
     }
+    .konfigurator_row{
+		height: 30px !important;
+		margin-bottom: 5px;
+		margin-right: 5px;
+		line-height: 30px !important;
+	}
+	.konfigurator_col{
+		padding: 0 8px !important;
+	}
+	.konfigurator_namenscol{
+		padding-left:25px;
+	}
+	.konfigurator_col h5{
+		font-size: 12px;
+	}
+	.konfigurator_namenscol label{
+		font-size: 12px;
+	}
 }
 
 /* Small devices (bis 767px) */
 
 @media (max-width:767px)
 {
-	
     .navbar-nav > li > a
     {
         padding: 15px;
@@ -1202,4 +1249,23 @@ label
     {
         text-align: center;
     }
+    .konfigurator_row{
+		height: 60px !important;
+		margin-bottom: 5px;
+		margin-right: 5px;
+		line-height: 15px !important;
+	}
+	.konfigurator_col{
+		padding: 0 8px !important;
+	}
+	.konfigurator_namenscol{
+		padding-left:25px;
+	}
+	.konfigurator_col h5{
+		font-size: 12px;
+	}
+	.konfigurator_namenscol label{
+		padding-top: 10px;
+		font-size: 12px;
+	}
 }
