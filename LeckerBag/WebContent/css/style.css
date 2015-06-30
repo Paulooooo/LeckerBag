@@ -911,6 +911,12 @@ label
 
 /* --- Dashboard_Lieferant - START --- */
 
+#datas_dashboard_lieferant thead{
+	background-color: rgb(238, 238, 238);
+}
+.dash_element_ext_meine_details{
+	min-height: 110px !important;
+}
 .option_dashboard_lieferant_1
 {
     margin-bottom: 15px;
@@ -1171,6 +1177,42 @@ label
 }
 .konfigurator_namenscol{
 	padding-left:45px;
+}
+
+
+.drop_storno
+{
+    border-radius: 4px;
+    /*background-color: #EEE;*/
+    background-color: #5b586b;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.tab_einkauf
+{
+    background-color: #EEE;
+    font-style: normal;
+    font-weight: 500 !important;
+}
+
+.bestellung_alle_date
+{
+    background-color: #6c7f2c;
+    border-radius: 4px;
+    /*background-color: #EEE;*/
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*font-weight: 500 !important;*/
+    font-weight: bold;
+}
+
+.kennzahlen_format
+{
+    font-weight: bolder;
+    font-style: normal;
+    color: #6c7f2c;
 }
 
 

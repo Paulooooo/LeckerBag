@@ -1,0 +1,180 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8">         
+        <title>Leckerbag - Die gesunde Alternative</title>         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">         
+        <meta name="description" content="Beschreibung der Seite">         
+        <meta name="author" content="Paul Kozakiewicz">         
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">         
+        <link href="css/bootstrap.css" rel="stylesheet">         
+        <link href="css/style.css" rel="stylesheet" type="text/css">         
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <script src="js/jquery.js"></script>         
+        <script> 
+			$(function(){
+			  $("#header").load("header2.html"); 
+			  $("#footer").load("footer.html"); 
+			});
+		</script>         
+    </head>     
+    <body> 
+        <div class="row" id="header"></div>         
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container wrapper">
+                    <div class="row">
+                        <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10">
+                            <h3>Meine Kundenguthaben</h3> 
+                            <p>Hier können Sie alle bestehenden Kundenguthaben einsehen</p>
+                        </div>
+                        <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2">
+                            <a href="#"><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
+                            <br>
+                            <a id="help_text">benötigen Sie hilfe?</a>
+                        </div>
+                    </div>
+                    <hr class="hr_line">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="dashboard_lieferant.html">Mein Leckerbag</a>
+                        </li>                         
+                        <li>&nbsp;Alle Kundenguthaben &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>                         
+                    </ol>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-sm-12 col-xs-12 dash_element_col border_grey col-md-12 col-lg-12" style="height: 550px; margin-bottom:10px">
+                                    <div class="row dash_element_holder" style="margin-bottom: 15px; margin-top:5px">
+                                        <div class="col-md-10 col-lg-10 col-sm-10 col-xs-10"> 
+                                            <h4>Alle Kundenguthaben</h4>
+                                        </div>
+                                        <div class="col-md-2 text-right col-xs-2 col-sm-2 col-lg-2">
+                                            <button type="button" class="btn btn-default btn_icon btn_icon">
+                                                <i class="glyphicon glyphicon-print"></i>
+                                            </button>                                             
+                                        </div>
+                                    </div>
+                                    <div class="row dash_element_holder drop_storno" style="margin-left:28px; Margin-right:28px">
+                                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                                            <h5>Guthaben sortieren nach:</h5> 
+                                            <select class="form-control" data-pg-name="Dropdown: Geschlecht">
+                                                <option>Kunde</option>
+                                                <option>Letzte Transaktion</option>
+                                                <option>Schule</option>                                                 
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                                            <h5>Beträge sortieren:</h5>
+                                            <select class="form-control" data-pg-name="Dropdown: Geschlecht">
+                                                <option>Aufsteigend </option>
+                                                <option>Absteigend</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row dash_element_holder" style="margin-bottom: 15px; margin-top:5px">
+</div>
+                                    <div class="row dash_element_holder" style="margin-bottom: 15px; margin-top:5px">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" id="dashboard_stornierung_tb" style="height: 375px; float: left; overflow-y: scroll">
+                                            <div class="row" data-pg-collapsed="">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <h4 class="bestellung_alle_date text-center">Grundschule Süd</h4>
+                                                </div>
+                                            </div>
+                                            <div class="row" data-pg-collapsed="">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <table class="table">
+                                                        <thead class="hidden-xs hidden-sm" data-pg-collapsed=""> 
+                                                            <tr data-pg-collapsed=""> 
+                                                                <th>Kunde&nbsp;</th>                                                                 
+                                                                <th>Guthaben</th>                                                                 
+                                                                <th>Letzte Transaktion</th>                                                                 
+                                                            </tr>                                                             
+                                                        </thead>                                                         
+                                                        <tbody data-pg-collapsed=""> 
+                                                            <tr> 
+                                                                <td>Max Musterman</td>                                                                 
+                                                                <td>08,30€</td>                                                                 
+                                                                <td>19.06.2015</td>                                                                 
+                                                            </tr>
+                                                            <tr> 
+                                                                <td>Max Musterman</td>                                                                 
+                                                                <td>08,30€</td>                                                                 
+                                                                <td>19.06.2015</td>                                                                 
+                                                            </tr>
+                                                            <tr> 
+                                                                <td>Max Musterman</td>                                                                 
+                                                                <td>08,30€</td>                                                                 
+                                                                <td>19.06.2015</td>                                                                 
+                                                            </tr>
+                                                            <tr> 
+                                                                <td>Max Musterman</td>                                                                 
+                                                                <td>08,30€</td>                                                                 
+                                                                <td>19.06.2015</td>                                                                 
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>                                                     
+                                                </div>
+                                            </div>
+                                            <div class="row" data-pg-collapsed="">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <h4 class="bestellung_alle_date text-center">Röntgen Gymnasium</h4>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <table class="table">
+                                                        <thead class="hidden-xs hidden-sm" data-pg-collapsed=""> 
+                                                            <tr data-pg-collapsed=""> 
+                                                                <th>Kunde&nbsp;</th>                                                                 
+                                                                <th>Guthaben</th>                                                                 
+                                                                <th>Letzte Transaktion</th>                                                                 
+                                                            </tr>                                                             
+                                                        </thead>
+                                                        <tbody> 
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td>Bob Brown &nbsp; &nbsp; &nbsp; &nbsp;</td>                                                                 
+                                                                <td>08,30€</td>                                                                 
+                                                                <td>19.06.2015</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td>Bob Brown</td>                                                                 
+                                                                <td>08,30€</td>                                                                 
+                                                                <td>19.06.2015</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td>Bob Brown</td>                                                                 
+                                                                <td>08,30€</td>                                                                 
+                                                                <td>19.06.2015</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td>Bob Brown</td>                                                                 
+                                                                <td>08,30€</td>                                                                 
+                                                                <td>19.06.2015</td>                                                                 
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>                                                     
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </div>         
+        <div class="row" id="footer"></div>         
+        <!-- Ende des Dokumentes -->         
+        <script>
+	        $("#header").load("header.html", function(){
+	        	setNav(2);
+	        });
+        </script>         
+        <!-- Ende des Dokumentes -->         
+        <script src="js/jquery.js"></script>         
+        <script src="js/bootstrap.js"></script>         
+        <script src="js/functions.js"></script>         
+    </body>     
+</html>

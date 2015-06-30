@@ -1,0 +1,1173 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8">         
+        <title>Leckerbag - Die gesunde Alternative</title>         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">         
+        <meta name="description" content="Beschreibung der Seite">         
+        <meta name="author" content="Paul Kozakiewicz">         
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">         
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">         
+        <link href="css/style.css" rel="stylesheet" type="text/css">         
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>      
+        <script src="js/jquery.js"></script>         
+        <script> 
+			$(function(){
+		        $("#header").load("header2.html", function(){
+		        	setNav(2);
+		        	var eventRecorder_meine_details = document.getElementById("meine_details_bestellungen");
+		        	eventRecorder_meine_details.addEventListener('click', function(){
+		        		var selectedItem = eventRecorder_meine_details.options[eventRecorder_meine_details.selectedIndex].value;
+		        		showHide_bestellLieferant(selectedItem);
+		        	});
+		        });
+			  	$("#footer").load("footer.html"); 
+			});
+			var showHide_bestellLieferant = function(item){
+				 if(item === "1"){
+					 document.getElementById("belegte_broetchen").style.display = "";
+					 document.getElementById("leckerbags").style.display = "none";
+				 }
+				 if(item === "2"){
+					 document.getElementById("belegte_broetchen").style.display = "none";
+					 document.getElementById("leckerbags").style.display = "";
+				 }
+			};
+		</script>           
+    </head>     
+    <body> 
+        <div class="row" id="header" data-pg-collapsed></div>         
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container wrapper">
+                    <div class="row" data-pg-collapsed>
+                        <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10">
+                            <h3>Meine Bestellungen</h3> 
+                            <p>Hier können Sie die eingegangen Bestellungen einsehen&nbsp;</p>
+                        </div>
+                        <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2">
+                            <a href="#"><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
+                            <br>
+                            <a id="help_text">benötigen Sie hilfe?</a>
+                        </div>
+                    </div>
+                    <hr class="hr_line">
+                    <ol class="breadcrumb" data-pg-collapsed>
+                        <li>
+                            <a href="dashboard_lieferant.html">Mein Leckerbag</a>
+                        </li>                         
+                        <li>&nbsp;Meine Bestellungen &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>                         
+                    </ol>
+                    <div class="row drop_storno" style="margin-bottom:10px; margin-left:1px; margin-right:1px;">
+                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                            <h5><b>Zeitraum</b></h5> 
+                            <select class="form-control" data-pg-name="Dropdown: Geschlecht">
+                                <option>Heute</option>
+                                <option class="pg-empty-placeholder">Morgen</option>
+                                <option>Diese Woche</option>
+                                <option>Diesen Monat</option>
+                                <option>Nächste Woche</option>
+                                <option class="pg-empty-placeholder">Nächsten Monat</option>
+                                <option>Letzten Monat</option>
+                                <option>Letzte Woche</option>                                 
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                            <h5>Schule</h5>
+                            <select class="form-control" data-pg-name="Dropdown: Geschlecht">
+                                <option>Alle Schulen</option>
+                                <option>Röntgen Gymnasium</option>
+                                <option class="pg-empty-placeholder">Grundschule Süd</option>
+                                <option>Hans-August Gesamtschule</option>                                 
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 10px; margin-right: 1px">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-lg-4 col-md-4">
+                            <div class="row dash_element_holder">
+                                <div class="col-md-12 border_grey col-xs-12 col-sm-12 col-lg-12" style="height: 500px;">
+                                    <div class="row" style="margin-top:5px">
+                                        <div class="col-md-8 col-lg-8 col-xs-8 col-sm-8" style="margin-bottom: 15px" data-pg-collapsed="">
+                                            <h4>Aktuelle Auswahl</h4>
+                                        </div>
+                                        <div class="text-center col-md-4 col-lg-4 col-sm-4 col-xs-4">
+                                            <button type="button" class="btn btn-default btn_icon btn_icon" style="margin-right:10px">
+                                                <i class="glyphicon glyphicon-print"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top:20px">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <h5>Anzahl der Schulen:</h5>
+                                            <h2 class="text-center kennzahlen_format">3</h2>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <h5>Anzahl der Kunden:</h5>
+                                            <h2 class="text-center kennzahlen_format">35</h2>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <h5>Anzahl der Lieferungen:</h5>
+                                            <h2 class="text-center kennzahlen_format">40</h2>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <h5>Anzahlb der Bags:</h5>
+                                            <h2 class="text-center kennzahlen_format">45</h2>
+                                        </div>
+                                    </div>                                     
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 dash_element_col border_grey item_rezensionen col-md-8 col-lg-8" style="height: 500px;">
+                            <div class="row dash_element_holder" style="margin-bottom: 15px; margin-top:5px">
+                                <div class="col-md-10 col-lg-10 col-sm-8 col-xs-8"> 
+                                    <h4>Meine Zutatenliste</h4>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-4 col-xs-4 text-right">
+                                    <button type="button" class="btn btn-default btn_icon btn_icon">
+                                        <i class="glyphicon glyphicon-print"></i>
+                                    </button>                                     
+                                </div>
+                            </div>
+                            <div class="row dash_element_holder text-center" style="padding-right: 15px; ">
+                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="height: 415px; float: left; overflow-y: scroll;" data-pg-collapsed>
+                                    <table class="table" id="yui_patched_v3_18_1_1_1434358742874_382"> 
+                                        <thead> 
+                                            <tr class="tab_einkauf"> 
+                                                <th>Brötchen</th>                                                 
+                                                <th>Anzahl</th>                                                 
+                                            </tr>                                             
+                                        </thead>
+                                        <tbody> 
+                                            <tr> 
+                                                <td class="text-left">Weizenbrötchen</td>                                                 
+                                                <td class="text-left">10x</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                <td class="text-left">20x</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">Croissant
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">
+                                                    09x
+</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">Volkornbrötchen &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">19x</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Erdnuss-Sojabrötchen
+</td>                                                 
+                                                <td class="text-left">
+                                                    04x
+</td>                                                 
+                                            </tr>
+                                            <tr class="tab_einkauf">
+                                                <td class="text-left">Beläg&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">
+                                                    Anzahl
+</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Salami&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">32x</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Kochschinken&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">
+                                                    06x
+</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Käse
+</td>                                                 
+                                                <td class="text-left">12x</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Roher Schinken &nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">14x</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Erdnussbutter&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">
+                                                    05x
+</td>                                                 
+                                            </tr>
+                                            <tr class="tab_einkauf"> 
+                                                <td class="text-left">Zusätzliche Beläge
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">Anzahl</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Tomate&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">36x</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Gurke&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">40x</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Salat&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">45x</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Butter&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">23x</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Margarine&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">27x</td>                                                 
+                                            </tr>
+                                            <tr class="tab_einkauf"> 
+                                                <td class="text-left">Obst&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">Abzahl</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">Banane
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">12x</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Apfel&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">16x</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Birne&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">08x</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">&nbsp;Mandarine
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">19x</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Orange&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">11x</td>                                                 
+                                            </tr>
+                                            <tr class="tab_einkauf"> 
+                                                <td class="text-left">Getränke&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">Anzahl</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Wasser(spritzig)
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">29x</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Wasser(medium)&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">19x</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Wasser(still)&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">
+                                                    03x
+</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Apfelsaftschorle&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">
+                                                    09x
+</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Multivitamsinsaft&nbsp;
+                                                    <br>
+                                                </td>                                                 
+                                                <td class="text-left">
+                                                    02x
+</td>                                                 
+                                            </tr>
+                                            <tr> 
+                                                <td class="text-left">Milch
+</td>                                                 
+                                                <td class="text-left">
+                                                    01x
+</td>                                                 
+                                            </tr>                                             
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-md-12 dash_element col-sm-12 col-xs-12 col-lg-12 dash_element_ext_meine_details">
+                                    <h4>Meine weiteren Deitails</h4>
+                                    <div class="row pg-empty-placeholder">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                            <select class="form-control" id="meine_details_bestellungen" data-pg-name="Dropdown: Geschlecht">
+                                                <option value="1">Alle belegten Brötchen</option>
+                                                <option value="2">Alle LeckerBags</option>                                                
+                                            </select>                                             
+                                        </div>
+                                    </div>                                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="belegte_broetchen" style="margin-bottom: 10px; display:">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-sm-12 col-xs-12 dash_element_col border_grey col-md-12 col-lg-12">
+                                    <div class="row dash_element_holder" style="margin-bottom: 15px; margin-top:5px">
+                                        <div class="col-md-10"> 
+                                            <h4>Alle belegten Brötchen</h4>
+                                        </div>
+                                        <div class="col-md-2 text-right">
+                                            <button type="button" class="btn btn-default btn_icon btn_icon">
+                                                <i class="glyphicon glyphicon-print"></i>
+                                            </button>                                             
+                                        </div>
+                                    </div>
+                                    <div class="row dash_element_holder text-center" style="padding-right: 15px; margin-bottom:10px">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="height: 385px; float: left; overflow-y: scroll;">
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <h4 class="text-center bestellung_alle_date">Lieferdatum: 26.07.2015</h4> 
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" data-pg-collapsed>
+                                                    <table class="table"> 
+                                                        <thead> 
+                                                            <tr class="tab_einkauf"> 
+                                                                <th>Brötchen</th>
+                                                                <th>Belag</th>                                                                 
+                                                                <th>Belag</th>
+                                                                <th>Belag</th>
+                                                                <th>Belag</th>
+                                                                <th>Anzahl</th>                                                                 
+                                                            </tr>                                                             
+                                                        </thead>
+                                                        <tbody> 
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Weizenbrötchen</td>                                                                 
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Käse</td>
+                                                                <td class="text-left">Gurke</td>
+                                                                <td class="text-left">Tomate</td>
+                                                                <td class="text-left">10x</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Weizenbrötchen</td>                                                                 
+                                                                <td class="text-left">Schinken</td>
+                                                                <td class="text-left">Salai</td>
+                                                                <td class="text-left">Tomate</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">10x</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Weizenbrötchen</td>                                                                 
+                                                                <td class="text-left">Käse</td>
+                                                                <td class="text-left">Schinken
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">10x</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Weizenbrötchen</td>                                                                 
+                                                                <td class="text-left">Käse</td>
+                                                                <td class="text-left">Schinken
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">10x</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Käse</td>
+                                                                <td class="text-left">Salamie</td>
+                                                                <td class="text-left">Gurke</td>
+                                                                <td class="text-left">Tomate</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Ernussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Ernussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Ernussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Ernussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Ernussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Erdnussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed="">
+                                                                <td class="text-left">Croissant
+                                                                    <br>
+                                                                </td>                                                                 
+                                                                <td class="text-left">Salamie &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td>
+                                                                <td class="text-left">Käse &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td>
+                                                                <td class="text-left">Butter&nbsp;</td>
+                                                                <td class="text-left">/ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                                                                <td class="text-left">
+                                                                    09x &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>                                                     
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <h4 class="text-center bestellung_alle_date">Lieferdatum: 27.07.2015</h4> 
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" data-pg-collapsed>
+                                                    <table class="table"> 
+                                                        <thead> 
+                                                            <tr class="tab_einkauf"> 
+                                                                <th>Brötchen</th>
+                                                                <th>Belag</th>                                                                 
+                                                                <th>Belag</th>
+                                                                <th>Belag</th>
+                                                                <th>Belag</th>
+                                                                <th>Anzahl</th>                                                                 
+                                                            </tr>                                                             
+                                                        </thead>
+                                                        <tbody> 
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Weizenbrötchen</td>                                                                 
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Käse</td>
+                                                                <td class="text-left">Gurke</td>
+                                                                <td class="text-left">Tomate</td>
+                                                                <td class="text-left">10x</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Weizenbrötchen</td>                                                                 
+                                                                <td class="text-left">Schinken</td>
+                                                                <td class="text-left">Salai</td>
+                                                                <td class="text-left">Tomate</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">10x</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Weizenbrötchen</td>                                                                 
+                                                                <td class="text-left">Käse</td>
+                                                                <td class="text-left">Schinken
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">10x</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Weizenbrötchen</td>                                                                 
+                                                                <td class="text-left">Käse</td>
+                                                                <td class="text-left">Schinken
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">10x</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Käse</td>
+                                                                <td class="text-left">Salamie</td>
+                                                                <td class="text-left">Gurke</td>
+                                                                <td class="text-left">Tomate</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Ernussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Ernussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Ernussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Ernussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Ernussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Erdnussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed="">
+                                                                <td class="text-left">Croissant
+                                                                    <br>
+                                                                </td>                                                                 
+                                                                <td class="text-left">Salamie &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td>
+                                                                <td class="text-left">Käse &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td>
+                                                                <td class="text-left">Butter&nbsp;</td>
+                                                                <td class="text-left">/ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                                                                <td class="text-left">
+                                                                    09x &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>                                                     
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <h4 class="text-center bestellung_alle_date">Lieferdatum: 28.07.2015</h4> 
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" data-pg-collapsed>
+                                                    <table class="table"> 
+                                                        <thead> 
+                                                            <tr class="tab_einkauf"> 
+                                                                <th>Brötchen</th>
+                                                                <th>Belag</th>                                                                 
+                                                                <th>Belag</th>
+                                                                <th>Belag</th>
+                                                                <th>Belag</th>
+                                                                <th>Anzahl</th>                                                                 
+                                                            </tr>                                                             
+                                                        </thead>
+                                                        <tbody> 
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Weizenbrötchen</td>                                                                 
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Käse</td>
+                                                                <td class="text-left">Gurke</td>
+                                                                <td class="text-left">Tomate</td>
+                                                                <td class="text-left">10x</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Weizenbrötchen</td>                                                                 
+                                                                <td class="text-left">Schinken</td>
+                                                                <td class="text-left">Salai</td>
+                                                                <td class="text-left">Tomate</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">10x</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Weizenbrötchen</td>                                                                 
+                                                                <td class="text-left">Käse</td>
+                                                                <td class="text-left">Schinken
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">10x</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Weizenbrötchen</td>                                                                 
+                                                                <td class="text-left">Käse</td>
+                                                                <td class="text-left">Schinken
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">10x</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Käse</td>
+                                                                <td class="text-left">Salamie</td>
+                                                                <td class="text-left">Gurke</td>
+                                                                <td class="text-left">Tomate</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Ernussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Ernussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Ernussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Ernussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Salami</td>
+                                                                <td class="text-left">Ernussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">20x</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Mehrkornbrötchen</td>
+                                                                <td class="text-left">Erdnussbutter</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                                <td class="text-left">/</td>
+                                                            </tr>
+                                                            <tr data-pg-collapsed="">
+                                                                <td class="text-left">Croissant
+                                                                    <br>
+                                                                </td>                                                                 
+                                                                <td class="text-left">Salamie &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td>
+                                                                <td class="text-left">Käse &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td>
+                                                                <td class="text-left">Butter&nbsp;</td>
+                                                                <td class="text-left">/ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                                                                <td class="text-left">
+                                                                    09x &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>                                                     
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="leckerbags" style="margin-bottom: 10px; display:none;">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-sm-12 col-xs-12 dash_element_col border_grey col-md-12 col-lg-12">
+                                    <div class="row dash_element_holder" style="margin-bottom: 15px; margin-top:5px" data-pg-collapsed>
+                                        <div class="col-md-10"> 
+                                            <h4>Alle LeckerBags</h4>
+                                        </div>
+                                        <div class="col-md-2 text-right">
+                                            <button type="button" class="btn btn-default btn_icon btn_icon">
+                                                <i class="glyphicon glyphicon-print"></i>
+                                            </button>                                             
+                                        </div>
+                                    </div>
+                                    <div class="row dash_element_holder text-center" style="padding-right: 15px; margin-bottom:10px">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="height: 385px; float: left; overflow-y: scroll;">
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <h4 class="bestellung_alle_date text-center">Lieferdatum: 26.07.2015</h4> 
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <table class="table"> 
+                                                        <thead> 
+                                                            <tr class="tab_einkauf"> 
+                                                                <th>Schule</th>                                                                 
+                                                                <th>Kind</th>
+                                                                <th>Brötchen</th>
+                                                                <th>Obst</th>
+                                                                <th>Getränk</th>                                                                 
+                                                            </tr>                                                             
+                                                        </thead>
+                                                        <tbody> 
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Röntgen Gymnasium</td>                                                                 
+                                                                <td class="text-left">Carl Christophson</td>
+                                                                <td class="text-left">Weizenbrötchen mit Salami
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Banane
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Milch</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Röntgen Gymnasium</td>                                                                 
+                                                                <td class="text-left">Carl Christophson</td>
+                                                                <td class="text-left">Weizenbrötchen mit Aufschnitt
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfel&nbsp;
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Wasser(Still)</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Röntgen Gymnasium</td>                                                                 
+                                                                <td class="text-left">Carl Christophson</td>
+                                                                <td class="text-left">Weizenbrötchen mit Salami
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Banane
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfelschorle</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Grundschule Süd</td>                                                                 
+                                                                <td class="text-left">Mike Meckelmann
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Weizenbrötchen mit Schinken&nbsp;
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Birne&nbsp;
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfelschorle</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Grundschule Süd
+                                                                    <br>
+                                                                </td>                                                                 
+                                                                <td class="text-left">Mike Meckelmann
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Weizenbrötchen mit Käse
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Banane
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Wasser(Medium)</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Grundschule Süd
+                                                                    <br>
+                                                                </td>                                                                 
+                                                                <td class="text-left">Mike Meckelmann
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Weizenbrötchen mit Salami
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfel&nbsp;
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfelschorle</td>                                                                 
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>                                                     
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <h4 class="bestellung_alle_date text-center">Lieferdatum: 27.07.2015</h4>
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <table class="table"> 
+                                                        <thead> 
+                                                            <tr class="tab_einkauf"> 
+                                                                <th>Schule</th>                                                                 
+                                                                <th>Kind</th>
+                                                                <th>Brötchen</th>
+                                                                <th>Obst</th>
+                                                                <th>Getränk</th>                                                                 
+                                                            </tr>                                                             
+                                                        </thead>
+                                                        <tbody> 
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Röntgen Gymnasium</td>                                                                 
+                                                                <td class="text-left">Carl Christophson</td>
+                                                                <td class="text-left">Weizenbrötchen mit Salami
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Banane
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Milch</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Röntgen Gymnasium</td>                                                                 
+                                                                <td class="text-left">Carl Christophson</td>
+                                                                <td class="text-left">Weizenbrötchen mit Aufschnitt
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfel&nbsp;
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Wasser(Still)</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Röntgen Gymnasium</td>                                                                 
+                                                                <td class="text-left">Carl Christophson</td>
+                                                                <td class="text-left">Weizenbrötchen mit Salami
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Banane
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfelschorle</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Grundschule Süd</td>                                                                 
+                                                                <td class="text-left">Mike Meckelmann
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Weizenbrötchen mit Schinken&nbsp;
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Birne&nbsp;
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfelschorle</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Grundschule Süd
+                                                                    <br>
+                                                                </td>                                                                 
+                                                                <td class="text-left">Mike Meckelmann
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Weizenbrötchen mit Käse
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Banane
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Wasser(Medium)</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Grundschule Süd
+                                                                    <br>
+                                                                </td>                                                                 
+                                                                <td class="text-left">Mike Meckelmann
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Weizenbrötchen mit Salami
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfel&nbsp;
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfelschorle</td>                                                                 
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>                                                     
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <h4 class="bestellung_alle_date text-center">Lieferdatum: 28.07.2015</h4>
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <table class="table"> 
+                                                        <thead> 
+                                                            <tr class="tab_einkauf"> 
+                                                                <th>Schule</th>                                                                 
+                                                                <th>Kind</th>
+                                                                <th>Brötchen</th>
+                                                                <th>Obst</th>
+                                                                <th>Getränk</th>                                                                 
+                                                            </tr>                                                             
+                                                        </thead>
+                                                        <tbody> 
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Röntgen Gymnasium</td>                                                                 
+                                                                <td class="text-left">Carl Christophson</td>
+                                                                <td class="text-left">Weizenbrötchen mit Salami
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Banane
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Milch</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Röntgen Gymnasium</td>                                                                 
+                                                                <td class="text-left">Carl Christophson</td>
+                                                                <td class="text-left">Weizenbrötchen mit Aufschnitt
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfel&nbsp;
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Wasser(Still)</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Röntgen Gymnasium</td>                                                                 
+                                                                <td class="text-left">Carl Christophson</td>
+                                                                <td class="text-left">Weizenbrötchen mit Salami
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Banane
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfelschorle</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Grundschule Süd</td>                                                                 
+                                                                <td class="text-left">Mike Meckelmann
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Weizenbrötchen mit Schinken&nbsp;
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Birne&nbsp;
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfelschorle</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Grundschule Süd
+                                                                    <br>
+                                                                </td>                                                                 
+                                                                <td class="text-left">Mike Meckelmann
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Weizenbrötchen mit Käse
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Banane
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Wasser(Medium)</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Grundschule Süd
+                                                                    <br>
+                                                                </td>                                                                 
+                                                                <td class="text-left">Mike Meckelmann
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Weizenbrötchen mit Salami
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfel&nbsp;
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfelschorle</td>                                                                 
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>                                                     
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <h4 class="bestellung_alle_date text-center">Lieferdatum: 29.07.2015</h4>
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <table class="table"> 
+                                                        <thead> 
+                                                            <tr class="tab_einkauf"> 
+                                                                <th>Schule</th>                                                                 
+                                                                <th>Kind</th>
+                                                                <th>Brötchen</th>
+                                                                <th>Obst</th>
+                                                                <th>Getränk</th>                                                                 
+                                                            </tr>                                                             
+                                                        </thead>
+                                                        <tbody> 
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Röntgen Gymnasium</td>                                                                 
+                                                                <td class="text-left">Carl Christophson</td>
+                                                                <td class="text-left">Weizenbrötchen mit Salami
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Banane
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Milch</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Röntgen Gymnasium</td>                                                                 
+                                                                <td class="text-left">Carl Christophson</td>
+                                                                <td class="text-left">Weizenbrötchen mit Aufschnitt
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfel&nbsp;
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Wasser(Still)</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Röntgen Gymnasium</td>                                                                 
+                                                                <td class="text-left">Carl Christophson</td>
+                                                                <td class="text-left">Weizenbrötchen mit Salami
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Banane
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfelschorle</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Grundschule Süd</td>                                                                 
+                                                                <td class="text-left">Mike Meckelmann
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Weizenbrötchen mit Schinken&nbsp;
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Birne&nbsp;
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfelschorle</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Grundschule Süd
+                                                                    <br>
+                                                                </td>                                                                 
+                                                                <td class="text-left">Mike Meckelmann
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Weizenbrötchen mit Käse
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Banane
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Wasser(Medium)</td>                                                                 
+                                                            </tr>
+                                                            <tr data-pg-collapsed=""> 
+                                                                <td class="text-left">Grundschule Süd
+                                                                    <br>
+                                                                </td>                                                                 
+                                                                <td class="text-left">Mike Meckelmann
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Weizenbrötchen mit Salami
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfel&nbsp;
+                                                                    <br>
+                                                                </td>
+                                                                <td class="text-left">Apfelschorle</td>                                                                 
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>                                                     
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 10px" data-pg-collapsed>
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+</div>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </div>         
+        <div class="row" id="footer" data-pg-collapsed></div>         
+        <!-- Ende des Dokumentes -->         
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>         
+        <script src="js/functions.js"></script>        
+    </body>     
+</html>

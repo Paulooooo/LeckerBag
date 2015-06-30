@@ -7,10 +7,10 @@
         <meta name="description" content="Beschreibung der Seite">         
         <meta name="author" content="Paul Kozakiewicz">         
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">         
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">      
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">         
         <link href="css/style.css" rel="stylesheet" type="text/css">         
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>      
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>         
         <script> 
 			$(function(){
 		        $("#header").load("header2.html", function(){
@@ -18,7 +18,7 @@
 		        });
 			  	$("#footer").load("footer.html"); 
 			});
-		</script>           
+		</script>         
     </head>     
     <body> 
         <div class="row" id="header" data-pg-collapsed></div>         
@@ -113,15 +113,13 @@
                                                 </select>
                                             </div>                                             
                                         </div>
-                                        <div class="col-md-12 col-lg-12 col-sm-6 col-xs-6 text-right" data-pg-collapsed> 
-                                            <button type="button" class="btn btn-default btn_icon btn_icon" data-pg-collapsed>
-                                                <i class="glyphicon glyphicon-check"></i>
-                                            </button>
+                                        <div class="col-md-12 col-lg-12 col-sm-6 col-xs-6 text-right">
+                                            <button type="button" class="btn btn-default button_paulo">Hinzufügen</button>                                             
                                         </div>
                                     </div>
                                     <h4>Ihre Auswahl:</h4>
                                     <hr class="hr_line"/>
-                                    <div class="row konfig_abstand">
+                                    <div class="row konfig_abstand" data-pg-collapsed>
                                         <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6 list_scroll">
                                             <ul class="list-group" data-pg-collapsed> 
                                                 <li class="list-group-item" data-pg-collapsed="">
@@ -169,9 +167,11 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right" data-pg-collapsed>
-                                        <button type="button" class="btn btn-default button_paulo button_paulo_3">Abbrechen</button>
-                                        <button type="button" class="btn btn-default button_paulo" onclick="location.href='mein_profil_lieferant.html'">Fertig</button>                                         
+                                    <div class="row pg-empty-placeholder">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right" data-pg-collapsed>
+                                            <button type="button" class="btn btn-default button_paulo button_paulo_3">Abbrechen</button>
+                                            <button type="button" class="btn btn-default button_paulo" onclick="location.href='mein_profil_lieferant.html'">Fertig</button>                                             
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -182,7 +182,7 @@
         </div>
         <div class="row" id="footer" data-pg-collapsed></div>         
         <!-- Ende des Dokumentes -->         
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>   
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>         
         <script src="js/functions.js"></script>         
     </body>     
 </html>

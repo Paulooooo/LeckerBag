@@ -8,422 +8,543 @@
         <meta name="description" content="Beschreibung der Seite">         
         <meta name="author" content="Paul Kozakiewicz">         
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">         
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">      
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">         
         <link href="css/style.css" rel="stylesheet" type="text/css">         
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>      
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>         
         <!-- Scheduler -->
         <script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
         <script src="js/d3.min.js"></script>
-    	<!-- Scheduler -->
+        <!-- Scheduler -->
         <script> 
 			$(function(){
 		        $("#header").load("header2.html", function(){
 		        	setNav(2);
+		        	var eventRecorder_meine_details = document.getElementById("meine_details");
+		        	eventRecorder_meine_details.addEventListener('click', function(){
+		        		var selectedItem = eventRecorder_meine_details.options[eventRecorder_meine_details.selectedIndex].value;
+		        		showHide_dashLieferant(selectedItem);
+		        	});
 		        });
 			  	$("#footer").load("footer.html"); 
 			});
-		</script>      
-</head> 
-<body>
-    <div class="row" id="header" data-pg-collapsed></div>     
-    <div class="row">
-        <div class="col-md-12">
-            <div class="container wrapper">
-                <div class="row" data-pg-collapsed>
-                    <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10">
-                        <h3>Mein Leckerbag</h3> 
-                        <p>Herzlich Willkommen <font class="beschreibung">Martin Müller - MüllerBäck!</font></p> 
-                    </div>
-                    <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2" data-pg-collapsed>
-                        <a href="#" class=""><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
-                        <br/>
-                        <a>benötigen Sie Hilfe?</a>
-                    </div>
-                </div>
-                <hr class="hr_line"/>
-                <div class="row">
-                    <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 dash_element_col" data-pg-collapsed>
-                        <div class="row dash_element_holder">
-                            <div class="col-md-12 dash_element"> 
-                                <h4>Mein Profil</h4>
-                                <h5>Ihre persönlichen Daten</h5>
-                                <ul class="pg-empty-placeholder" data-pg-collapsed>
-                                    <li class="list_text">
-                                        <a color="#5b586b" href="mein_profil_lieferant.html">Profil ansehen</a>
-                                    </li>
-                                    <li class="list_text">
-                                        <a color="#5b586b">Profil bearbeiten</a>
-                                    </li>
-                                    <li class="list_text"> 
-                                        <a color="#23527c">Profil löschen</a>
-                                    </li>
-                                </ul>
-                                <h5>Ihre Lieferorte</h5>
-                                <ul class="pg-empty-placeholder" data-pg-collapsed>
-                                    <li class="list_text">
-                                        <a>Lieferort hinzufügen</a>
-                                    </li>
-                                    <li class="list_text">
-                                        <a>Lieferort(e) ansehen</a>
-                                    </li>
-                                    <li class="list_text">
-                                        <a color="#5b586b">Lieferort(e) bearbeiten</a>
-                                    </li>
-                                </ul>
-                                <h5>Ihre Produkte</h5>
-                                <ul class="pg-empty-placeholder">
-                                    <li class="list_text">
-                                        <a href="Konfigurator_Seite1.html">Produktkonfiguration starten</a>
-                                    </li>
-                                </ul>
-                            </div>
+			var showHide_dashLieferant = function(item){
+				 if(item === "1"){
+					 document.getElementById("meine_stornierungen").style.display = "";
+					 document.getElementById("meine_abonnements").style.display = "none";
+					 document.getElementById("meine_kundenguthaben").style.display = "none";
+				 }
+				 if(item === "2"){
+					 document.getElementById("meine_stornierungen").style.display = "none";
+					 document.getElementById("meine_abonnements").style.display = "";
+					 document.getElementById("meine_kundenguthaben").style.display = "none";
+				 }
+				 if(item === "3"){
+					 document.getElementById("meine_stornierungen").style.display = "none";
+					 document.getElementById("meine_abonnements").style.display = "none";
+					 document.getElementById("meine_kundenguthaben").style.display = "";
+				 }
+			};
+		</script>         
+    </head>     
+    <body>
+        <div class="row" id="header" data-pg-collapsed></div>         
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container wrapper">
+                    <div class="row" data-pg-collapsed>
+                        <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10">
+                            <h3>Mein Leckerbag</h3> 
+                            <p>Herzlich Willkommen <font class="beschreibung">Martin Müller - MüllerBäck!</font></p> 
+                        </div>
+                        <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2" data-pg-collapsed>
+                            <a href="#" class=""><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
+                            <br/>
+                            <a>benötigen Sie Hilfe?</a>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 dash_element_col">
-                        <div class="row dash_element_holder">
-                            <div class="col-md-12 dash_element"> 
-                                <h4>Meine Rezensionen</h4>
-                                <h5>Aktuelle Bewertung</h5>
-                                <div class="row">
-                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
-                                        <h1 class="rating-num">4.5</h1>
-                                        <div class="rating_paulo">
+                    <hr class="hr_line"/>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 dash_element_col" data-pg-collapsed>
+                            <div class="row dash_element_holder">
+                                <div class="col-md-12 dash_element"> 
+                                    <h4>Mein Profil</h4>
+                                    <h5>Ihre persönlichen Daten</h5>
+                                    <ul class="pg-empty-placeholder" data-pg-collapsed>
+                                        <li class="list_text">
+                                            <a color="#5b586b" href="mein_profil_lieferant.html">Profil ansehen</a>
+                                        </li>
+                                        <li class="list_text">
+                                            <a color="#5b586b">Profil bearbeiten</a>
+                                        </li>
+                                        <li class="list_text"> 
+                                            <a color="#23527c">Profil löschen</a>
+                                        </li>
+                                    </ul>
+                                    <h5>Ihre Lieferorte</h5>
+                                    <ul class="pg-empty-placeholder" data-pg-collapsed>
+                                        <li class="list_text">
+                                            <a>Lieferort hinzufügen</a>
+                                        </li>
+                                        <li class="list_text">
+                                            <a>Lieferort(e) ansehen</a>
+                                        </li>
+                                        <li class="list_text">
+                                            <a color="#5b586b">Lieferort(e) bearbeiten</a>
+                                        </li>
+                                    </ul>
+                                    <h5>Ihre Produkte</h5>
+                                    <ul class="pg-empty-placeholder">
+                                        <li class="list_text">
+                                            <a href="Konfigurator_Seite1.html">Produktkonfiguration starten</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 dash_element_col">
+                            <div class="row dash_element_holder">
+                                <div class="col-md-12 dash_element"> 
+                                    <h4>Meine Rezensionen</h4>
+                                    <h5>Aktuelle Bewertung</h5>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
+                                            <h1 class="rating-num">4.5</h1>
+                                            <div class="rating_paulo">
+                                                <span class="fa fa-star star_green fa-lg"></span>
+                                                <span class="fa fa-star  star_green fa-lg"></span>
+                                                <span class="fa fa-star  star_green fa-lg"></span>
+                                                <span class="fa fa-star  star_green fa-lg"></span>
+                                                <span class="fa fa-star-half-empty star_green fa-lg"></span>
+                                            </div>
+                                            <div data-pg-collapsed>
+                                                <a href="8_lieferant_rezension_dash.html"><span class="fa fa-user"></span>&nbsp;702 total votes</a>
+                                            </div>
+                                        </div>                                         
+                                    </div>
+                                    <h5>Letzte Rezensionen</h5>
+                                    <div class="row" data-pg-collapsed>
+                                        <div class="col-sm-4 col-xs-4 col-lg-4 col-md-4">
                                             <span class="fa fa-star star_green fa-lg"></span>
                                             <span class="fa fa-star  star_green fa-lg"></span>
                                             <span class="fa fa-star  star_green fa-lg"></span>
                                             <span class="fa fa-star  star_green fa-lg"></span>
-                                            <span class="fa fa-star-half-empty star_green fa-lg"></span>
+                                            <span class="fa fa-star-half-empty star_green fa-lg"></span> 
                                         </div>
-                                        <div data-pg-collapsed>
-                                            <a href="8_lieferant_rezension_dash.html"><span class="fa fa-user"></span>&nbsp;702 total votes</a>
+                                        <div class="rating col-sm-8 col-xs-8 col-md-8 col-lg-8" data-pg-collapsed>
+                                            <p data-pg-collapsed><strong>Abonnement ist grandios!</strong></p>
                                         </div>
-                                    </div>                                     
-                                </div>
-                                <h5>Letzte Rezensionen</h5>
-                                <div class="row" data-pg-collapsed>
-                                    <div class="col-sm-4 col-xs-4 col-lg-4 col-md-4">
-                                        <span class="fa fa-star star_green fa-lg"></span>
-                                        <span class="fa fa-star  star_green fa-lg"></span>
-                                        <span class="fa fa-star  star_green fa-lg"></span>
-                                        <span class="fa fa-star  star_green fa-lg"></span>
-                                        <span class="fa fa-star-half-empty star_green fa-lg"></span> 
-                                    </div>
-                                    <div class="rating col-sm-8 col-xs-8 col-md-8 col-lg-8" data-pg-collapsed>
-                                        <p data-pg-collapsed><strong>Abonnement ist grandios!</strong></p>
-                                    </div>
-                                    <div class="col-md-12 col-lg-12" data-pg-collapsed> 
-                                        <p><strong>Kunde:</strong> <a href="#">Bob Brown</a> | <strong>Datum:</strong> 21.08.15 | <strong>Rezension:</strong>
+                                        <div class="col-md-12 col-lg-12" data-pg-collapsed> 
+                                            <p><strong>Kunde:</strong> <a href="#">Bob Brown</a> | <strong>Datum:</strong> 21.08.15 | <strong>Rezension:</strong>
 Ich kann über Müllerbäck nichts schlechtes berichten.
     Die Bags sind immer frisch, pünkltich und ... <a href="#">(mehr)</a></p> 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4 col-xs-4 col-lg-4 col-md-4">
-                                        <span class="fa fa-star star_green fa-lg"></span>
-                                        <span class="fa fa-star  star_green fa-lg"></span>
-                                        <span class="fa fa-star  star_green fa-lg"></span>
-                                        <span class="fa fa-star  star_green fa-lg"></span>
-                                        <span class="fa fa-star-half-empty star_green fa-lg"></span> 
-                                    </div>
-                                    <div class="rating col-sm-8 col-xs-8 col-md-8 col-lg-8">
-                                        <p data-pg-collapsed><strong>Lecker, pünktlich und gut!</strong></p>
-                                    </div>
-                                    <div class="col-md-12 col-lg-12"> 
-                                        <p><strong>Kunde:</strong> <a href="#">Bob Brown</a> | <strong>Datum:</strong> 21.08.15 | <strong>Rezension:</strong>
+                                    <div class="row">
+                                        <div class="col-sm-4 col-xs-4 col-lg-4 col-md-4">
+                                            <span class="fa fa-star star_green fa-lg"></span>
+                                            <span class="fa fa-star  star_green fa-lg"></span>
+                                            <span class="fa fa-star  star_green fa-lg"></span>
+                                            <span class="fa fa-star  star_green fa-lg"></span>
+                                            <span class="fa fa-star-half-empty star_green fa-lg"></span> 
+                                        </div>
+                                        <div class="rating col-sm-8 col-xs-8 col-md-8 col-lg-8">
+                                            <p data-pg-collapsed><strong>Lecker, pünktlich und gut!</strong></p>
+                                        </div>
+                                        <div class="col-md-12 col-lg-12"> 
+                                            <p><strong>Kunde:</strong> <a href="#">Bob Brown</a> | <strong>Datum:</strong> 21.08.15 | <strong>Rezension:</strong>
 Ich kann über Müllerbäck nichts schlechtes berichten.
     Die Bags sind immer frisch, pünkltich und ... <a href="#">(mehr)</a></p> 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row last_element_dash" data-pg-collapsed>
-                                    <hr class="hr_line hr_line_ext_dashboard_last">
-                                    <div class="col-md-12">
-                                        <a href="8_lieferant_rezension_dash.html">Alle Rezensionen anzeigen</a> 
+                                    <div class="row last_element_dash" data-pg-collapsed>
+                                        <hr class="hr_line hr_line_ext_dashboard_last">
+                                        <div class="col-md-12">
+                                            <a href="8_lieferant_rezension_dash.html">Alle Rezensionen anzeigen</a> 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
-                        <div class="row dash_element_holder">
-                            <div class="col-md-12 dash_element col-sm-12 col-xs-12 col-lg-12">
-                                <h4>Meine Lieferungen</h4>
-                                <h5>Ihre nächsten Lieferungen</h5>
-                                <div class="row" data-pg-collapsed>
-                                    <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12" id="scheduler_dashboard_lieferant" data-pg-collapsed></div>
-                                    <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12" id="datasHolder_dashboard_lieferant" style="display:none" data-pg-collapsed>
-                                        <div class="row">
-                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right option_dashboard_lieferant_1" data-pg-collapsed>
-                                                <button type="button" class="btn btn-default btn_icon btn_icon btn_icon_padding" onclick="">
-                                                    <i class="fa fa-print fa-lg"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-default btn_icon btn_icon" onclick="">
-                                                    <i class="fa fa-lg fa-download"></i>
-                                                </button>
-                                            </div>
-                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" id="datas_dashboard_lieferant">
-                                                <div class="row">
-                                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" id="dataTable_dashboard_lieferant_1" data-pg-collapsed></div>
+                    <div class="row" data-pg-collapsed>
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-md-12 dash_element col-sm-12 col-xs-12 col-lg-12">
+                                    <h4>Meine Lieferungen</h4>
+                                    <h5>Ihre nächsten Lieferungen</h5>
+                                    <div class="row" data-pg-collapsed>
+                                        <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12" id="scheduler_dashboard_lieferant" data-pg-collapsed></div>
+                                        <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12" id="datasHolder_dashboard_lieferant" style="display:none" data-pg-collapsed>
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right option_dashboard_lieferant_1" data-pg-collapsed>
+                                                    <button type="button" class="btn btn-default btn_icon btn_icon btn_icon_padding" onclick="">
+                                                        <i class="fa fa-print fa-lg"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-default btn_icon btn_icon" onclick="">
+                                                        <i class="fa fa-lg fa-download"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" id="datas_dashboard_lieferant">
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" id="dataTable_dashboard_lieferant_1" data-pg-collapsed></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row last_element_dash" data-pg-collapsed>
-                                    <hr class="hr_line hr_line_ext_dashboard_last">
-                                    <div class="col-md-12">
-                                        <a>Alle Bestellungen anzeigen</a>
-                                    </div>
-                                </div>                                 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" data-pg-collapsed>
-                    <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
-                        <div class="row dash_element_holder">
-                            <div class="col-md-12 dash_element" data-pg-collapsed> 
-                                <h4>Meine Stornierungen</h4>
-                                <h5>Ihre letzten Stornierungen</h5>
-                                <div class="row" id="dashboard_stornierungen_tb_holder">
-                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right option_dashboard_lieferant_1" data-pg-collapsed="">
-                                        <button type="button" class="btn btn-default btn_icon btn_icon btn_icon_padding" onclick="">
-                                            <i class="fa fa-print fa-lg"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-default btn_icon btn_icon" onclick="">
-                                            <i class="fa fa-lg fa-download"></i>
-                                        </button>
-                                    </div>
-                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" id="dashboard_stornierung_tb">
-                                        <table class="table" id="yui_patched_v3_18_1_1_1434358742874_382"> 
-                                            <thead> 
-                                                <tr> 
-                                                    <th>Kunde</th>                                                     
-                                                    <th>Abo-Nr</th>                                                     
-                                                    <th>Bag</th>                                                     
-                                                    <th>Kind</th>
-                                                    <th>Lieferdatum</th>
-                                                    <th>Lieferort
-                                                        <br>
-                                                    </th>
-                                                    <th>Zusatzinformation
-                                                        <br>
-                                                    </th>
-                                                    <th>
-                                                        <br>
-                                                    </th>                                                     
-                                                </tr>                                                 
-                                            </thead>                                             
-                                            <tbody> 
-                                                <tr data-pg-collapsed=""> 
-                                                    <td>Max Musterman</td>                                                     
-                                                    <td>
-                                                        <a href="#">10060321</a>
-                                                    </td>                                                     
-                                                    <td>
-                                                        <a href="#">20060321</a>
-                                                    </td>                                                     
-                                                    <td>Arnold Mustermann</td>
-                                                    <td>01.09.15</td>
-                                                    <td>Röntgen Gymnasium</td>
-                                                    <td>Kind ist krank</td>
-                                                    <td>ja</td>                                                     
-                                                </tr>
-                                                <tr data-pg-collapsed=""> 
-                                                    <td>Max Musterman</td>                                                     
-                                                    <td>
-                                                        <a href="#">10060321</a>
-                                                    </td>                                                     
-                                                    <td>
-                                                        <a href="#">20060321</a>
-                                                    </td>                                                     
-                                                    <td>Bernadette Mustermann</td>
-                                                    <td>01.09.15</td>
-                                                    <td>Grundschule Süd</td>
-                                                    <td>Kind ist krank</td>
-                                                    <td>ja</td>                                                     
-                                                </tr>
-                                                <tr data-pg-collapsed=""> 
-                                                    <td>Bob Brown</td>                                                     
-                                                    <td>
-                                                        <a href="#">10060321</a>
-                                                    </td>                                                     
-                                                    <td>
-                                                        <a href="#">20060321</a>
-                                                    </td>                                                     
-                                                    <td>Mikael Brown</td>
-                                                    <td>01.09.15</td>
-                                                    <td>Grundschule Süd</td>
-                                                    <td>Bag wird abgeholt</td>
-                                                    <td>nein</td>                                                     
-                                                </tr>                                                 
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="row last_element_dash">
-                                    <hr class="hr_line hr_line_ext_dashboard_last">
-                                    <div class="col-md-12">
-                                        <a>Alle Stornierungen anzeigen</a>
-                                    </div>
+                                    <div class="row last_element_dash">
+                                        <hr class="hr_line hr_line_ext_dashboard_last">
+                                        <div class="col-md-12">
+                                            <a href="11_lieferant_bestellungen_alle.html">Alle Bestellungen anzeigen</a>
+                                        </div>
+                                    </div>                                     
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row" data-pg-collapsed>
-                    <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
-                        <div class="row dash_element_holder">
-                            <div class="col-md-12 dash_element"> 
-                                <h4>Meine Abonnements</h4>
-                                <h5>Ihre letzten Abonnements</h5>
-                                <div class="row" id="dashboard_stornierungen_tb_holder">
-                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right option_dashboard_lieferant_1" data-pg-collapsed="">
-                                        <button type="button" class="btn btn-default btn_icon btn_icon btn_icon_padding" onclick="">
-                                            <i class="fa fa-print fa-lg"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-default btn_icon btn_icon" onclick="">
-                                            <i class="fa fa-lg fa-download"></i>
-                                        </button>
-                                    </div>
-                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" id="dashboard_stornierung_tb">
-                                        <table class="table" id="yui_patched_v3_18_1_1_1434358742874_382"> 
-                                            <thead data-pg-collapsed=""> 
-                                                <tr> 
-                                                    <th>Kunde</th>                                                     
-                                                    <th>Abonnement</th>                                                     
-                                                    <th>Abo-Nr</th>                                                     
-                                                    <th>Bestelldatum</th>
-                                                    <th>&nbsp;
-                                                        <br>
-                                                    </th>                                                     
-                                                </tr>                                                 
-                                            </thead>                                             
-                                            <tbody> 
-                                                <tr data-pg-collapsed=""> 
-                                                    <td>Max Musterman</td>                                                     
-                                                    <td>
-                                                        30-Tage Abonnement
-</td>                                                     
-                                                    <td>
-                                                        <a href="#">20060321</a>
-                                                    </td>                                                     
-                                                    <td>01.09.15</td>
-                                                    <td>
-                                                        <a href="#">(Bestelldetails)</a>
-                                                    </td>
-                                                </tr>
-                                                <tr data-pg-collapsed=""> 
-                                                    <td>Bob Brown</td>                                                     
-                                                    <td>
-                                                        7-Tage Abonnement
-</td>                                                     
-                                                    <td>
-                                                        <a href="#">20060322</a>
-                                                    </td>                                                     
-                                                    <td>01.09.15</td>
-                                                    <td>
-                                                        <a href="#">(Bestelldetails)</a>
-                                                    </td>
-                                                </tr>
-                                                <tr data-pg-collapsed=""> 
-                                                    <td>Mareike Bock</td>                                                     
-                                                    <td>
-                                                        30-Tage Abonnement
-</td>                                                     
-                                                    <td>
-                                                        <a href="#">20060323</a>
-                                                    </td>                                                     
-                                                    <td>31.08.15</td>
-                                                    <td>
-                                                        <a href="#">(Bestelldetails)</a>
-                                                    </td>
-                                                </tr>
-                                                <tr data-pg-collapsed=""> 
-                                                    <td>Frank Blumengarten</td>                                                     
-                                                    <td>
-                                                        60-Tage Abonnement
-</td>                                                     
-                                                    <td>
-                                                        <a href="#">20060324</a>
-                                                    </td>                                                     
-                                                    <td>29.08.15</td>
-                                                    <td>
-                                                        <a href="#">(Bestelldetails)</a>
-                                                    </td>
-                                                </tr>
-                                                <tr data-pg-collapsed=""> 
-                                                    <td>Eva Kern</td>                                                     
-                                                    <td>
-                                                        14-Tage Abonnement
-</td>                                                     
-                                                    <td>
-                                                        <a href="#">20060325</a>
-                                                    </td>                                                     
-                                                    <td>15.08.15</td>
-                                                    <td>
-                                                        <a href="#">(Bestelldetails)</a>
-                                                    </td>
-                                                </tr>
-                                                <tr data-pg-collapsed=""> 
-                                                    <td>Max Musterman</td>                                                     
-                                                    <td>
-                                                        30-Tage Abonnement
-</td>                                                     
-                                                    <td>
-                                                        <a href="#">20060326</a>
-                                                    </td>                                                     
-                                                    <td>07.07.15</td>
-                                                    <td>
-                                                        <a href="#">(Bestelldetails)</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-md-12 dash_element col-sm-12 col-xs-12 col-lg-12 dash_element_ext_meine_details">
+                                    <h4>Meine weiteren Deitails</h4>
+                                    <div class="row pg-empty-placeholder">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                            <select class="form-control" id="meine_details" data-pg-name="Dropdown: Geschlecht">
+                                                <option value="1">Meine Stornierungen</option>
+                                                <option value="2">Meine Abonnements</option>
+                                                <option value="3">Meine Kundenguthaben</option>                                                 
+                                            </select>                                             
+                                        </div>
+                                    </div>                                     
                                 </div>
-                                <div class="row last_element_dash">
-                                    <hr class="hr_line hr_line_ext_dashboard_last">
-                                    <div class="col-md-12">
-                                        <a>Alle Stornierungen anzeigen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="meine_stornierungen" style="display:" data-pg-collapsed>
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-md-12 dash_element"> 
+                                    <h4>Meine Stornierungen</h4>
+                                    <h5>Ihre letzten Stornierungen</h5>
+                                    <div class="row" id="dashboard_stornierungen_tb_holder">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right option_dashboard_lieferant_1" data-pg-collapsed="">
+                                            <button type="button" class="btn btn-default btn_icon btn_icon btn_icon_padding" onclick="">
+                                                <i class="fa fa-print fa-lg"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-default btn_icon btn_icon" onclick="">
+                                                <i class="fa fa-lg fa-download"></i>
+                                            </button>
+                                        </div>
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" id="dashboard_stornierung_tb">
+                                            <table class="table" id="yui_patched_v3_18_1_1_1434358742874_382"> 
+                                                <thead> 
+                                                    <tr> 
+                                                        <th>Kunde</th>                                                         
+                                                        <th>Abo-Nr</th>                                                         
+                                                        <th>Bag</th>                                                         
+                                                        <th>Kind</th>
+                                                        <th>Lieferdatum</th>
+                                                        <th>Lieferort
+                                                            <br>
+                                                        </th>
+                                                        <th>Zusatzinformation
+                                                            <br>
+                                                        </th>
+                                                        <th>
+                                                            <br>
+                                                        </th>                                                         
+                                                    </tr>                                                     
+                                                </thead>                                                 
+                                                <tbody> 
+                                                    <tr data-pg-collapsed=""> 
+                                                        <td>Max Musterman</td>                                                         
+                                                        <td>
+                                                            <a href="#">10060321</a>
+                                                        </td>                                                         
+                                                        <td>
+                                                            <a href="#">20060321</a>
+                                                        </td>                                                         
+                                                        <td>Arnold Mustermann</td>
+                                                        <td>01.09.15</td>
+                                                        <td>Röntgen Gymnasium</td>
+                                                        <td>Kind ist krank</td>
+                                                        <td>ja</td>                                                         
+                                                    </tr>
+                                                    <tr data-pg-collapsed=""> 
+                                                        <td>Max Musterman</td>                                                         
+                                                        <td>
+                                                            <a href="#">10060321</a>
+                                                        </td>                                                         
+                                                        <td>
+                                                            <a href="#">20060321</a>
+                                                        </td>                                                         
+                                                        <td>Bernadette Mustermann</td>
+                                                        <td>01.09.15</td>
+                                                        <td>Grundschule Süd</td>
+                                                        <td>Kind ist krank</td>
+                                                        <td>ja</td>                                                         
+                                                    </tr>
+                                                    <tr data-pg-collapsed=""> 
+                                                        <td>Bob Brown</td>                                                         
+                                                        <td>
+                                                            <a href="#">10060321</a>
+                                                        </td>                                                         
+                                                        <td>
+                                                            <a href="#">20060321</a>
+                                                        </td>                                                         
+                                                        <td>Mikael Brown</td>
+                                                        <td>01.09.15</td>
+                                                        <td>Grundschule Süd</td>
+                                                        <td>Bag wird abgeholt</td>
+                                                        <td>nein</td>                                                         
+                                                    </tr>                                                     
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row last_element_dash">
+                                        <hr class="hr_line hr_line_ext_dashboard_last">
+                                        <div class="col-md-12">
+                                            <a href="10_lieferant_stornierungen_alle.html">Alle Stornierungen anzeigen</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
-                        <div class="row dash_element_holder">
-                            <div class="col-md-12 dash_element"> 
-                                <h4>Meine Kennzahlen</h4>
-                                <h5>Ihre aktuellen Kennzahlen</h5>
-                                <div class="row">
-                                    <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
-                                        <div class="donut"></div>
+                    <div class="row" id="meine_abonnements" style="display:none;">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-md-12 dash_element"> 
+                                    <h4>Meine Abonnements</h4>
+                                    <h5>Ihre letzten Abonnements</h5>
+                                    <div class="row" id="dashboard_stornierungen_tb_holder">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right option_dashboard_lieferant_1" data-pg-collapsed="">
+                                            <button type="button" class="btn btn-default btn_icon btn_icon btn_icon_padding" onclick="">
+                                                <i class="fa fa-print fa-lg"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-default btn_icon btn_icon" onclick="">
+                                                <i class="fa fa-lg fa-download"></i>
+                                            </button>
+                                        </div>
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" id="dashboard_stornierung_tb">
+                                            <table class="table" id="yui_patched_v3_18_1_1_1434358742874_382"> 
+                                                <thead data-pg-collapsed=""> 
+                                                    <tr> 
+                                                        <th>Kunde</th>                                                         
+                                                        <th>Abonnement</th>                                                         
+                                                        <th>Abo-Nr</th>                                                         
+                                                        <th>Bestelldatum</th>
+                                                        <th>&nbsp;
+                                                            <br>
+                                                        </th>                                                         
+                                                    </tr>                                                     
+                                                </thead>                                                 
+                                                <tbody> 
+                                                    <tr data-pg-collapsed=""> 
+                                                        <td>Max Musterman</td>                                                         
+                                                        <td>
+                                                            30-Tage Abonnement
+</td>                                                         
+                                                        <td>
+                                                            <a href="#">20060321</a>
+                                                        </td>                                                         
+                                                        <td>01.09.15</td>
+                                                        <td>
+                                                            <a href="#">(Bestelldetails)</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-pg-collapsed=""> 
+                                                        <td>Bob Brown</td>                                                         
+                                                        <td>
+                                                            7-Tage Abonnement
+</td>                                                         
+                                                        <td>
+                                                            <a href="#">20060322</a>
+                                                        </td>                                                         
+                                                        <td>01.09.15</td>
+                                                        <td>
+                                                            <a href="#">(Bestelldetails)</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-pg-collapsed=""> 
+                                                        <td>Mareike Bock</td>                                                         
+                                                        <td>
+                                                            30-Tage Abonnement
+</td>                                                         
+                                                        <td>
+                                                            <a href="#">20060323</a>
+                                                        </td>                                                         
+                                                        <td>31.08.15</td>
+                                                        <td>
+                                                            <a href="#">(Bestelldetails)</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-pg-collapsed=""> 
+                                                        <td>Frank Blumengarten</td>                                                         
+                                                        <td>
+                                                            60-Tage Abonnement
+</td>                                                         
+                                                        <td>
+                                                            <a href="#">20060324</a>
+                                                        </td>                                                         
+                                                        <td>29.08.15</td>
+                                                        <td>
+                                                            <a href="#">(Bestelldetails)</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-pg-collapsed=""> 
+                                                        <td>Eva Kern</td>                                                         
+                                                        <td>
+                                                            14-Tage Abonnement
+</td>                                                         
+                                                        <td>
+                                                            <a href="#">20060325</a>
+                                                        </td>                                                         
+                                                        <td>15.08.15</td>
+                                                        <td>
+                                                            <a href="#">(Bestelldetails)</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-pg-collapsed=""> 
+                                                        <td>Max Musterman</td>                                                         
+                                                        <td>
+                                                            30-Tage Abonnement
+</td>                                                         
+                                                        <td>
+                                                            <a href="#">20060326</a>
+                                                        </td>                                                         
+                                                        <td>07.07.15</td>
+                                                        <td>
+                                                            <a href="#">(Bestelldetails)</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
-                                        <div class="bar"></div>
-                                    </div>
-                                </div>
-                                <div class="row last_element_dash" data-pg-collapsed>
-                                    <hr class="hr_line hr_line_ext_dashboard_last">
-                                    <div class="col-md-12">
-                                        <a>Alle Kennzahlen anzeigen</a>
+                                    <div class="row last_element_dash">
+                                        <hr class="hr_line hr_line_ext_dashboard_last">
+                                        <div class="col-md-12">
+                                            <a>Alle Abonnements anzeigen</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>             
-        </div>
-    </div>     
-    <div class="row" id="footer" data-pg-collapsed></div>     
-    <!-- Ende des Dokumentes -->     
-    <script>
+                    <div class="row" id="meine_kundenguthaben" style="display:none;">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-md-12 dash_element"> 
+                                    <h4>Meine Kundenguthaben</h4>
+                                    <h5>Kundenguthaben bei Ihnen</h5>
+                                    <div class="row" id="dashboard_stornierungen_tb_holder" data-pg-collapsed>
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right option_dashboard_lieferant_1" data-pg-collapsed="">
+                                            <button type="button" class="btn btn-default btn_icon btn_icon btn_icon_padding" onclick="">
+                                                <i class="fa fa-print fa-lg"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-default btn_icon btn_icon" onclick="">
+                                                <i class="fa fa-lg fa-download"></i>
+                                            </button>
+                                        </div>
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" id="dashboard_stornierung_tb" data-pg-collapsed>
+                                            <table class="table" id="yui_patched_v3_18_1_1_1434358742874_382"> 
+                                                <thead> 
+                                                    <tr> 
+                                                        <th>Kunde</th>                                                         
+                                                        <th>Guthaben</th>
+                                                        <th>Letzte Transaktion</th>
+                                                    </tr>                                                     
+                                                </thead>                                                 
+                                                <tbody> 
+                                                    <tr> 
+                                                        <td>Max Musterman</td>                                                         
+                                                        <td>12,00 €</td>
+                                                        <td>- 02,00 € (
+                                                            <a style="background-color: rgb(254, 254, 254);">29.06.2015)</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-pg-collapsed=""> 
+                                                        <td>Bob Brown</td>                                                         
+                                                        <td>04,30 €</td>
+                                                        <td>+ 04,30 € (
+                                                            <a style="background-color: rgb(254, 254, 254);">26.06.2015)</a>&nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-pg-collapsed=""> 
+                                                        <td>Mareike Bock</td>                                                         
+                                                        <td>05,20 €</td>
+                                                        <td>+ 04,20 €&nbsp;(
+                                                            <a style="background-color: rgb(254, 254, 254);">26.06.2015)</a>&nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-pg-collapsed=""> 
+                                                        <td>Hans Müller</td>                                                         
+                                                        <td>04,20 €</td>
+                                                        <td>- 01,20 €&nbsp;(
+                                                            <a style="background-color: rgb(254, 254, 254);">26.06.2015)</a>&nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-pg-collapsed=""> 
+                                                        <td>Mareike Bock</td>                                                         
+                                                        <td>03,20 €</td>
+                                                        <td>- 05,20 €&nbsp;(
+                                                            <a style="background-color: rgb(254, 254, 254);">26.06.2015)</a>&nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-pg-collapsed=""> 
+                                                        <td>Peter Bock</td>                                                         
+                                                        <td>08,20 €</td>
+                                                        <td>+ 03,20 €&nbsp;(
+                                                            <a style="background-color: rgb(254, 254, 254);">26.06.2015)</a>&nbsp;
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row last_element_dash" data-pg-collapsed>
+                                        <hr class="hr_line hr_line_ext_dashboard_last">
+                                        <div class="col-md-12">
+                                            <a href="12_lieferant_guthaben_alle.html">Alle Kundenguthaben anzeigen</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" data-pg-collapsed>
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-md-12 dash_element"> 
+                                    <h4>Meine Kennzahlen</h4>
+                                    <h5>Ihre aktuellen Kennzahlen</h5>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                                            <div class="donut"></div>
+                                        </div>
+                                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                                            <div class="bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row last_element_dash" data-pg-collapsed>
+                                        <hr class="hr_line hr_line_ext_dashboard_last">
+                                        <div class="col-md-12">
+                                            <a>Alle Kennzahlen anzeigen</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </div>         
+        <div class="row" id="footer" data-pg-collapsed></div>         
+        <!-- Ende des Dokumentes -->         
+        <script>
         	YUI().use(
         		'aui-scheduler',
         		function(Y) {
@@ -452,14 +573,14 @@ Ich kann über Müllerbäck nichts schlechtes berichten.
         		}
         	);
         </script>
-    <script>
+        <script>
     	YUI().use(
     		  'aui-datatable',
     		  function(Y) {
     		    var columns = ['Kind', 'Baginhalt', 'Lieferdatum', 'Schule', 'Zusatzinformation'];
 
     		    var data = [
-    		      {Kind: 'Arnold Mustermann', Baginhalt: 'Weizenbrötchen mit Salami, Banane, Apfelschorle', Lieferdatum: '01.09.15', Schule: 'Röntgen Gymnasium', Zusatzinformation: 'storniert'},
+    		      {Kind: 'Arnold Mustermann', Baginhalt: 'Weizenbrötchen mit Salami, Banane, Apfelschorle', Lieferdatum: '01.09.15', Schule: 'Röntgen Gymnasium', Zusatzinformation: 'Klasse 2a'},
     		      {Kind: 'Carl Christophson', Baginhalt: 'Volkornbrot mit Ei, Apfel, stilles Wasser', Lieferdatum: '01.09.15', Schule: 'Röntgen Gymnasium', Zusatzinformation: 'Klasse 2b'},
     		      {Kind: 'Frank Blumengarten', Baginhalt: 'Volkornbrötchen mit Putenaufschnitt, Banane, Milch', Lieferdatum: '01.09.15', Schule: 'Röntgen Gymnasium', Zusatzinformation: 'storniert'},
     		      {Kind: 'Mike Meckelmann', Baginhalt: 'Weizenbrötchen mit Salami, Apfel, Nektarine, stilles Wasser', Lieferdatum: '01.09.15', Schule: 'Röntgen Gymnasium', Zusatzinformation: 'Klasse 3a'},
@@ -491,7 +612,7 @@ Ich kann über Müllerbäck nichts schlechtes berichten.
     		colorStorniert();
     	};
     </script>
-    <script>
+        <script>
     function displayDonut(){
     	
     	var wi = 400;
@@ -577,7 +698,7 @@ Ich kann über Müllerbäck nichts schlechtes berichten.
     displayDonut();
     });
     </script>
-    <script>
+        <script>
 	    var margin = {top: 20, right: 20, bottom: 30, left: 40},
 	        width = 557 - margin.left - margin.right,
 	        height = 505 - margin.top - margin.bottom;
@@ -638,6 +759,6 @@ Ich kann über Müllerbäck nichts schlechtes berichten.
 	      return d;
 	    }
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>    
-    <script src="js/functions.js"></script>     
-</body>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>         
+        <script src="js/functions.js"></script>         
+    </body>
