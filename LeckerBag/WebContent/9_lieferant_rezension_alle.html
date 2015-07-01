@@ -7,25 +7,23 @@
         <meta name="description" content="Beschreibung der Seite">         
         <meta name="author" content="Paul Kozakiewicz">         
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">         
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">         
+        <link href="css/bootstrap.css" rel="stylesheet">         
         <link href="css/style.css" rel="stylesheet" type="text/css">         
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <script src="js/jquery.js"></script>         
         <script> 
 			$(function(){
-		        $("#header").load("header2.html", function(){
-		        	setNav(2);
-		        });
-			  	$("#footer").load("footer.html"); 
+			  $("#header").load("header2.html"); 
+			  $("#footer").load("footer.html"); 
 			});
 		</script>         
     </head>     
     <body> 
         <div class="row" id="header"></div>         
-        <div class="row">
+        <div class="row" data-pg-collapsed>
             <div class="col-md-12">
                 <div class="container wrapper">
-                    <div class="row">
+                    <div class="row" data-pg-collapsed="">
                         <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10">
                             <h3>Meine Rezensionen</h3> 
                             <p>Hier können Sie alle eingegangen Rezensionen einsehen</p>
@@ -163,7 +161,14 @@
         </div>         
         <div class="row" id="footer"></div>         
         <!-- Ende des Dokumentes -->         
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>         
+        <script>
+	        $("#header").load("header.html", function(){
+	        	setNav(2);
+	        });
+        </script>         
+        <!-- Ende des Dokumentes -->         
+        <script src="js/jquery.js"></script>         
+        <script src="js/bootstrap.js"></script>         
         <script src="js/functions.js"></script>         
     </body>     
 </html>
