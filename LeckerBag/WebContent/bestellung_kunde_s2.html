@@ -8,14 +8,14 @@
         <meta name="description" content="Beschreibung der Seite">         
         <meta name="author" content="Paul Kozakiewicz">         
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">         
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">      
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">         
         <link href="css/style.css" rel="stylesheet" type="text/css">         
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>   
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>         
         <!-- Scheduler -->
         <script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
-   		<!-- Scheduler -->
-    	<script> 
+        <!-- Scheduler -->
+        <script> 
 		$(function(){
 	        $("#header").load("header.html", function(){
 	        	setNav(2);
@@ -71,280 +71,280 @@
         		$("#ampel_2").popover('disable');
         	}
         };
-		</script>     
-	</head> 
-<body>
-    <div class="row" id="header" data-pg-collapsed></div>     
-    <div class="row">
-        <div class="col-md-12">
-            <div class="container wrapper">
-                <div class="row">
-                    <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10" data-pg-collapsed>
-                        <h3>Bestellung</h3>
-                        <p>Erstelle deine LeckerBags</p> 
+		</script>         
+    </head>     
+    <body>
+        <div class="row" id="header" data-pg-collapsed></div>         
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container wrapper">
+                    <div class="row">
+                        <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10" data-pg-collapsed>
+                            <h3>Bestellung</h3>
+                            <p>Erstelle deine LeckerBags</p> 
+                        </div>
+                        <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2">
+                            <a href="#" class=""><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
+                            <br/>
+                            <a>Benötigst du Hilfe?</a>
+                        </div>
                     </div>
-                    <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2">
-                        <a href="#" class=""><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
-                        <br/>
-                        <a>benötigen Sie Hilfe?</a>
-                    </div>
-                </div>
-                <hr class="hr_line"/>
-                <ol class="breadcrumb" data-pg-collapsed> 
-                    <li>
-                        <a href="dashboard_kunde.html">Mein Leckerbag</a>
-                    </li>
-                    <li>
-                        <a href="bestellung_kunde.html">Bestellung - Schritt 1</a>
-                    </li>                     
-                    <li>
-                        <font>Bestellung - Schritt 2</font>
-                    </li>                     
-                </ol>
-                <div class="row">
-                    <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
-                        <div class="row dash_element_holder">
-                            <div class="col-md-12 dash_element col-sm-12 col-xs-12 col-lg-12">
-                                <div class="row bestellung_schrittzaehler" data-pg-collapsed>
-                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" data-pg-collapsed>
-                                        <p>Schritt 2/2</p> 
-                                    </div>
-                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" data-pg-collapsed>
-                                        <div class="progress"> 
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"> 
-</div>                                             
-                                        </div>                                         
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right"> 
-                                        <p>Sie müssen noch <strong><font id="daysRemaining">30</font></strong><strong> / 30</strong> Tagen konfigurieren</p> 
-                                    </div>
-                                    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 dash_element dash_element_ext_bestellung_s2">
-                                        <div class="row">
-                                            <div class="ol-md-12 col-sm-12 col-xs-12 col-lg-12">
-                                                <p class="control-label" for="formInput43">Wähle einen Tag aus</p>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-pg-collapsed>
-                                                <div id="bestellung2_scheduler" data-pg-collapsed></div>                                                 
-                                            </div>
+                    <hr class="hr_line"/>
+                    <ol class="breadcrumb" data-pg-collapsed> 
+                        <li>
+                            <a href="dashboard_kunde.html">Mein Leckerbag</a>
+                        </li>
+                        <li>
+                            <a href="bestellung_kunde.html">Bestellung - Schritt 1</a>
+                        </li>                         
+                        <li>
+                            <font>Bestellung - Schritt 2</font>
+                        </li>                         
+                    </ol>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-md-12 dash_element col-sm-12 col-xs-12 col-lg-12">
+                                    <div class="row bestellung_schrittzaehler" data-pg-collapsed>
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" data-pg-collapsed>
+                                            <p>Schritt 2/2</p> 
+                                        </div>
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" data-pg-collapsed>
+                                            <div class="progress"> 
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"> 
+</div>                                                 
+                                            </div>                                             
                                         </div>
                                     </div>
-                                    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 dash_element" id="bestellung_s2_bagbefuellen" style="display:block">
-                                        <div class="row">
-                                            <div class="ol-md-12 col-sm-12 col-xs-12 col-lg-12 col-md-12" data-pg-collapsed>
-                                                <p class="control-label" for="formInput43">Befülle Deine Bag</p>
-                                            </div>
-                                            <div class="ol-md-12 col-md-6 col-lg-6 col-xs-12 col-sm-12" data-pg-collapsed>
-                                                <div class="row">
-                                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right">
-                                                        <i class="fa fa-circle fa-2x ampel" id="ampel_1" data-toggle="popover" data-trigger="hover"></i>
-                                                        <i class="fa fa-2x fa-circle ampel" id="ampel_2" data-toggle="popover" data-trigger="hover"></i>
-                                                        <i class="fa fa-2x fa-circle ampel" id="ampel_3" style="margin-right:20px" data-toggle="popover" data-trigger="hover"></i> 
-                                                    </div>
-                                                    <div id="popover_content_wrapper" style="display: none">
-                                                        <table class="table" id="table_naehrwerte">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>kcal</th>
-                                                                    <th>Fett</th>
-                                                                    <th>Eiweiß</th>
-                                                                    <th>Kohlenhydrate</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>115</td>
-                                                                    <td>25g</td>
-                                                                    <td>15g</td>
-                                                                    <td>45g</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right"> 
+                                            <p>Du musst noch <strong><font id="daysRemaining">30</font></strong><strong> / 30</strong> Tage konfigurieren</p> 
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 dash_element dash_element_ext_bestellung_s2">
+                                            <div class="row">
+                                                <div class="ol-md-12 col-sm-12 col-xs-12 col-lg-12">
+                                                    <p class="control-label" for="formInput43">Wähle einen Tag aus</p>
                                                 </div>
-                                                <div id="mySortableLayout">
-                                                    <div class="bestellung_bag">
-                                                        <div class="portlet" id="portlet_default">
-                                                            <p>Baginhalt</p>
-                                                        </div>
-                                                    </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-pg-collapsed>
+                                                    <div id="bestellung2_scheduler" data-pg-collapsed></div>                                                     
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" data-pg-collapsed>
-                                                <div id="bestellung_s2_Tab">
-                                                    <ul class="nav nav-tabs">
-                                                        <li class="active">
-                                                            <a href="#tab-1">Brötchen</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#tab-2">Getränke</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#tab-3">Obst</a>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="tab-content">
-                                                        <div id="tab-1">
-                                                            <div class="sidebar">
-                                                                <div class="portlet-item blue" id="blue">Brötchen mit Salami und Käse</div>
-                                                                <div class="portlet-item blue" id="blue">Brötchen mit Käse</div>
-                                                                <div class="portlet-item blue" id="blue">Brötchen mit Mortadella</div>
-                                                                <div class="portlet-item blue" id="blue">Brötchen mit Schinken</div>
-                                                                <div class="portlet-item blue" id="blue">Brötchen mit Mettwurst</div>
-                                                                <div class="portlet-item blue" id="blue">Brötchen mit Tomate Mozzarella</div>
-                                                            </div>                                                             
-                                                        </div>
-                                                        <div id="tab-2" class="tab-pane">
-                                                            <div class="sidebar">
-                                                                <div class="portlet-item green" id="green">Wasser Medium</div>
-                                                                <div class="portlet-item green" id="green">Wasser Still</div>
-                                                                <div class="portlet-item green" id="green">Milch</div>
-                                                                <div class="portlet-item green" id="green">Kakao</div>
-                                                                <div class="portlet-item green" id="green">Erdbeermilch</div>
-                                                                <div class="portlet-item green" id="green">Apfelschorle</div>
-                                                                <div class="portlet-item green" id="green">Cola</div>
-                                                            </div>                                                             
-                                                        </div>
-                                                        <div id="tab-3" class="tab-pane">
-                                                            <div class="sidebar">
-                                                                <div class="portlet-item red" id="red">Apfel</div>
-                                                                <div class="portlet-item red" id="red">Banane</div>
-                                                                <div class="portlet-item red" id="red">Nektarine</div>
-                                                                <div class="portlet-item red" id="red">Pfirsich</div>
-                                                                <div class="portlet-item red" id="red">Trauben hell</div>
-                                                                <div class="portlet-item red" id="red">Trauben dunkel</div>
-                                                                <div class="portlet-item red" id="red">Clementine</div>
-                                                                <div class="portlet-item red" id="red">Birne</div>
-                                                            </div>                                                             
-                                                        </div>
-                                                    </div>
-                                                </div>                                                 
-                                            </div>
-                                            <div class="row pg-empty-placeholder"></div>
-                                            <div class="col-xs-6 bestellung_favorite_optionen col-sm-6 col-md-6 col-lg-6" data-pg-collapsed>
-                                                <p data-pg-collapsed> <input class="control-label" type="checkbox" value="">                                                                                                                             		   Bag als Favorite abspeichern       </p> 
-                                            </div>
-                                            <div class="col-sm-6 col-xs-6 text-right bestellung_favorite_optionen col-md-6 col-lg-6" data-pg-collapsed>
-                                                <button type="button" class="btn btn-default button_paulo" onclick="saveDate(false)">Speichern</button>                                                 
-                                            </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" data-pg-collapsed>
-                                                <p id="yui_patched_v3_18_1_2_1434183585072_222">Meine Favoriten</p> 
-                                            </div>
-                                            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" data-pg-collapsed>
-                                                <div id="favorites_carousel" class="carousel slide">
-                                                    <!-- Carousel items -->
-                                                    <div class="carousel-inner">
-                                                        <div class="item active">
-                                                            <div class="row">
-                                                                <div class="col-sm-3">
-                                                                    <a href="#x" class="thumbnail thumbnail_favorites">
-                                                                        <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col-sm-3">
-                                                                    <a href="#x" class="thumbnail thumbnail_favorites">
-                                                                        <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col-sm-3">
-                                                                    <a href="#x" class="thumbnail thumbnail_favorites">
-                                                                        <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col-sm-3">
-                                                                    <a href="#x" class="thumbnail thumbnail_favorites">
-                                                                        <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <!--/row-->
+                                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 dash_element" id="bestellung_s2_bagbefuellen" style="display:block">
+                                            <div class="row">
+                                                <div class="ol-md-12 col-sm-12 col-xs-12 col-lg-12 col-md-12" data-pg-collapsed>
+                                                    <p class="control-label" for="formInput43">Befülle Deine Bag</p>
+                                                </div>
+                                                <div class="ol-md-12 col-md-6 col-lg-6 col-xs-12 col-sm-12" data-pg-collapsed>
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right">
+                                                            <i class="fa fa-circle fa-2x ampel" id="ampel_1" data-toggle="popover" data-trigger="hover"></i>
+                                                            <i class="fa fa-2x fa-circle ampel" id="ampel_2" data-toggle="popover" data-trigger="hover"></i>
+                                                            <i class="fa fa-2x fa-circle ampel" id="ampel_3" style="margin-right:20px" data-toggle="popover" data-trigger="hover"></i> 
                                                         </div>
-                                                        <!--/item-->
-                                                        <div class="item">
-                                                            <div class="row">
-                                                                <div class="col-sm-3">
-                                                                    <a href="#x" class="thumbnail thumbnail_favorites">
-                                                                        <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col-sm-3">
-                                                                    <a href="#x" class="thumbnail thumbnail_favorites">
-                                                                        <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col-sm-3">
-                                                                    <a href="#x" class="thumbnail thumbnail_favorites">
-                                                                        <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col-sm-3">
-                                                                    <a href="#x" class="thumbnail thumbnail_favorites">
-                                                                        <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <!--/row-->
+                                                        <div id="popover_content_wrapper" style="display: none">
+                                                            <table class="table" id="table_naehrwerte">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>kcal</th>
+                                                                        <th>Fett</th>
+                                                                        <th>Eiweiß</th>
+                                                                        <th>Kohlenhydrate</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>115</td>
+                                                                        <td>25g</td>
+                                                                        <td>15g</td>
+                                                                        <td>45g</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
                                                         </div>
-                                                        <!--/item-->
-                                                        <div class="item">
-                                                            <div class="row">
-                                                                <div class="col-sm-3">
-                                                                    <a href="#x" class="thumbnail thumbnail_favorites">
-                                                                        <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col-sm-3">
-                                                                    <a href="#x" class="thumbnail thumbnail_favorites">
-                                                                        <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col-sm-3">
-                                                                    <a href="#x" class="thumbnail thumbnail_favorites">
-                                                                        <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col-sm-3">
-                                                                    <a href="#x" class="thumbnail thumbnail_favorites">
-                                                                        <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <!--/row-->
-                                                        </div>
-                                                        <!--/item-->
                                                     </div>
-                                                    <!--/carousel-inner-->                                                     
-                                                    <a class="left carousel-control carousel_favorites" href="#favorites_carousel" data-slide="prev">‹</a>
-                                                    <a class="right carousel-control carousel_favorites" href="#favorites_carousel" data-slide="next">›</a>
-                                                </div>                                                 
+                                                    <div id="mySortableLayout">
+                                                        <div class="bestellung_bag">
+                                                            <div class="portlet" id="portlet_default">
+                                                                <p>Baginhalt</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" data-pg-collapsed>
+                                                    <div id="bestellung_s2_Tab">
+                                                        <ul class="nav nav-tabs">
+                                                            <li class="active">
+                                                                <a href="#tab-1">Brötchen</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#tab-2">Getränke</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#tab-3">Obst</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="tab-content">
+                                                            <div id="tab-1">
+                                                                <div class="sidebar">
+                                                                    <div class="portlet-item blue" id="blue">Brötchen mit Salami und Käse</div>
+                                                                    <div class="portlet-item blue" id="blue">Brötchen mit Käse</div>
+                                                                    <div class="portlet-item blue" id="blue">Brötchen mit Mortadella</div>
+                                                                    <div class="portlet-item blue" id="blue">Brötchen mit Schinken</div>
+                                                                    <div class="portlet-item blue" id="blue">Brötchen mit Mettwurst</div>
+                                                                    <div class="portlet-item blue" id="blue">Brötchen mit Tomate Mozzarella</div>
+                                                                </div>                                                                 
+                                                            </div>
+                                                            <div id="tab-2" class="tab-pane">
+                                                                <div class="sidebar">
+                                                                    <div class="portlet-item green" id="green">Wasser Medium</div>
+                                                                    <div class="portlet-item green" id="green">Wasser Still</div>
+                                                                    <div class="portlet-item green" id="green">Milch</div>
+                                                                    <div class="portlet-item green" id="green">Kakao</div>
+                                                                    <div class="portlet-item green" id="green">Erdbeermilch</div>
+                                                                    <div class="portlet-item green" id="green">Apfelschorle</div>
+                                                                    <div class="portlet-item green" id="green">Cola</div>
+                                                                </div>                                                                 
+                                                            </div>
+                                                            <div id="tab-3" class="tab-pane">
+                                                                <div class="sidebar">
+                                                                    <div class="portlet-item red" id="red">Apfel</div>
+                                                                    <div class="portlet-item red" id="red">Banane</div>
+                                                                    <div class="portlet-item red" id="red">Nektarine</div>
+                                                                    <div class="portlet-item red" id="red">Pfirsich</div>
+                                                                    <div class="portlet-item red" id="red">Trauben hell</div>
+                                                                    <div class="portlet-item red" id="red">Trauben dunkel</div>
+                                                                    <div class="portlet-item red" id="red">Clementine</div>
+                                                                    <div class="portlet-item red" id="red">Birne</div>
+                                                                </div>                                                                 
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                     
+                                                </div>
+                                                <div class="row pg-empty-placeholder"></div>
+                                                <div class="col-xs-6 bestellung_favorite_optionen col-sm-6 col-md-6 col-lg-6" data-pg-collapsed>
+                                                    <p data-pg-collapsed> <input class="control-label" type="checkbox" value="">                                                                                                                             		   Bag als Favorit abspeichern       </p> 
+                                                </div>
+                                                <div class="col-sm-6 col-xs-6 text-right bestellung_favorite_optionen col-md-6 col-lg-6" data-pg-collapsed>
+                                                    <button type="button" class="btn btn-default button_paulo" onclick="saveDate(false)">Speichern</button>                                                     
+                                                </div>
                                             </div>
-                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" data-pg-collapsed>
-                                                <p data-pg-collapsed> <input class="control-label" type="checkbox" value="" style="margin-top:15px">Alle Tage automatisch mit Bags aus meinen Favoriten befüllen</p> 
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" data-pg-collapsed>
+                                                    <p id="yui_patched_v3_18_1_2_1434183585072_222">Meine Favoriten</p> 
+                                                </div>
+                                                <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" data-pg-collapsed>
+                                                    <div id="favorites_carousel" class="carousel slide">
+                                                        <!-- Carousel items -->
+                                                        <div class="carousel-inner">
+                                                            <div class="item active">
+                                                                <div class="row">
+                                                                    <div class="col-sm-3">
+                                                                        <a href="#x" class="thumbnail thumbnail_favorites">
+                                                                            <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <a href="#x" class="thumbnail thumbnail_favorites">
+                                                                            <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <a href="#x" class="thumbnail thumbnail_favorites">
+                                                                            <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <a href="#x" class="thumbnail thumbnail_favorites">
+                                                                            <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <!--/row-->
+                                                            </div>
+                                                            <!--/item-->
+                                                            <div class="item">
+                                                                <div class="row">
+                                                                    <div class="col-sm-3">
+                                                                        <a href="#x" class="thumbnail thumbnail_favorites">
+                                                                            <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <a href="#x" class="thumbnail thumbnail_favorites">
+                                                                            <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <a href="#x" class="thumbnail thumbnail_favorites">
+                                                                            <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <a href="#x" class="thumbnail thumbnail_favorites">
+                                                                            <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <!--/row-->
+                                                            </div>
+                                                            <!--/item-->
+                                                            <div class="item">
+                                                                <div class="row">
+                                                                    <div class="col-sm-3">
+                                                                        <a href="#x" class="thumbnail thumbnail_favorites">
+                                                                            <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <a href="#x" class="thumbnail thumbnail_favorites">
+                                                                            <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <a href="#x" class="thumbnail thumbnail_favorites">
+                                                                            <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <a href="#x" class="thumbnail thumbnail_favorites">
+                                                                            <img src="http://placehold.it/250x250" alt="Image" class="img-responsive">
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <!--/row-->
+                                                            </div>
+                                                            <!--/item-->
+                                                        </div>
+                                                        <!--/carousel-inner-->                                                         
+                                                        <a class="left carousel-control carousel_favorites" href="#favorites_carousel" data-slide="prev">‹</a>
+                                                        <a class="right carousel-control carousel_favorites" href="#favorites_carousel" data-slide="next">›</a>
+                                                    </div>                                                     
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" data-pg-collapsed>
+                                                    <p data-pg-collapsed> <input class="control-label" type="checkbox" value="" style="margin-top:15px">Alle Tage automatisch mit Bags aus meinen Favoriten befüllen</p> 
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right" data-pg-collapsed>
-                                        <button type="button" class="btn btn-default button_paulo button_paulo_3" onclick="location.href='dashboard_kunde.html'">Abbrechen</button>
-                                        <button type="button" class="btn btn-default button_paulo" onclick="location.href='2_uebersicht_abo.html'">Abschliessen</button>                                         
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right" data-pg-collapsed>
+                                            <button type="button" class="btn btn-default button_paulo button_paulo_3" onclick="location.href='dashboard_kunde.html'">Abbrechen</button>
+                                            <button type="button" class="btn btn-default button_paulo" onclick="location.href='2_uebersicht_abo.html'">Abschliessen</button>                                             
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>             
-        </div>
-    </div>     
-    <div class="row" id="footer" data-pg-collapsed></div>     
-    <!-- Ende des Dokumentes -->     
-    <script>
+                </div>                 
+            </div>
+        </div>         
+        <div class="row" id="footer" data-pg-collapsed></div>         
+        <!-- Ende des Dokumentes -->         
+        <script>
     </script>
-    <script>
+        <script>
    		YUI().use(
    		  'aui-scheduler',
    		  function(Y) {
@@ -363,7 +363,7 @@
    		  }
    		);
     </script>
-    <script>
+        <script>
     	YUI().use(
     			  'aui-sortable-layout',
     			  function(Y) {
@@ -455,6 +455,6 @@
     			  }
     			);
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>      
-    <script src="js/functions.js"></script>     
-</body>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>         
+        <script src="js/functions.js"></script>         
+    </body>
