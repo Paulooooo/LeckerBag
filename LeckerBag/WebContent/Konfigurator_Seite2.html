@@ -68,7 +68,7 @@
                                         <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" data-pg-collapsed="">
                                             <div class="form-group" data-pg-collapsed=""> 
                                                 <label class="control-label">Rohling</label>                                                 
-                                                <select id="" class="form-control"> 
+                                                <select id="formInput_rohling" class="form-control"> 
                                                     <option>Weizenbrötchen</option>                                                     
                                                     <option>Vollkornnbrötchen</option>                                                     
                                                     <option>Sesambrötchen</option>
@@ -78,7 +78,7 @@
                                             </div>
                                             <div class="form-group"> 
                                                 <label class="control-label">Belag 1</label>
-                                                <select id="" class="form-control"> 
+                                                <select id="formInput_belag1" class="form-control"> 
                                                     <option></option>
                                                     <option>Salami</option>                                                     
                                                     <option>Schinken</option>                                                     
@@ -87,7 +87,7 @@
                                             </div>                                             
                                             <div class="form-group"> 
                                                 <label class="control-label">Belag 2</label>
-                                                <select id="" class="form-control"> 
+                                                <select id="formInput_belag2" class="form-control"> 
                                                     <option></option>
                                                     <option>Emmentaler</option>                                                     
                                                     <option>Gouda</option>                                                     
@@ -98,7 +98,7 @@
                                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-pg-collapsed="">
                                             <div class="form-group"> 
                                                 <label class="control-label">Zusätzlicher Belag 1</label>
-                                                <select id="" class="form-control"> 
+                                                <select id="formInput_zbelag1" class="form-control"> 
                                                     <option></option>
                                                     <option>Salat</option>                                                     
                                                     <option>Gurke</option>                                                     
@@ -107,7 +107,7 @@
                                             </div>                                             
                                             <div class="form-group"> 
                                                 <label class="control-label">Zusätzlicher Belag 2</label>
-                                                <select id="" class="form-control"> 
+                                                <select id="formInput_zbelag2" class="form-control"> 
                                                     <option></option>
                                                     <option>Salat</option>                                                     
                                                     <option>Gurke</option>                                                     
@@ -116,7 +116,7 @@
                                             </div>
                                             <div class="form-group"> 
                                                 <label class="control-label">Zusätzlicher Belag 3</label>
-                                                <select id="" class="form-control"> 
+                                                <select id="formInput_zbelag3" class="form-control"> 
                                                     <option></option>
                                                     <option>Salat</option>                                                     
                                                     <option>Gurke</option>                                                     
@@ -125,56 +125,14 @@
                                             </div>                                             
                                         </div>
                                         <div class="col-md-12 col-lg-12 col-sm-6 col-xs-6 text-right">
-                                            <button type="button" class="btn btn-default button_paulo">Hinzufügen</button>                                             
+                                            <button type="button" class="btn btn-default button_paulo" id="add_produkt">Hinzufügen</button>                                             
                                         </div>
                                     </div>
                                     <h4>Ihre Auswahl:</h4>
                                     <hr class="hr_line"/>
-                                    <div class="row konfig_abstand" data-pg-collapsed>
+                                    <div class="row konfig_abstand" data-pg-collapsed id="konfig_produkte">
                                         <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6 list_scroll">
-                                            <ul class="list-group" data-pg-collapsed> 
-                                                <li class="list-group-item" data-pg-collapsed="">
-                                                    <label data-pg-collapsed=""> 
-                                                        <input class="control-label" type="checkbox" value="">                                                         
-                                                    </label>                                                     
-                                                    Weizenbrötchen / Schinken / Gouda / Tomate             
-                                                    <b>Kosten:</b> 2,49 € 
-                                                </li>
-                                                <li class="list-group-item" data-pg-collapsed="">
-                                                    <label> 
-                                                        <input class="control-label" type="checkbox" checked="checked">                                                         
-                                                    </label>                                                     
-                                                    Vollkornbrötchen / Salami / Emmentaler                              
-                                                    <b>Kosten:</b> 2,00 € 
-                                                </li>                                                 
-                                                <li class="list-group-item" data-pg-collapsed="">
-                                                    <label data-pg-collapsed=""> 
-                                                        <input class="control-label" type="checkbox" value="">                                                         
-                                                    </label>                                                     
-                                                    Sesambrötchen / Lyoner / Salat
-                                                    <b>Kosten:</b> 1,89 €                            
-                                                </li>
-                                                <li class="list-group-item" data-pg-collapsed="">
-                                                    <label data-pg-collapsed=""> 
-                                                        <input class="control-label" type="checkbox" checked="checked">                                                         
-                                                    </label>                                                     
-                                                    Vollkornbrot / Schinken / Edamer / Tomate
-                                                    <b>Kosten:</b> 2,09 €  
-                                                </li>
-                                                <li class="list-group-item" data-pg-collapsed="">
-                                                    <label data-pg-collapsed=""> 
-                                                        <input class="control-label" type="checkbox" checked="checked">                                                         
-                                                    </label>                                                     
-                                                    Schwarzbrot / Salami / Emmentaler / Salat
-                                                    <b>Kosten:</b> 2,19 € 
-                                                </li>
-                                                <li class="list-group-item" data-pg-collapsed="">
-                                                    <label data-pg-collapsed=""> 
-                                                        <input class="control-label" type="checkbox" checked="checked">                                                         
-                                                    </label>                                                     
-                                                    Weizenbrötchen / Lyoner / Gouda / Tomate
-                                                    <b>Kosten:</b> 2,49 €  
-                                                </li>                                                 
+                                            <ul class="list-group" data-pg-collapsed id="konfig_produkte_ul">                                         
                                             </ul>
                                         </div>
                                     </div>
@@ -192,7 +150,35 @@
             </div>
         </div>
         <div class="row" id="footer" data-pg-collapsed></div>         
-        <!-- Ende des Dokumentes -->         
+        <!-- Ende des Dokumentes -->     
+        <script>
+	        $('#add_produkt').click(function () {
+	        	var rohling = $("#formInput_rohling").val();
+	        	var belag1 = $("#formInput_belag1").val();
+	        	var belag2 = $("#formInput_belag2").val();
+	        	var zbelag1 = $("#formInput_zbelag1").val();
+	        	var zbelag2 = $("#formInput_zbelag2").val();
+	        	var zbelag3 = $("#formInput_zbelag3").val();
+	        	var string =  "";
+	        	if (rohling != "")
+	        		string = string+rohling;
+	        	if (belag1 != "")
+	        		string = string+" / "+belag1;
+	        	if (belag2 != "")
+	        		string = string+" / "+belag2;
+	        	if (zbelag1 != "")
+	        		string = string+" / "+zbelag1;
+	        	if (zbelag2 != "")
+	        		string = string+" / "+zbelag2;
+	        	if (zbelag3 != "")
+	        		string = string+" / "+zbelag3;
+	        	$("#konfig_produkte ul").append('<li style="display: inline-block; width: 100%;" class="list-group-item"><font style="padding-top: 12px; display: inline-block;""><label class="konfig_produkt_aktiv"><input class="control-label" type="checkbox" checked="checked"></label>'+string+'<b> / Kosten:</b> 2,30 €</font><button type="button" style="float: right;" class="btn btn-default btn_icon btn_icon " data-pg-collapsed=""><i class="glyphicon glyphicon-trash"></i></button></li>');
+	        	
+	        	$("#konfig_produkte_ul :button").click(function() { 
+	        	   $(this).parent().remove();
+	        	});
+	        });
+        </script>    
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>         
         <script src="js/functions.js"></script>         
     </body>     

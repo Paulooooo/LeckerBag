@@ -24,7 +24,7 @@
 		</script>         
     </head>     
     <body>
-        <div class="row" id="header"></div>         
+        <div class="row" id="header" data-pg-collapsed></div>         
         <div class="row">
             <div class="col-md-12">
                 <div class="container wrapper">
@@ -50,32 +50,38 @@
                                         <li class="list_text">
                                             <a color="#5b586b" href="mein_profil_kunde.html">Profil ansehen</a>
                                         </li>
-                                        <li class="list_text">
-                                            <a color="#5b586b" href="mein_profil_kunde.html">Profil bearbeiten</a>
-                                        </li>
                                         <li class="list_text"> 
                                             <a color="#23527c" href="profil_loeschen_kunde.html">Profil löschen</a>
+                                        </li>
+                                        <li class="list_text">
+                                            <a href="kind_bearbeiten.html">Kind hinzufügen</a>
                                         </li>
                                     </ul>
                                     <h5>Deine Kinder</h5>
                                     <ul class="pg-empty-placeholder">
                                         <li class="list_text">
+                                            <a color="#5b586b" href="mein_profil_kunde.html">Kind(er) ansehen</a>
+                                        </li>
+                                        <li class="list_text">
                                             <a href="kind_bearbeiten.html">Kind hinzufügen</a>
                                         </li>
-                                        <li class="list_text">
-                                            <a href="mein_profil_kunde.html">Kind(er) ansehen</a>
+                                    </ul>
+                                    <h5>Deine favorisierten Bags</h5>
+                                    <ul class="pg-empty-placeholder">
+                                        <li>
+                                            <a>Favoriten ansehen</a>
                                         </li>
-                                        <li class="list_text">
-                                            <a color="#5b586b" href="mein_profil_kunde.html">Kind(er) bearbeiten</a>
-                                        </li>
-                                        <li class="list_text">
-                                            <a color="#5b586b" href="mein_profil_kunde.html">Kind(er) löschen</a>
+                                    </ul>
+                                    <h5>Deine favorisierten Bäcker</h5>
+                                    <ul class="pg-empty-placeholder">
+                                        <li>
+                                            <a>Favoriten ansehen</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 dash_element_col">
+                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 dash_element_col" data-pg-collapsed>
                             <div class="row dash_element_holder">
                                 <div class="col-md-12 dash_element"> 
                                     <h4>Meine Abonnements</h4>
@@ -105,7 +111,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-pg-collapsed>
                         <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
                             <div class="row dash_element_holder">
                                 <div class="col-md-12 dash_element col-sm-12 col-xs-12 col-lg-12">
@@ -114,7 +120,7 @@
                                     <div id="wrapper_scheduler">
                                         <div id="scheduler_dashboard"></div>
                                     </div>
-                                    <div class="row last_element_dash">
+                                    <div class="row last_element_dash" data-pg-collapsed>
                                         <hr class="hr_line hr_line_ext_dashboard_last">
                                         <div class="col-md-12">
                                             <a>Alle Bestellungen anzeigen</a>
@@ -124,7 +130,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-pg-collapsed>
                         <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
                             <div class="row dash_element_holder">
                                 <div class="col-md-12 dash_element" data-pg-collapsed> 
@@ -179,38 +185,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 dash_element_col">
-                            <div class="row dash_element_holder" data-pg-collapsed="">
-                                <div class="col-md-12 dash_element"> 
-                                    <h4>Meine Favoriten</h4>
-                                    <h5>Deine Bags</h5>
-                                    <ul class="pg-empty-placeholder" data-pg-collapsed="">
-                                        <li>
-                                            <a>Favoriten ansehen</a>
-                                        </li>
-                                        <li>
-                                            <a>Favoriten bearbeiten</a>
-                                        </li>
-                                        <li>
-                                            <a>Favoriten löschen</a>
-                                        </li>
-                                    </ul>
-                                    <h5>Deine Bäcker</h5>
-                                    <ul class="pg-empty-placeholder" data-pg-collapsed="">
-                                        <li>
-                                            <a>Favoriten ansehen</a>
-                                        </li>
-                                        <li>
-                                            <a>Favoriten bearbeiten</a>
-                                        </li>
-                                        <li>
-                                            <a>Favoriten löschen</a>
-                                        </li>
-                                    </ul>                                     
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 dash_element_col">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12" data-pg-collapsed>
                             <div class="row dash_element_holder">
                                 <div class="col-md-12 dash_element"> 
                                     <h4>Neuigkeiten</h4>
@@ -245,7 +220,7 @@
                 </div>                 
             </div>
         </div>         
-        <div class="row" id="footer"></div>         
+        <div class="row" id="footer" data-pg-collapsed></div>         
         <!-- Ende des Dokumentes -->         
         <script>
 	        $("#header").load("header.html", function(){

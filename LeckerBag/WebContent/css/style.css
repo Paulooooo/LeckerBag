@@ -45,7 +45,7 @@ label
 
 /* Navigationsleiste*/
 
-#nav_sn
+.nav_sn
 {
     background-color: #332211;
     padding-right: 20px;
@@ -1217,7 +1217,9 @@ label
     font-style: normal;
     color: #6c7f2c;
 }
-
+.konfig_produkt_aktiv{
+	margin-right: 15px;
+}
 
 
 /* medium devices (bis 992px) */

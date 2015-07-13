@@ -24,7 +24,8 @@
 		        });
 			  	$("#footer").load("footer.html"); 
 			});
-		</script>         
+		</script>
+
     </head>     
     <body>
         <div class="row" id="header" data-pg-collapsed></div>         
@@ -64,28 +65,44 @@
                                         <div class="col-md-6 col-lg-6 schulen_element col-sm-12 col-xs-12" data-pg-collapsed>
                                             <div class="form-group" data-pg-collapsed> 
                                                 <label class="control-label" for="formInput38">Bundesland</label>                                                 
-                                                <select id="formInput38" class="form-control" data-pg-collapsed> 
-                                                    <option>Bayern</option>                                                     
-                                                    <option>Hessen</option>                                                     
-                                                    <option>Saarland</option>                                                     
+                                                <select name="horst" id="formInput_bundesland" class="form-control" data-pg-collapsed> 
+                                                	<option value="0">Bundesland auswählen...</option>
+                                                	<option value="1">Baden-Württemberg  </option> 
+                                                	<option value="2">Bayern</option> 
+                                                	<option value="3">Berlin</option> 
+                                                	<option value="4">Brandenburg</option> 
+                                                	<option value="5">Bremen</option> 
+                                                	<option value="6">Hamburg</option> 
+                                                	<option value="7">Hessen</option> 
+                                                	<option value="8">Mecklenburg-Vorpommern</option> 
+                                                	<option value="9">Niedersachsen</option> 
+                                                	<option value="10">Nordrhein-Westfalen</option> 
+                                                	<option value="11">Rheinland-Pfalz</option> 
+                                                	<option value="12">Saarland</option> 
+                                                	<option value="13">Sachsen</option> 
+                                                	<option value="14">Sachsen-Anhalt</option> 
+                                                	<option value="15">Schleswig-Holstein</option> 
+                                                	<option value="16">Thüringen</option>                                                                                                 
                                                 </select>
                                             </div>
                                             <div class="form-group" data-pg-collapsed> 
                                                 <label class="control-label" for="formInput42">Schulform</label>                                                 
-                                                <select id="formInput42" class="form-control"> 
-                                                    <option>Gymnasium</option>                                                     
-                                                    <option>Realschule</option>                                                     
-                                                    <option>Grundschule</option>                                                     
+                                                <select id="formInput_schulform" class="form-control" disabled>
+                                                	<option value="0">Schulform auswählen...</option> 
+                                                    <option value="1">Gymnasium</option>                                                     
+                                                    <option value="2">Realschule</option>                                                     
+                                                    <option value="3">Grundschule</option>                                                     
                                                 </select>
                                             </div>                                             
                                         </div>
                                         <div class="col-lg-6 col-md-6 schulen_element col-sm-12 col-xs-12" data-pg-collapsed>
                                             <div class="form-group" data-pg-collapsed> 
                                                 <label class="control-label" for="formInput48">Ort</label>                                                 
-                                                <select id="formInput48" class="form-control"> 
-                                                    <option>Würzburg</option>                                                     
-                                                    <option>München</option>                                                     
-                                                    <option>Augsburg</option>                                                     
+                                                <select id="formInput_ort" class="form-control" disabled> 
+                                                	<option value="0">Ort auswählen...</option> 
+                                                    <option value="1">Würzburg</option>                                                     
+                                                    <option value="2">München</option>                                                     
+                                                    <option value="3">Augsburg</option>                                                     
                                                 </select>
                                             </div>
                                             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 text-center schulen_map" data-pg-collapsed>
@@ -98,7 +115,7 @@
                                             <h4>Schulen wählen</h4> 
                                         </div>
                                         <div class="col-lg-12 col-md-12 list_scroll col-sm-12 col-xs-12">
-                                            <ul class="list-group"> 
+                                            <ul class="list-group" id="list_schule" style="display:none"> 
                                                 <li class="list-group-item" data-pg-collapsed>
                                                     <label data-pg-collapsed> 
                                                         <input class="control-label school_cb" id="school1" type="checkbox" value="1">                                                         
@@ -139,6 +156,32 @@
         </div>         
         <div class="row" id="footer" data-pg-collapsed></div>
         <!-- Ende des Dokumentes -->         
+        <script>
+        $("#formInput_bundesland").change(function(){
+            if ($(this).val() != "0"){
+           		$('#formInput_ort').prop("disabled", false);
+            }
+            else{
+            	$('#formInput_ort').prop("disabled", true);
+            }
+        });
+        $("#formInput_schulform").change(function(){
+            if ($(this).val() != "0"){
+           		$('#list_schule').css("display", "");
+            }
+            else{
+            	$('#list_schule').prop("display", "none");
+            }
+        });
+        $("#formInput_ort").change(function(){
+            if ($(this).val() != "0"){
+           		$('#formInput_schulform').prop("disabled", false);
+            }
+            else{
+            	$('#formInput_schulform').prop("disabled", true);
+            }
+        });
+        </script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>         
         <script src="js/functions.js"></script>         
         <script src="js/lieferant_maps_schulauswahl.js"></script>         
