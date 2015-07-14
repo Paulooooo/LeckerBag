@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8">         
+        <title>Leckerbag - Die gesunde Alternative</title>         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">         
+        <meta name="description" content="Beschreibung der Seite">         
+        <meta name="author" content="Paul Kozakiewicz">         
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">         
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">         
+        <link href="css/style.css" rel="stylesheet" type="text/css">         
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script> 
+			$(function(){
+		        $("#header").load("header.html", function(){
+		        	setNav(1);
+		        });
+			  	$("#footer").load("footer.html"); 
+			});
+		</script>         
+    </head>     
+    <body>
+        <div class="row" id="header"></div>         
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container wrapper">
+                    <div class="row" data-pg-collapsed>
+                        <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10" data-pg-collapsed>
+                            <h3>Kontakt</h3> 
+                            <p>Kontakformular für Fragen &amp; Probleme&nbsp;</p>
+                        </div>
+                        <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2" data-pg-collapsed>
+                            <a href="#"><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
+                            <br/>
+                            <a id="help_text">Benötigst du Hilfe?</a>
+                        </div>
+                    </div>
+                    <hr class="hr_line"/>
+                    <div class="row" data-pg-collapsed>
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-md-12 dash_element col-xs-12 col-sm-12 col-lg-12 kontakt_element">
+                                    <div class="row" data-pg-collapsed>
+                                        <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12" style="padding-right:15px" data-pg-collapsed> 
+                                            <div class="row kontakt_element" style="margin-bottom: 15px" data-pg-collapsed>
+                                                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 kontak_question">
+                                                    <h4 class="kontakt_text_question">1</h4>
+                                                </div>
+                                                <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 kontak_question">
+                                                    <h4 class="kontakt_text_question">Wähle bitte deine Rolle</h4>
+                                                </div>
+                                                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+</div>
+                                                <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+                                                    <div class="radio"> 
+                                                        <label class="control-label" style="margin-right:5px">
+                                                            <input type="radio" name="group" value="option1" checked="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Ich bin Lieferant
+                                                        </label>
+                                                        <label class="control-label" title="Meine Abonnements" data-pg-name="Meine Abonnements" style="margin-right:5px">
+                                                            <input type="radio" name="group" value="Meine Abonnements" checked="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Ich bin Kunde
+                                                        </label>                                                         
+                                                    </div>                                                     
+                                                </div>
+                                            </div>
+                                            <div class="row kontakt_element" style="margin-bottom: 10px" data-pg-collapsed>
+                                                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 kontak_question">
+                                                    <h4 class="kontakt_text_question">2</h4>
+                                                </div>
+                                                <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 kontak_question">
+                                                    <h4 class="kontakt_text_question">Zu welchem Theam können wir dir behilflich sein?</h4>
+                                                </div>
+                                                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+</div>
+                                                <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+                                                    <div class="radio"> 
+                                                        <label class="control-label" style="margin-right:7px">
+                                                            <input type="radio" name="group" value="option1" checked="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Meine Profidaten
+                                                        </label>
+                                                        <label class="control-label" title="Meine Abonnements" data-pg-name="Meine Abonnements" style="margin-right:5px">
+                                                            <input type="radio" name="group" value="Meine Abonnements" checked="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Meine Abonnements
+                                                        </label>
+                                                        <label class="control-label" style="margin-right:5px">
+                                                            <input type="radio" name="group" value="option1" checked="">
+                                                            Meine Guthaben
+                                                        </label>
+                                                        <label class="control-label" style="margin-right:5px">
+                                                            <input type="radio" name="group" value="option1" checked="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Sonstiges
+                                                        </label>                                                         
+                                                    </div>                                                     
+                                                </div>
+                                            </div>
+                                            <div class="row kontakt_element" style="margin-bottom: 10px" data-pg-collapsed>
+                                                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 kontak_question">
+                                                    <h4 class="kontakt_text_question">3</h4>
+                                                </div>
+                                                <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 kontak_question">
+                                                    <h4 class="kontakt_text_question">Schreib deine E-Mail an Leckerbag</h4>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <textarea class="form-control" rows="3" style="padding-bottom: 120px; margin-top:12px; margin-bottom:12px;"></textarea>                                                     
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-bottom: 10px">
+</div>                                             
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" data-pg-collapsed>
+                                            <div class="row kontakt_element" style="margin-left:5px">
+                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                                    <h5 class="kontakt_text_question" style="padding-bottom:10px">Kontaktinformationen:</h5>
+                                                    <h5>&nbsp; &nbsp;Sanderring 2</h5>
+                                                    <h5>&nbsp; &nbsp;97070 Würzburg</h5>
+                                                    <h5>&nbsp; &nbsp;Tel.: 0931/31-0</h5>
+                                                    <h5>&nbsp; &nbsp;Fax: 0931/31-82600</h5>
+                                                    <h5 style="padding-bottom:12px">&nbsp; &nbsp;E-Mail: info@leckerbag.de<br></h5>
+                                                </div>
+                                            </div>                                             
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right last_element_dash div_buttons">
+                                        <button type="button" class="btn btn-default button_paulo" data-pg-name="Button: Suchen">Bestätigen</button>
+                                    </div>                                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </div>         
+        <div class="row" id="footer"></div>
+        <!-- Ende des Dokumentes -->         
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>         
+        <script src="js/functions.js"></script>         
+    </body>     
+</html>

@@ -1360,3 +1360,22 @@ label
     font-size: 17px;
     line-height: 30px;
 }
+
+.kontakt_element
+{
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    padding-top: 10px;
+}
+
+.kontak_question
+{
+    border-bottom: solid 1px #ddd;
+}
+
+.kontakt_text_question
+{
+    color: #5b586b;
+    font-weight: bold;
+    font-size: 18px;
+}
