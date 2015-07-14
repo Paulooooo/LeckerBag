@@ -1,24 +1,3 @@
-	        $("#formInput_bundesland").change(function(){
-	            if ($(this).val() != "0"){
-	           		$('select[id="formInput_ort"]').disabled=false;
-	            }
-	            else{
-	            	$('select[id="formInput_ort"]').disabled=true;
-	            }
-	        });
-	        $('select[id="formInput_ort"]').change(function(){
-	            if ($(this).val() != "0")
-	           		$('select[id="formInput_schulform"]').disabled=false;
-	            else
-	            	$('select[id="formInput_schulform"]').disabled=true;
-	        });
-	        $('select[id="formInput_schulform"]').change(function(){
-	            if ($(this).val() != "0")
-	           		$('select[id="list_schule"]').css('display', ''); 
-	            else
-	            	$('select[id="list_schule"]').css('display', 'none'); 
-	        });
-
 //**** ---- Funktionen load on init  ---- ****
 //--------------------------------------------
 //**** Navbar stick on Top ****

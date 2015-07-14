@@ -1345,6 +1345,15 @@ label
 		padding-top: 10px;
 		font-size: 12px;
 	}
+	#nav-wrapper{
+		height: 100%;
+	}
+	.navbar_container{
+		width:100%;
+	}
+	.navbar_container li{
+		width: 100% !important;
+	}
 }
 .ueber_uns_text
 {
