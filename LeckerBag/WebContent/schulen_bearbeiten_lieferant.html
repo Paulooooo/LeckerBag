@@ -157,30 +157,30 @@
         <div class="row" id="footer" data-pg-collapsed></div>
         <!-- Ende des Dokumentes -->         
         <script>
-        $("#formInput_bundesland").change(function(){
-            if ($(this).val() != "0"){
-           		$('#formInput_ort').prop("disabled", false);
-            }
-            else{
-            	$('#formInput_ort').prop("disabled", true);
-            }
-        });
-        $("#formInput_schulform").change(function(){
-            if ($(this).val() != "0"){
-           		$('#list_schule').css("display", "");
-            }
-            else{
-            	$('#list_schule').prop("display", "none");
-            }
-        });
-        $("#formInput_ort").change(function(){
-            if ($(this).val() != "0"){
-           		$('#formInput_schulform').prop("disabled", false);
-            }
-            else{
-            	$('#formInput_schulform').prop("disabled", true);
-            }
-        });
+	        $("#formInput_bundesland").change(function(){
+	            if ($(this).val() != "0"){
+	           		$('#formInput_ort').prop("disabled", false);
+	            }
+	            else{
+	            	$('#formInput_ort').prop("disabled", true);
+	            }
+	        });
+	        $("#formInput_schulform").change(function(){
+	            if ($(this).val() != "0"){
+	           		$('#list_schule').css("display", "");
+	            }
+	            else{
+	            	$('#list_schule').prop("display", "none");
+	            }
+	        });
+	        $("#formInput_ort").change(function(){
+	            if ($(this).val() != "0"){
+	           		$('#formInput_schulform').prop("disabled", false);
+	            }
+	            else{
+	            	$('#formInput_schulform').prop("disabled", true);
+	            }
+	        });
         </script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>         
         <script src="js/functions.js"></script>         

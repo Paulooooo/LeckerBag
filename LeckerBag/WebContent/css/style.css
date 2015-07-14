@@ -1220,8 +1220,23 @@ label
 .konfig_produkt_aktiv{
 	margin-right: 15px;
 }
-
-
+.fav_list_holder{
+	text-align:center;
+}
+.fav_list{
+	vertical-align: middle;
+	margin: 0px;
+	line-height: 40px;
+	cursor: pointer;
+	border: 1px solid;
+	border-color: #ddd;
+	border-radius: 4px;
+}
+.fav_list:hover{
+	border: 1px solid;
+	border-color: #868492;
+	border-radius: 4px;
+}
 /* medium devices (bis 992px) */
 
 @media (max-width:992px)
