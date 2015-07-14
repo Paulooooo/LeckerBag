@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8">         
+        <title>Leckerbag - Die gesunde Alternative</title>         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">         
+        <meta name="description" content="Beschreibung der Seite">         
+        <meta name="author" content="Paul Kozakiewicz">         
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">         
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">         
+        <link href="css/style.css" rel="stylesheet" type="text/css">         
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script> 
+			$(function(){
+		        $("#header").load("header.html", function(){
+		        	setNav(1);
+		        });
+			  	$("#footer").load("footer.html"); 
+			});
+		</script>         
+    </head>     
+    <body>
+        <div class="row" id="header" data-pg-collapsed></div>         
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container wrapper">
+                    <div class="row" data-pg-collapsed>
+                        <div class="content_header_element col-md-10 col-sm-10 col-xs-10 col-lg-10" data-pg-collapsed>
+                            <h3>Über Uns</h3> 
+                            <p>Infos rund um die Plattform Leckerbag!</p>
+                        </div>
+                        <div class="content_header_element text-right col-md-2 col-sm-2 col-xs-2 col-lg-2" data-pg-collapsed>
+                            <a href="#"><i class="fa fa-question-circle fa-2x" id="help_icon"></i></a>
+                            <br/>
+                            <a id="help_text">Benötigst du Hilfe?</a>
+                        </div>
+                    </div>
+                    <hr class="hr_line"/>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 dash_element_col col-md-12 col-lg-12">
+                            <div class="row dash_element_holder">
+                                <div class="col-md-12 dash_element col-xs-12 col-sm-12 col-lg-12">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left ueber_uns_text"> 
+                                        <p data-pg-collapsed><font style="font-weight:500">LeckerBag</font> ist eine junge und innovative Plattform, welche aus einem Projekt der Julius-Maximilians-Universität Würzburg hervorgegangen ist. Wir sehen uns als ein Unternehmen, das Dich in deinem Alltag entlastet und deinem Kind jeden Tag eine ausgewogene Ernährung bietet.
+                                        <p data-pg-collapsed>
+    Als deutschlandweit erster Frühstückslieferservice speziell für Schüler, ist es unser Ziel, deinem Kind ein <font style="font-weight:500">individuelles und gesundes Frühstück</font> bereitzustellen. Hierzu können die Eltern ganz bequem von zu Hause aus via PC oder unterwegs mit Smartphone oder Tablet, ihrem Kind für jeden gewünschten Tag ein individuelles <font style="font-weight:500">LeckerBag</font> zusammenstellen.
+                                        <p data-pg-collapsed>
+Wir bieten eine Auswahl an <font style="font-weight:500">frischen, gesunden und ausgewählten Produkten</font>, die jeden deiner Ansprüche an ein gesundes Frühstück für dein Kind erfüllen. Unsere Lieferanten sind meist lokale oder regionale Bäckereien, welche im vorab sorgfältig von uns geprüft und ausgesucht wurden.
+                                        <p data-pg-collapsed>
+Entdecke <font style="font-weight:500">LeckerBag</font> und erfahre mehr über die gesunde Alternative zum Pausenbrot!<div class="col-md-4 col-sm-4 col-xs-12 col-lg-4">
+                                                <img src="pics/obst.jpg" width="100%" class="text-left">
+                                            </div><div class="col-md-4 col-sm-4 col-xs-12 col-lg-4" data-pg-collapsed>
+                                                <img src="pics/brot.jpg" width="100%">
+                                            </div><div class="col-md-4 col-sm-4 col-xs-12 col-lg-4" data-pg-collapsed>
+                                                <img src="pics/o-saft.jpg" width="100%">
+                                            </div>
+                                    </div>                                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </div>         
+        <div class="row" id="footer" data-pg-collapsed></div>
+        <!-- Ende des Dokumentes -->         
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>         
+        <script src="js/functions.js"></script>         
+    </body>     
+</html>
